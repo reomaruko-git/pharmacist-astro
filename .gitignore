@@ -1,0 +1,38 @@
+# build output
+dist/
+
+# generated types
+.astro/
+
+# dependencies
+node_modules/
+
+# environment variables
+.env
+.env.production
+
+# jetbrains setting folder
+.idea/
+
+# --- システムの不要ファイル ---
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# --- Macの圧縮ゴミ ---
+__MACOSX/
+
+# --- VSCodeの設定ファイル（重要！） ---
+# ここにSFTPのパスワード(sftp.json)が含まれるので絶対無視！
+.vscode/
+
+# --- 重たい外部ライブラリ ---
+vendor/  
+
+# --- デザイン元データ ---
+*.psd
+.ai
+
+# --- その他 ---
+*.log
+backup/
