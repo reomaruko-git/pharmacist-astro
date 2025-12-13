@@ -745,7 +745,7 @@ import Layout from '../layouts/Layout.astro';
             </h2>
             <p class="mb-10 font-bold opacity-90 text-sm md:text-base leading-relaxed">
                 1社だけに絞ると、良い求人を見逃すリスクがあります。<br>
-                「スピード検索」と「じっくり相談」、<br class="md:hidden">
+                「スピード重視」と「じっくり相談」、<br class="md:hidden">
                 両方のメリットを手に入れましょう。
             </p>
 
@@ -828,7 +828,7 @@ import Layout from '../layouts/Layout.astro';
         </p>
     </section>
 
-    <div class="fixed bottom-0 left-0 w-full bg-white/95 backdrop-blur-md border-t border-gray-200 p-3 md:hidden z-50 shadow-[0_-4px_20px_-5px_rgba(0,0,0,0.1)]">
+    <div class="fixed bottom-0 left-0 w-full bg-white/95 backdrop-blur-md border-t border-gray-200 px-3 pt-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))] md:hidden z-50 shadow-[0_-4px_20px_-5px_rgba(0,0,0,0.1)]">
         <div class="flex gap-3 max-w-sm mx-auto">
             <a href="https://agent.m3career.com/" class="flex-1 bg-accent hover:bg-accent-hover text-center text-white text-xs font-bold py-3.5 rounded-lg shadow-md flex flex-col justify-center items-center leading-tight shiny-btn active:scale-95 transition relative overflow-visible">
                 <span class="text-[10px] block mb-0.5 text-yellow-200 font-extrabold tracking-wide">
@@ -857,7 +857,7 @@ import Layout from '../layouts/Layout.astro';
 		}
 	</script>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-	<script is:inline src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script is:inline src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
 
 	<script is:inline>
 	// 1. スライダーの設定
