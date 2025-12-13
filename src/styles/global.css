@@ -1,6 +1,12 @@
 @import "tailwindcss";
-@source "../**";
 
+/* ★ これがTailwind v4を読み込むための必須行です */
+@import "tailwindcss";
+
+/* -------------------------------------------------- */
+/* 1. テーマ設定 (@theme)                            */
+/* ここに変数を定義すると、Tailwindクラスとして使えます      */
+/* -------------------------------------------------- */
 @theme {
   /* ▼ カスタムカラー */
   --color-primary: #43bcae;
@@ -13,18 +19,21 @@
   --color-sub-text: #718096;
   --color-warm-bg: #fdfcf8;
 
-  /* ▼ フォント設定：LINE Seed JPを最優先に戻しました */
+  /* ▼ フォント設定 */
   --font-sans: "LINE Seed JP", "Zen Kaku Gothic New", sans-serif;
   --font-rounded: "M PLUS Rounded 1c", sans-serif;
 
-  /* 影の設定 */
+  /* ▼ 影の設定 */
   --shadow-soft: 0 10px 40px -10px rgba(0, 0, 0, 0.08);
   --shadow-card: 0 4px 6px -1px rgba(0, 0, 0, 0.05),
     0 2px 4px -1px rgba(0, 0, 0, 0.03);
 }
 
+/* -------------------------------------------------- */
+/* 2. ベーススタイル (@layer base)                    */
+/* フォント定義や body の基本設定                      */
+/* -------------------------------------------------- */
 @layer base {
-  /* ▼ ここを修正！ publicフォルダの中を見に行くようにパスを変更 */
   @font-face {
     font-family: "LINE Seed JP";
     src: url("/assets/fonts/LINESeedJP_OTF_Rg.woff2") format("woff2");
@@ -54,8 +63,12 @@
   }
 }
 
+/* -------------------------------------------------- */
+/* 3. コンポーネント・ユーティリティ (@layer components) */
+/* ボタンやSwiperなどのカスタムCSS                      */
+/* -------------------------------------------------- */
 @layer components {
-  /* ボタンなどの装飾 */
+  /* shiny-btn */
   .shiny-btn {
     position: relative;
     overflow: hidden;
@@ -132,37 +145,29 @@
     margin-bottom: 0.5rem;
   }
 
-  /* Swiperナビゲーションボタンのカスタマイズ */
-
+  /* Swiper カスタマイズ */
   .mySwiper .swiper-button-next:after,
   .mySwiper .swiper-button-prev:after {
     font-size: 16px;
     color: #43bcae;
     font-weight: bold;
   }
-
   .mySwiper .swiper-button-next:hover,
   .mySwiper .swiper-button-prev:hover {
     background: #43bcae;
   }
-
   .mySwiper .swiper-button-next:hover:after,
   .mySwiper .swiper-button-prev:hover:after {
     color: white;
   }
-
-  /* スライドの高さを揃える */
   .mySwiper .swiper-slide {
     height: auto;
     display: flex;
   }
-
-  /* ページネーションのスタイル調整 */
   .mySwiper .swiper-pagination-bullet {
     background: #43bcae;
     opacity: 0.3;
   }
-
   .mySwiper .swiper-pagination-bullet-active {
     opacity: 1;
   }
