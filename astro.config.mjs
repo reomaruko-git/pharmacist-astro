@@ -4,6 +4,11 @@ import tailwindcss from "@tailwindcss/vite";
 // https://astro.build/config
 export default defineConfig({
   output: "static",
+  redirects: {
+    // '/自分のサイトのパス': '飛ばしたいアフィリエイトURL'
+    "/link/m3career/": "https://agent.m3career.com/",
+    "/link/38-8931/": "https://www.38-8931.com/",
+  },
 
   vite: {
     plugins: [tailwindcss()],

@@ -35,7 +35,7 @@
 │   │   └── privacy.astro
 │   └── styles/
 │       └── global.css   # 🎨 Tailwind v4設定・共通スタイル（@theme等はここ）
-├── astro.config.mjs     # ⚙️ Astro設定（Viteプラグイン、ビルド出力設定）
+├── astro.config.mjs     # ⚙️ Astro設定（Viteプラグイン、ビルド出力設定、ショートリンク設定）
 ├── dist/                # 📦 ビルド生成物（この中身をサーバーにアップロード）
 └── package.json
 ```
