@@ -8,7 +8,7 @@
 - **Framework**: [Astro](https://astro.build) (v5)
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/) (v4) - `@tailwindcss/vite` プラグイン使用
 - **UI Library**: [Swiper](https://swiperjs.com/) (カルーセルスライダー)
-- **Deployment**: Mixhost (VS Code SFTP 拡張機能による同期)
+- **Deployment**: **Netlify (Git 連携による自動デプロイ)**
 
 ## 📚 運用マニュアル
 
@@ -51,26 +51,24 @@
 | `npm run build`   | **本番用ビルド**。`dist/` フォルダに公開用ファイルを生成します。                   |
 | `npm run preview` | ビルドされた `dist/` の内容をローカルで確認します。                                |
 
-## 📦 デプロイ手順（Mixhost へのアップロード）
+## 📦 デプロイ手順（Netlify へ自動本番化）
 
-このプロジェクトは、VS Code の拡張機能（SFTP）を使用してデプロイするように構成されています。
+このプロジェクトは、Git リポジトリ（GitHub など）と Netlify が連携した**継続的デプロイ（Continuous Deployment: CD）**により運用されています。
 
-1.  **ビルドを実行する**
+サイトを更新する手順は非常にシンプルです。
+ローカルでコードを変更する
+必要な修正をローカルファイルに対して行います。
+変更を Git でコミットし、リモートリポジトリにプッシュする
 
-    ```sh
-    npm run build
-    ```
+git add .
+git commit -m "feat: [コミットメッセージを記述]"
+git push origin main
 
-    _エラーなく完了し、`dist` フォルダが更新されたことを確認してください。_
+プッシュ後、Netlify が自動で変更を検知し、ビルド（npm run build）とデプロイを数分で完了させます。
 
-2.  **サーバーへ同期する**
-
-    - VS Code で `F1` (または `Cmd+Shift+P`) を押す。
-    - `SFTP: Sync Local -> Remote` を実行。
-    - 確認画面で `Yes` を選択。
-    - `dist` フォルダの中身のみが、自動的にサーバーの公開ディレクトリへ転送されます。
-
-> **⚠️ 注意:** 手動でアップロードする場合は、`dist` フォルダの**中身すべて**を `public_html/yakuzaisupport/` にアップロードしてください。
+✅ 注意:
+デプロイ状況は Netlify のダッシュボードで確認できます。
+SFTP や手動でのファイルアップロードは一切不要です。 必ず Git プッシュで更新を行ってください。
 
 ## 🎨 スタイル編集について (Tailwind CSS v4)
 
