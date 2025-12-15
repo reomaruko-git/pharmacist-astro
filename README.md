@@ -89,4 +89,4 @@
 
 ---
 
-© 2025 Mama Yaku Haken. All Rights Reserved.
+© 2025 Yakuzaishi Support.com. All Rights Reserved.
