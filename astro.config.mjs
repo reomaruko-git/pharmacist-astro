@@ -6,8 +6,11 @@ export default defineConfig({
   output: "static",
   redirects: {
     // '/自分のサイトのパス': '飛ばしたいアフィリエイトURL'
+    //薬キャリ
     "/link/m3career/": "https://agent.m3career.com/",
+    //ファルマスタッフ
     "/link/38-8931/": "https://www.38-8931.com/",
+    //ファル・メイト
     "/link/pharmate/":
       "https://px.a8.net/svt/ejp?a8mat=45KFSQ+7O95GY+31X8+60WN7",
   },
