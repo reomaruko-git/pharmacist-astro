@@ -61,189 +61,257 @@ import Layout from '../layouts/Layout.astro';
         </div>
     </section>
 
-    <section class="py-12 px-4 md:px-8">
-        <div class="max-w-5xl mx-auto">
-            <h2 class="text-center text-2xl md:text-3xl font-bold mb-8 leading-tight">
-                今の職場、こんな<span class="text-accent decoration-accent/30 decoration-4">悩み</span>ありませんか？
-            </h2>
+    <div class="w-full">
 
-            <div class="rounded-[2.5rem] shadow-xl overflow-hidden border border-gray-200">
+    <section class="w-full bg-slate-50 pt-16 md:pt-24 pb-24 md:pb-32 relative">
+        <div class="max-w-6xl mx-auto px-4 md:px-8 relative z-10">
 
-                <div class="bg-gray-50 p-6 md:p-10 pb-12 md:pb-16">
+            <div class="text-center mb-16">
+                <h2 class="text-2xl md:text-3xl font-bold leading-tight text-slate-800">
+                    今の職場、こんな<span class="text-accent decoration-accent/30 decoration-4 underline-offset-4 relative inline-block">悩み<svg class="absolute -bottom-2 left-0 w-full h-2 text-red-200" viewBox="0 0 100 10" preserveAspectRatio="none"><path d="M0 5 Q 25 0, 50 5 T 100 5" stroke="currentColor" stroke-width="2" fill="none" /></svg></span>ありませんか？
+                </h2>
+                <p class="text-slate-500 mt-4 tracking-wider font-bold">Current Situation</p>
+            </div>
 
-                    <h3 class="text-center font-bold text-gray-600 mb-8 text-lg md:text-xl">
+            <div class="flex flex-col md:flex-row items-center gap-10 md:gap-20">
+                
+                <div class="w-full md:w-1/2 relative">
+                    <div class="absolute -left-4 -bottom-4 w-full h-full bg-slate-200 rounded-[2rem] -z-10 hidden md:block transform -rotate-2"></div>
+                    <div class="relative transform -rotate-2">
+                        <img src="/assets/images/full.png" alt="焦る薬剤師" class="w-full aspect-[4/3] object-cover rounded-[2rem] shadow-xl shadow-slate-300/50 grayscale-[30%]" loading="lazy">
+                        <div class="absolute inset-0 bg-slate-900/10 rounded-[2rem]"></div>
+                    </div>
+                </div>
+
+                <div class="w-full md:w-1/2">
+                    <h3 class="text-xl md:text-2xl font-bold text-slate-700 mb-10 text-center md:text-left">
                         正社員・パートの現実…
                     </h3>
 
-                    <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
-                        <div class="w-full md:w-auto text-center flex-shrink-0">
-                            <div class="relative inline-block rotate-[-2deg]">
-                                <img src="/assets/images/full.png" alt="焦る薬剤師" class="w-60 md:w-80 aspect-[4/3] object-cover shadow-lg" loading="lazy">
+                    <ul class="space-y-10">
+                        <li class="flex items-start group">
+                            <div class="shrink-0 mr-6">
+                                <div class="w-10 h-14 flex items-center justify-center">
+                                    <i class="fas fa-thermometer-full text-accent text-3xl"></i>
+                                </div>
                             </div>
-                        </div>
-
-                        <div class="w-full flex-grow">
-                            <ul class="bg-white p-6 rounded-2xl shadow-sm space-y-4 border border-gray-100">
-                                <li class="flex items-center">
-                                    <i class="fas fa-times-circle text-red-400 text-xl mr-3 flex-shrink-0"></i>
-                                    <span class="font-bold text-gray-700 text-sm md:text-base">子ども発熱で早退のたびに肩身が狭い…</span>
-                                </li>
-                                <li class="flex items-center border-t border-gray-100 pt-4">
-                                    <i class="fas fa-times-circle text-red-400 text-xl mr-3 flex-shrink-0"></i>
-                                    <span class="font-bold text-gray-700 text-sm md:text-base">「残業できません」が言いづらい空気</span>
-                                </li>
-                                <li class="flex items-center border-t border-gray-100 pt-4">
-                                    <i class="fas fa-times-circle text-red-400 text-xl mr-3 flex-shrink-0"></i>
-                                    <span class="font-bold text-gray-700 text-sm md:text-base">社員だと休めない。パートは収入が不安…</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="relative h-0 z-10">
-                    <div class="absolute left-0 right-0 -top-4 flex justify-center">
-                        <div class="bg-white text-teal-600 border border-gray-300 rounded-full px-6 py-1.5 font-bold flex items-center gap-2 text-sm md:text-base shadow-sm">
-                            <i class="fas fa-arrow-down text-teal-400"></i>派遣なら、こう変わる！
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bg-yellow-50 p-6 md:p-10 pt-12 md:pt-16 border-t border-dashed border-gray-300">
-
-                    <h3 class="text-center font-bold text-yellow-800 mb-8 text-lg md:text-xl">
-                        “派遣”という新しい選択肢
-                    </h3>
-
-                    <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
-                        <div class="w-full md:w-auto text-center flex-shrink-0">
-                            <div class="relative inline-block rotate-[2deg]">
-                                <img src="/assets/images/after-haken.png" alt="笑顔の親子" class="w-60 md:w-80 aspect-[4/3] object-cover shadow-lg" loading="lazy">
+                            <div>
+                                <h4 class="text-lg md:text-xl font-bold text-slate-800 mb-2 leading-tight">
+                                    子どもの発熱で早退のたびに<span class="underline decoration-red-300 decoration-2 underline-offset-4">肩身が狭い…</span>
+                                </h4>
+                                <p class="text-slate-500 text-sm md:text-base leading-relaxed">
+                                    「また？」という空気感。謝ってばかりで心がすり減っていく。
+                                </p>
                             </div>
-                        </div>
+                        </li>
 
-                        <div class="w-full flex-grow">
-                            <ul class="bg-white p-6 rounded-2xl shadow-sm space-y-4 border border-yellow-100">
-                                <li class="flex items-center">
-                                    <i class="fas fa-check-circle text-teal-500 text-xl mr-3 flex-shrink-0"></i>
-                                    <span class="font-bold text-gray-800 text-sm md:text-base"><span class="text-teal-600 text-lg">週2日〜OK</span>、家庭優先のシフト</span>
-                                </li>
-                                <li class="flex items-center border-t border-yellow-50 pt-4">
-                                    <i class="fas fa-check-circle text-teal-500 text-xl mr-3 flex-shrink-0"></i>
-                                    <span class="font-bold text-gray-800 text-sm md:text-base">時間きっかり終了！<span class="bg-yellow-100 px-1 rounded ml-1 text-yellow-800">残業なし</span></span>
-                                </li>
-                                <li class="flex items-center border-t border-yellow-50 pt-4">
-                                    <i class="fas fa-check-circle text-teal-500 text-xl mr-3 flex-shrink-0"></i>
-                                    <span class="font-bold text-gray-800 text-sm md:text-base">時短でもお金の余裕が生まれる（<span class="text-teal-600 text-lg font-bold">時給3,000円〜</span>）</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                        <li class="flex items-start group">
+                            <div class="shrink-0 mr-6">
+                                <div class="w-10 h-14 flex items-center justify-center">
+                                    <i class="fas fa-business-time text-accent text-3xl"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="text-lg md:text-xl font-bold text-slate-800 mb-2 leading-tight">
+                                    「残業できません」が<span class="underline decoration-red-300 decoration-2 underline-offset-4">言いづらい空気</span>
+                                </h4>
+                                <p class="text-slate-500 text-sm md:text-base leading-relaxed">
+                                    定時で帰るのが悪のような雰囲気。周りに合わせて無理をしてしまう。
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="flex items-start group">
+                            <div class="shrink-0 mr-6">
+                                <div class="w-10 h-14 flex items-center justify-center">
+                                    <i class="fas fa-user-slash text-accent text-3xl"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="text-lg md:text-xl font-bold text-slate-800 mb-2 leading-tight">
+                                    社員だと休めない。パートは<span class="underline decoration-red-300 decoration-2 underline-offset-4">収入が不安…</span>
+                                </h4>
+                                <p class="text-slate-500 text-sm md:text-base leading-relaxed">
+                                    責任と自由、どちらを選んでも何かが犠牲になるジレンマ。
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-
             </div>
-
         </div>
+
+        <div class="absolute left-0 right-0 bottom-0 flex justify-center translate-y-[99%] z-20">
+            <div class="w-0 h-0 border-l-[40px] border-l-transparent border-r-[40px] border-r-transparent border-t-[30px] border-t-slate-50"></div>
         </div>
     </section>
 
-    <section class="py-10 md:py-16 px-4 bg-gradient-to-b from-gray-50 via-white to-white relative">
-        <div class="absolute top-0 left-0 w-full h-1/2 bg-gray-50/50 -z-10"></div>
-        <div class="max-w-4xl mx-auto">
-            <div class="text-center mb-8">
-                <span class="inline-block py-1 px-3 rounded-full bg-white border border-gray-200 text-gray-500 text-[10px] md:text-xs font-bold mb-3 shadow-sm">
-                    選ばれる4つの理由
-                </span>
-                <h2 class="text-2xl md:text-3xl font-bold text-gray-800 leading-tight">
-                    収入も、時間も、ゆとりも。<br>
-                    <span class="text-primary px-2 rounded mt-2 inline-block">全部どりできる働き方</span>
+
+    <section class="w-full bg-white pt-24 md:pt-32 pb-16 md:pb-24 relative z-0">
+        <div class="max-w-6xl mx-auto px-4 md:px-8">
+
+            <div class="text-center mb-16">
+                <p class="text-teal-600 tracking-wider font-bold mb-2">New Standard</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
+                    “派遣”という<br class="md:hidden">新しい選択肢
                 </h2>
             </div>
 
-            <div class="bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden relative pb-4">
-                <div class="p-5 md:p-8 pb-2 md:pb-6">
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-0 md:gap-8 relative z-10 divide-y divide-gray-100 md:divide-y-0">
-
-                        <div class="flex items-center md:flex-col md:text-center group py-6 md:py-0">
-                            <div class="flex-shrink-0 mr-6 md:mr-0 md:mb-4 text-teal-500 text-4xl md:text-5xl group-hover:scale-110 transition duration-300 flex items-center justify-center">
-                                <i class="fas fa-clock"></i>
-                            </div>
-                            <div>
-                                <h3 class="font-bold text-gray-800 text-base md:text-lg mb-1 md:mb-2">16時退社OK</h3>
-                                <p class="text-xs md:text-sm text-gray-500 leading-relaxed">
-                                    <strong class="font-bold text-gray-700">残業なし</strong>契約が可能。<br class="hidden md:inline">
-                                    保育園の<strong class="font-bold text-gray-700">お迎え</strong>も余裕です。
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="flex items-center md:flex-col md:text-center group py-6 md:py-0 md:border-x md:border-gray-50">
-                            <div class="flex-shrink-0 mr-6 md:mr-0 md:mb-4 text-yellow-500 text-4xl md:text-5xl group-hover:scale-110 transition duration-300 flex items-center justify-center">
-                                <i class="fas fa-yen-sign fa-fw"></i>
-                            </div>
-                            <div>
-                                <h3 class="font-bold text-gray-800 text-base md:text-lg mb-1 md:mb-2">時給3,000円〜</h3>
-                                <p class="text-xs md:text-sm text-gray-500 leading-relaxed">
-                                    短時間でも効率よく稼げる。<br class="hidden md:inline">
-                                    <strong class="font-bold text-gray-700">高単価求人</strong>が多数。
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="flex items-center md:flex-col md:text-center group py-6 md:py-0">
-                            <div class="flex-shrink-0 mr-6 md:mr-0 md:mb-4 text-red-400 text-4xl md:text-5xl group-hover:scale-110 transition duration-300 flex items-center justify-center">
-                                <i class="fas fa-book-reader"></i>
-                            </div>
-                            <div>
-                                <h3 class="font-bold text-gray-800 text-base md:text-lg mb-1 md:mb-2">ブランク研修</h3>
-                                <p class="text-xs md:text-sm text-gray-500 leading-relaxed">
-                                    <strong class="font-bold text-gray-700">復職支援プログラム</strong>で<br class="hidden md:inline">
-                                    知識をアップデート。
-                                </p>
-                            </div>
-                        </div>
+            <div class="flex flex-col md:flex-row-reverse items-center gap-10 md:gap-20">
+                
+                <div class="w-full md:w-1/2 relative">
+                    <div class="absolute -right-4 -bottom-4 w-full h-full bg-yellow-100 rounded-[2rem] -z-10 hidden md:block transform rotate-2"></div>
+                    <div class="relative transform rotate-2">
+                        <img src="/assets/images/after-haken.png" alt="笑顔の親子" class="w-full aspect-[4/3] object-cover rounded-[2rem] shadow-2xl shadow-yellow-100/50" loading="lazy">
                     </div>
                 </div>
 
-                <div class="relative flex justify-center items-center py-2 md:py-3">
-                    <div class="absolute inset-0 flex items-center px-6 md:px-10">
-                        <div class="w-full border-t border-dashed border-gray-200"></div>
-                    </div>
-                    <span class="relative bg-white px-3 text-[10px] text-gray-400 font-bold flex items-center gap-1 z-10">
-                        <i class="fas fa-plus-circle text-teal-400"></i> さらに安心の保障
-                    </span>
-                </div>
+                <div class="w-full md:w-1/2">
+                    <ul class="space-y-10">
+                        <li class="flex items-start group">
+                            <div class="shrink-0 mr-6">
+                                <div class="w-14 h-14 bg-teal-50 rounded-2xl flex items-center justify-center shadow-sm shadow-teal-100/50">
+                                    <i class="fas fa-calendar-check text-teal-600 text-2xl"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="text-xl md:text-2xl font-bold text-gray-800 mb-2">
+                                    <span class="bg-gradient-to-t from-yellow-200/60 to-transparent bg-[length:100%_40%] bg-bottom bg-no-repeat pb-1">週2日〜OK</span>、家庭優先
+                                </h4>
+                                <p class="text-gray-500 text-sm md:text-base leading-relaxed">
+                                    土日休みや時短勤務も自由自在。家族との時間を犠牲にしません。
+                                </p>
+                            </div>
+                        </li>
 
-                <div class="px-5 md:px-10 py-2 md:py-4">
-                    <div class="bg-gray-50/50 rounded-xl p-4 border border-gray-100 flex flex-col md:flex-row items-center gap-3 md:gap-8">
-                        <div class="flex-shrink-0 text-center md:text-left w-full md:w-auto">
-                            <div class="flex items-center justify-center md:justify-start gap-2 mb-2 md:mb-0">
-                                <i class="fas fa-shield-cat text-teal-500 text-base md:text-lg"></i>
-                                <h3 class="font-bold text-gray-700 text-sm">福利厚生も完備</h3>
-                            </div>
-                        </div>
-                        <div class="flex-grow w-full">
-                            <div class="grid grid-cols-1 md:grid-cols-3 gap-2">
-                                <div class="flex items-center bg-white px-3 py-2 rounded-lg border border-gray-100 shadow-sm">
-                                    <i class="fas fa-check text-green-500 text-xs mr-2"></i>
-                                    <span class="text-xs font-bold text-gray-600">社会保険 即日加入</span>
-                                </div>
-                                <div class="flex items-center bg-white px-3 py-2 rounded-lg border border-gray-100 shadow-sm">
-                                    <i class="fas fa-check text-green-500 text-xs mr-2"></i>
-                                    <span class="text-xs font-bold text-gray-600">有給消化率 ほぼ100%</span>
-                                </div>
-                                <div class="flex items-center bg-white px-3 py-2 rounded-lg border border-gray-100 shadow-sm">
-                                    <i class="fas fa-check text-green-500 text-xs mr-2"></i>
-                                    <span class="text-xs font-bold text-gray-600">産休育休・健康診断</span>
+                        <li class="flex items-start group">
+                            <div class="shrink-0 mr-6">
+                                <div class="w-14 h-14 bg-teal-50 rounded-2xl flex items-center justify-center shadow-sm shadow-teal-100/50">
+                                    <i class="fas fa-clock text-teal-600 text-2xl"></i>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <p class="text-[10px] text-gray-400 text-center md:text-right mt-2">※加入条件等はご紹介時にご確認ください</p>
+                            <div>
+                                <div class="flex items-center gap-3 mb-2">
+                                    <h4 class="text-xl md:text-2xl font-bold text-gray-800">
+                                        定時退社！残業なし
+                                    </h4>
+                                </div>
+                                <p class="text-gray-500 text-sm md:text-base leading-relaxed">
+                                    契約通りの時間で終了。「周りの目が気になって帰れない」から解放されます。
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="flex items-start group">
+                            <div class="shrink-0 mr-6">
+                                <div class="w-14 h-14 bg-teal-50 rounded-2xl flex items-center justify-center shadow-sm shadow-teal-100/50">
+                                    <i class="fas fa-yen-sign text-teal-600 text-2xl"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="text-xl md:text-2xl font-bold text-gray-800 mb-2">
+                                    時給<span class="text-teal-600 text-3xl md:text-4xl font-extrabold mx-1">3,000</span>円〜も可能
+                                </h4>
+                                <p class="text-gray-500 text-sm md:text-base leading-relaxed">
+                                    パートよりも高時給。短い時間でも、しっかりと家計を支えられます。
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
+</div>
+
+
+    <section class="py-16 md:py-24 px-4 bg-white relative">
+    <div class="max-w-5xl mx-auto"> <div class="text-center mb-16">
+        <span class="inline-block py-1 px-3 rounded-full bg-white border border-gray-200 text-gray-500 text-[10px] md:text-xs font-bold mb-3 shadow-sm">
+                選ばれる4つの理由
+        </span>
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">
+                収入も、時間も、ゆとりも。<br>
+                <span class="text-teal-600 px-2 rounded mt-2 inline-block">全部どりできる働き方</span>
+            </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16 mb-16 relative z-10 px-4 md:px-0">
+
+            <div class="flex flex-col items-center text-center group">
+                <div class="mb-4 text-teal-500 transform">
+                    <i class="fas fa-clock text-5xl md:text-6xl"></i>
+                </div>
+                <h3 class="text-lg md:text-xl font-bold text-gray-800 mb-2">16時退社OK</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">
+                    <strong class="font-bold text-gray-700">残業なし</strong>契約が可能。<br>
+                    保育園のお迎えも余裕です。
+                </p>
+            </div>
+
+            <div class="flex flex-col items-center text-center group">
+                 <div class="mb-4 text-yellow-500 transform group-hover:scale-105 transition duration-300">
+                    <i class="fas fa-yen-sign text-5xl md:text-6xl"></i>
+                </div>
+                <h3 class="text-lg md:text-xl font-bold text-gray-800 mb-2">時給3,000円〜</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">
+                    短時間でも効率よく稼げる。<br>
+                    <strong class="font-bold text-gray-700">高単価求人</strong>が多数。
+                </p>
+            </div>
+
+            <div class="flex flex-col items-center text-center group">
+                 <div class="mb-4 text-red-400 transform group-hover:scale-105 transition duration-300">
+                    <i class="fas fa-book-reader text-5xl md:text-6xl"></i>
+                </div>
+                <h3 class="text-lg md:text-xl font-bold text-gray-800 mb-2">ブランク研修</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">
+                    <strong class="font-bold text-gray-700">復職支援プログラム</strong>で<br>
+                    知識をアップデート。
+                </p>
+            </div>
+
+        </div>
+
+        <div class="relative py-4 mb-10 md:mb-12">
+            <div class="absolute inset-0 flex items-center px-8 md:px-0">
+                <div class="w-full border-t border-dashed border-gray-200"></div>
+            </div>
+            <div class="relative flex justify-center">
+                <span class="bg-white px-4 text-sm text-gray-600 font-bold flex items-center gap-2">
+                    <i class="fas fa-plus-circle text-teal-400"></i> さらに安心の保障
+                </span>
+            </div>
+        </div>
+
+        <div class="bg-slate-50/80 rounded-xl py-6 px-4 md:px-8 md:flex md:items-center md:justify-between border border-gray-100/50">
+            
+            <div class="flex items-center justify-center md:justify-start gap-3 mb-4 md:mb-0 md:mr-8 flex-shrink-0">
+                <i class="fas fa-shield-cat text-teal-500 text-2xl"></i>
+                <h3 class="font-bold text-gray-700 text-base md:text-lg">福利厚生も完備</h3>
+            </div>
+
+            <ul class="flex flex-col md:flex-row gap-3 md:gap-6 text-sm justify-center md:justify-end flex-grow">
+                <li class="flex items-center justify-center md:justify-start text-gray-600 bg-white/50 px-3 py-2 rounded-lg md:bg-transparent md:p-0">
+                    <i class="fas fa-check text-green-500 mr-2"></i>
+                    <span>社会保険 <b class="text-gray-800">即日加入</b></span>
+                </li>
+                <li class="flex items-center justify-center md:justify-start text-gray-600 bg-white/50 px-3 py-2 rounded-lg md:bg-transparent md:p-0">
+                    <i class="fas fa-check text-green-500 mr-2"></i>
+                    <span>有給消化率 <b class="text-gray-800">ほぼ100%</b></span>
+                </li>
+                <li class="flex items-center justify-center md:justify-start text-gray-600 bg-white/50 px-3 py-2 rounded-lg md:bg-transparent md:p-0">
+                    <i class="fas fa-check text-green-500 mr-2"></i>
+                    <span>産休育休・健康診断</span>
+                </li>
+            </ul>
+
+        </div>
+        <p class="text-[10px] text-gray-400 text-center mt-3 md:text-right">※加入条件等はご紹介時にご確認ください</p>
+
+    </div>
+</section>
+
 
     <section class="py-10 md:py-16 px-4 bg-teal-50/50 border-teal-100">
         <div class="max-w-6xl mx-auto">
