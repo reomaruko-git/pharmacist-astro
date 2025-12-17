@@ -170,8 +170,8 @@ import Layout from '../layouts/Layout.astro';
                     <ul class="space-y-10">
                         <li class="flex items-start group">
                             <div class="shrink-0 mr-6">
-                                <div class="w-14 h-14 bg-teal-50 rounded-2xl flex items-center justify-center shadow-sm shadow-teal-100/50">
-                                    <i class="fas fa-calendar-check text-teal-600 text-2xl"></i>
+                                <div class="w-14 h-14 flex items-center justify-center">
+                                    <i class="fas fa-calendar-check text-teal-600 text-3xl"></i>
                                 </div>
                             </div>
                             <div>
@@ -186,8 +186,8 @@ import Layout from '../layouts/Layout.astro';
 
                         <li class="flex items-start group">
                             <div class="shrink-0 mr-6">
-                                <div class="w-14 h-14 bg-teal-50 rounded-2xl flex items-center justify-center shadow-sm shadow-teal-100/50">
-                                    <i class="fas fa-clock text-teal-600 text-2xl"></i>
+                                <div class="w-14 h-14 flex items-center justify-center">
+                                    <i class="fas fa-clock text-teal-600 text-3xl"></i>
                                 </div>
                             </div>
                             <div>
@@ -204,8 +204,8 @@ import Layout from '../layouts/Layout.astro';
 
                         <li class="flex items-start group">
                             <div class="shrink-0 mr-6">
-                                <div class="w-14 h-14 bg-teal-50 rounded-2xl flex items-center justify-center shadow-sm shadow-teal-100/50">
-                                    <i class="fas fa-yen-sign text-teal-600 text-2xl"></i>
+                                <div class="w-14 h-14 flex items-center justify-center">
+                                    <i class="fas fa-yen-sign text-teal-600 text-3xl"></i>
                                 </div>
                             </div>
                             <div>
@@ -225,11 +225,13 @@ import Layout from '../layouts/Layout.astro';
 </div>
 
 
-    <section class="py-16 md:py-24 px-4 bg-white relative">
-    <div class="max-w-5xl mx-auto"> <div class="text-center mb-16">
-        <span class="inline-block py-1 px-3 rounded-full bg-white border border-gray-200 text-gray-500 text-[10px] md:text-xs font-bold mb-3 shadow-sm">
+    <section class="py-16 md:py-24 px-4 bg-slate-50 relative">
+    <div class="max-w-5xl mx-auto"> 
+        
+        <div class="text-center mb-16">
+            <span class="inline-block py-1 px-3 rounded-full bg-white border border-gray-200 text-gray-500 text-[10px] md:text-xs font-bold mb-3 shadow-sm">
                 選ばれる4つの理由
-        </span>
+            </span>
             <h2 class="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">
                 収入も、時間も、ゆとりも。<br>
                 <span class="text-teal-600 px-2 rounded mt-2 inline-block">全部どりできる働き方</span>
@@ -275,16 +277,15 @@ import Layout from '../layouts/Layout.astro';
 
         <div class="relative py-4 mb-10 md:mb-12">
             <div class="absolute inset-0 flex items-center px-8 md:px-0">
-                <div class="w-full border-t border-dashed border-gray-200"></div>
-            </div>
+                <div class="w-full border-t border-dashed border-gray-300"></div> </div>
             <div class="relative flex justify-center">
-                <span class="bg-white px-4 text-sm text-gray-600 font-bold flex items-center gap-2">
+                <span class="bg-slate-50 px-4 text-sm text-gray-600 font-bold flex items-center gap-2">
                     <i class="fas fa-plus-circle text-teal-400"></i> さらに安心の保障
                 </span>
             </div>
         </div>
 
-        <div class="bg-slate-50/80 rounded-xl py-6 px-4 md:px-8 md:flex md:items-center md:justify-between border border-gray-100/50">
+        <div class="bg-white rounded-xl py-6 px-4 md:px-8 md:flex md:items-center md:justify-between border border-gray-200 shadow-sm">
             
             <div class="flex items-center justify-center md:justify-start gap-3 mb-4 md:mb-0 md:mr-8 flex-shrink-0">
                 <i class="fas fa-shield-cat text-teal-500 text-2xl"></i>
@@ -292,15 +293,15 @@ import Layout from '../layouts/Layout.astro';
             </div>
 
             <ul class="flex flex-col md:flex-row gap-3 md:gap-6 text-sm justify-center md:justify-end flex-grow">
-                <li class="flex items-center justify-center md:justify-start text-gray-600 bg-white/50 px-3 py-2 rounded-lg md:bg-transparent md:p-0">
+                <li class="flex items-center justify-center md:justify-start text-gray-600 bg-slate-50 px-3 py-2 rounded-lg md:bg-transparent md:p-0">
                     <i class="fas fa-check text-green-500 mr-2"></i>
                     <span>社会保険 <b class="text-gray-800">即日加入</b></span>
                 </li>
-                <li class="flex items-center justify-center md:justify-start text-gray-600 bg-white/50 px-3 py-2 rounded-lg md:bg-transparent md:p-0">
+                <li class="flex items-center justify-center md:justify-start text-gray-600 bg-slate-50 px-3 py-2 rounded-lg md:bg-transparent md:p-0">
                     <i class="fas fa-check text-green-500 mr-2"></i>
                     <span>有給消化率 <b class="text-gray-800">ほぼ100%</b></span>
                 </li>
-                <li class="flex items-center justify-center md:justify-start text-gray-600 bg-white/50 px-3 py-2 rounded-lg md:bg-transparent md:p-0">
+                <li class="flex items-center justify-center md:justify-start text-gray-600 bg-slate-50 px-3 py-2 rounded-lg md:bg-transparent md:p-0">
                     <i class="fas fa-check text-green-500 mr-2"></i>
                     <span>産休育休・健康診断</span>
                 </li>
@@ -560,7 +561,7 @@ import Layout from '../layouts/Layout.astro';
             <div class="max-w-5xl mx-auto">
                 <h2 class="text-center text-2xl md:text-3xl font-bold mb-4">
                     私にはどっちが合う？<br>
-                    <span class="text-primary">2大エージェント</span>徹底比較
+                    <span class="text-teal-600">2大エージェント</span>徹底比較
                 </h2>
                 <p class="text-center text-sub-text mb-8 text-sm">
                     「高時給・派遣重視」か「教育・サポート重視」か。<br>
