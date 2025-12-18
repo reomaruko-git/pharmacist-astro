@@ -1,948 +1,1768 @@
 ---
 import Layout from '../layouts/Layout.astro';
 ---
-<Layout 
+
+<Layout
   title="薬剤師派遣で時給3000円・16時退社｜家庭も収入も諦めない働き方"
   description="残業なしでしっかり稼ぐ。「家庭」も「収入」も「安心」も全部どりできる、薬剤師派遣という新しい働き方をご提案します。時給3,000円以上、16時退社OKの求人を厳選紹介。"
   bodyClass="pb-24 md:pb-0"
->   
-
-    <header class="bg-white/95 backdrop-blur-md shadow-sm absolute md:fixed w-full z-50 top-0 left-0 h-14 md:h-16 flex items-center justify-between px-4 md:px-8 border-b border-gray-100 transition-all duration-300">
-        <div class="flex items-center gap-3 md:gap-4">
-            <div class="inline-block select-none">
-                <a href="/" class="block hover:opacity-80 transition-opacity">
-                    <img src="/assets/images/yakusupo_logo.svg" alt="薬剤師Support.com" class="h-6 md:h-8 w-auto">
-                </a>
-            </div>
-
-            <div class="bg-gray-100 text-gray-600 text-[10px] md:text-xs font-medium px-2 py-0.5 rounded flex items-center whitespace-nowrap">
-                <i class="fas fa-bell text-gray-400 mr-1.5 text-[10px]"></i>
-                <span id="header-date-text">2025年12月更新</span>
-            </div>
-        </div>
-
-        <a href="#register" class="hidden md:inline-flex items-center gap-2 bg-accent hover:bg-accent-hover text-white font-bold py-2 px-6 rounded-full transition shadow-md text-sm shiny-btn">
-            <i class="fas fa-search"></i> 求人を見る（無料）
+>
+  <header
+    class="bg-white/95 backdrop-blur-md shadow-sm absolute md:fixed w-full z-50 top-0 left-0 h-14 md:h-16 flex items-center justify-between px-4 md:px-8 border-b border-gray-100 transition-all duration-300"
+  >
+    <div class="flex items-center gap-3 md:gap-4">
+      <div class="inline-block select-none">
+        <a href="/" class="block hover:opacity-80 transition-opacity">
+          <img
+            src="/assets/images/yakusupo_logo.svg"
+            alt="薬剤師Support.com"
+            class="h-6 md:h-8 w-auto"
+          />
         </a>
-    </header>
+      </div>
 
-    <section class="pt-14 md:pt-16 pb-8 md:pb-16 bg-gradient-to-b from-teal-50 via-white to-white relative overflow-hidden">
-        <div class="relative z-20">
-            <div class="bg-gray-50 py-0.5 border-b border-gray-100">
-                <div class="flex justify-center items-center gap-2 text-[10px] text-gray-400">
-                    <span class="border border-gray-300 px-1 rounded-[2px] bg-white text-gray-400 font-medium scale-90">PR</span>
-                    <span>本ページはプロモーションが含まれています</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="max-w-4xl mx-auto text-center relative z-10 px-4">
-            <div class="-mx-4 md:mx-0 relative mb-5 overflow-hidden shadow-soft">
-                <picture>
-                    <source media="(min-width: 768px)" srcset="/assets/images/main.png">
-
-                    <img 
-                    src="/assets/images/main_sp.png" 
-                    alt="派遣にして笑顔で働く女性薬剤師" 
-                    class="w-full h-auto align-middle object-cover"
-                    >
-                </picture>
-            </div>  
-
-            <h1 class="text-gray-600 mt-6 mb-0 md:mb-8 leading-snug">
-                <span class="font-bold">時給3,000円〜 週2日〜OK 残業ゼロ</span><br class="md:hidden"> 子育てママ薬剤師の賢い復職は
-                <span class="text-accent font-bold decoration-accent/30 decoration-4">“派遣”</span>でした
-            </h1>
-
-            <a href="#register" class="hidden md:inline-flex shiny-btn group items-center justify-center w-full md:w-auto min-w-[340px] bg-accent hover:bg-accent-hover text-white text-xl font-bold py-4 px-8 rounded-full shadow-lg shadow-accent/30 transition transform hover:-translate-y-1">
-                無料で求人紹介を受ける
-                <i class="fas fa-chevron-right ml-3 group-hover:translate-x-1 transition"></i>
-            </a>
-        </div>
-    </section>
-
-    <div class="w-full">
-
-    <section class="w-full bg-slate-50 pt-16 md:pt-24 pb-24 md:pb-32 relative">
-        <div class="max-w-6xl mx-auto px-4 md:px-8 relative z-10">
-
-            <div class="text-center mb-16">
-                <h2 class="text-2xl md:text-3xl font-bold leading-tight text-slate-800">
-                    今の職場、こんな<span class="text-accent decoration-accent/30 decoration-4 underline-offset-4 relative inline-block">悩み<svg class="absolute -bottom-2 left-0 w-full h-2 text-red-200" viewBox="0 0 100 10" preserveAspectRatio="none"><path d="M0 5 Q 25 0, 50 5 T 100 5" stroke="currentColor" stroke-width="2" fill="none" /></svg></span>ありませんか？
-                </h2>
-                <p class="text-slate-500 mt-4 tracking-wider font-bold">Current Situation</p>
-            </div>
-
-            <div class="flex flex-col md:flex-row items-center gap-10 md:gap-20">
-                
-                <div class="w-full md:w-1/2 relative">
-                    <div class="absolute -left-4 -bottom-4 w-full h-full bg-slate-200 rounded-[2rem] -z-10 hidden md:block transform -rotate-2"></div>
-                    <div class="relative transform -rotate-2">
-                        <img src="/assets/images/full.png" alt="焦る薬剤師" class="w-full aspect-[4/3] object-cover rounded-[2rem] shadow-xl shadow-slate-300/50 grayscale-[30%]" loading="lazy">
-                        <div class="absolute inset-0 bg-slate-900/10 rounded-[2rem]"></div>
-                    </div>
-                </div>
-
-                <div class="w-full md:w-1/2">
-                    <h3 class="text-xl md:text-2xl font-bold text-slate-700 mb-10 text-center md:text-left">
-                        正社員・パートの現実…
-                    </h3>
-
-                    <ul class="space-y-10">
-                        <li class="flex items-start group">
-                            <div class="shrink-0 mr-6">
-                                <div class="w-10 h-14 flex items-center justify-center">
-                                    <i class="fas fa-thermometer-full text-accent text-3xl"></i>
-                                </div>
-                            </div>
-                            <div>
-                                <h4 class="text-lg md:text-xl font-bold text-slate-800 mb-2 leading-tight">
-                                    子どもの発熱で早退のたびに<span class="underline decoration-red-300 decoration-2 underline-offset-4">肩身が狭い…</span>
-                                </h4>
-                                <p class="text-slate-500 text-sm md:text-base leading-relaxed">
-                                    「また？」という空気感。謝ってばかりで心がすり減っていく。
-                                </p>
-                            </div>
-                        </li>
-
-                        <li class="flex items-start group">
-                            <div class="shrink-0 mr-6">
-                                <div class="w-10 h-14 flex items-center justify-center">
-                                    <i class="fas fa-business-time text-accent text-3xl"></i>
-                                </div>
-                            </div>
-                            <div>
-                                <h4 class="text-lg md:text-xl font-bold text-slate-800 mb-2 leading-tight">
-                                    「残業できません」が<span class="underline decoration-red-300 decoration-2 underline-offset-4">言いづらい空気</span>
-                                </h4>
-                                <p class="text-slate-500 text-sm md:text-base leading-relaxed">
-                                    定時で帰るのが悪のような雰囲気。周りに合わせて無理をしてしまう。
-                                </p>
-                            </div>
-                        </li>
-
-                        <li class="flex items-start group">
-                            <div class="shrink-0 mr-6">
-                                <div class="w-10 h-14 flex items-center justify-center">
-                                    <i class="fas fa-user-slash text-accent text-3xl"></i>
-                                </div>
-                            </div>
-                            <div>
-                                <h4 class="text-lg md:text-xl font-bold text-slate-800 mb-2 leading-tight">
-                                    社員だと休めない。パートは<span class="underline decoration-red-300 decoration-2 underline-offset-4">収入が不安…</span>
-                                </h4>
-                                <p class="text-slate-500 text-sm md:text-base leading-relaxed">
-                                    責任と自由、どちらを選んでも何かが犠牲になるジレンマ。
-                                </p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="absolute left-0 right-0 bottom-0 flex justify-center translate-y-[99%] z-20">
-            <div class="w-0 h-0 border-l-[40px] border-l-transparent border-r-[40px] border-r-transparent border-t-[30px] border-t-slate-50"></div>
-        </div>
-    </section>
-
-
-    <section class="w-full bg-white pt-24 md:pt-32 pb-16 md:pb-24 relative z-0">
-        <div class="max-w-6xl mx-auto px-4 md:px-8">
-
-            <div class="text-center mb-16">
-                <p class="text-teal-600 tracking-wider font-bold mb-2">New Standard</p>
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
-                    “派遣”という新しい選択肢
-                </h2>
-            </div>
-
-            <div class="flex flex-col md:flex-row-reverse items-center gap-10 md:gap-20">
-                
-                <div class="w-full md:w-1/2 relative">
-                    <div class="absolute -right-4 -bottom-4 w-full h-full bg-yellow-100 rounded-[2rem] -z-10 hidden md:block transform rotate-2"></div>
-                    <div class="relative transform rotate-2">
-                        <img src="/assets/images/after-haken.png" alt="笑顔の親子" class="w-full aspect-[4/3] object-cover rounded-[2rem] shadow-2xl shadow-yellow-100/50" loading="lazy">
-                    </div>
-                </div>
-
-                <div class="w-full md:w-1/2">
-                    <ul class="space-y-10">
-                        <li class="flex items-start group">
-                            <div class="shrink-0 mr-6">
-                                <div class="w-14 h-14 flex items-center justify-center">
-                                    <i class="fas fa-calendar-check text-teal-600 text-3xl"></i>
-                                </div>
-                            </div>
-                            <div>
-                                <h4 class="text-xl md:text-2xl font-bold text-gray-800 mb-2">
-                                    <span class="bg-gradient-to-t from-yellow-200/60 to-transparent bg-[length:100%_40%] bg-bottom bg-no-repeat pb-1">週2日〜OK</span>、家庭優先
-                                </h4>
-                                <p class="text-gray-500 text-sm md:text-base leading-relaxed">
-                                    土日休みや時短勤務も自由自在。家族との時間を犠牲にしません。
-                                </p>
-                            </div>
-                        </li>
-
-                        <li class="flex items-start group">
-                            <div class="shrink-0 mr-6">
-                                <div class="w-14 h-14 flex items-center justify-center">
-                                    <i class="fas fa-clock text-teal-600 text-3xl"></i>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="flex items-center gap-3 mb-2">
-                                    <h4 class="text-xl md:text-2xl font-bold text-gray-800">
-                                        定時退社！残業なし
-                                    </h4>
-                                </div>
-                                <p class="text-gray-500 text-sm md:text-base leading-relaxed">
-                                    契約通りの時間で終了。「周りの目が気になって帰れない」から解放されます。
-                                </p>
-                            </div>
-                        </li>
-
-                        <li class="flex items-start group">
-                            <div class="shrink-0 mr-6">
-                                <div class="w-14 h-14 flex items-center justify-center">
-                                    <i class="fas fa-yen-sign text-teal-600 text-3xl"></i>
-                                </div>
-                            </div>
-                            <div>
-                                <h4 class="text-xl md:text-2xl font-bold text-gray-800 mb-2">
-                                    時給<span class="text-teal-600 text-3xl md:text-4xl font-extrabold mx-1">3,000</span>円〜も可能
-                                </h4>
-                                <p class="text-gray-500 text-sm md:text-base leading-relaxed">
-                                    パートよりも高時給。短い時間でも、しっかりと家計を支えられます。
-                                </p>
-                            </div>
-                        </li>
-
-                        <li class="flex items-start group">
-                            <div class="shrink-0 mr-6">
-                            <div class="w-14 h-14 flex items-center justify-center">
-                                <i class="fas fa-shield-heart text-teal-600 text-3xl"></i>
-                                </div>
-                            </div>
-                            <div>
-                                <h4 class="text-xl md:text-2xl font-bold text-gray-800 mb-2">
-                                    福利厚生・ブランク研修
-                                </h4>
-                                <p class="text-gray-500 text-sm leading-relaxed">
-                                    <span class="font-bold text-teal-600">社会保険・有給</span>も完備。復職支援プログラムがあるから久しぶりでも安心。
-                                </p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-</div>
-
-
-    <section class="py-10 md:py-16 px-4 bg-teal-50/50 border-teal-100">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-center text-2xl md:text-3xl font-bold mb-8 md:mb-12">
-                「働き方を変えてよかった」<br>先輩ママの声
-            </h2>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white p-6 pt-10 md:p-8 md:pt-12 rounded-2xl shadow-soft relative mt-6 md:mt-0 border border-gray-100">
-                    <div class="absolute -top-6 md:-top-8 left-1/2 transform -translate-x-1/2">
-                        <img src="/assets/images/user01.png" alt="User" loading="lazy" class="w-16 h-16 md:w-20 md:h-20 rounded-full border-4 border-white shadow-md object-cover" loading="lazy">
-                    </div>
-                    <div class="text-center">
-                        <span class="inline-block bg-gray-100 text-gray-500 text-[10px] font-bold px-2 py-1 rounded mb-3">34歳・子供2人</span>
-                        <span class="inline-block bg-gray-100 text-teal-600 text-[10px] font-bold px-2 py-1 rounded mb-3">高時給派遣・エリア重視</span>
-                        <h3 class="font-bold text-gray-800 text-lg mb-5 leading-snug">
-                            お迎えの焦りから解放。<br>
-                            通勤時間が<span class="text-accent">30分短縮!</span>
-                        </h3>
-                        <div class="bg-gray-50 rounded-lg p-4 mb-4 text-sm">
-                            <div class="flex items-center justify-between mb-2">
-                                <span class="text-gray-400 text-xs">転職前</span>
-                                <span class="text-gray-400 font-medium line-through">通勤45分・残業あり</span>
-                            </div>
-                            <div class="flex items-center justify-between">
-                                <span class="text-teal-600 text-xs font-bold">現在</span>
-                                <span class="text-gray-800 font-bold text-base">通勤15分・残業ゼロ</span>
-                            </div>
-                        </div>
-                        <p class="text-sm text-sub-text text-left leading-relaxed">
-                            以前は延長保育に頼り切りでしたが、今は16時に退社。自宅近くのクリニックを紹介してもらい、夕飯を子供と作る余裕が生まれました。
-                        </p>
-                    </div>
-                </div>
-
-                <div id="more-reviews" class="hidden md:contents">
-                    <div class="bg-white p-6 pt-10 md:p-8 md:pt-12 rounded-2xl shadow-soft relative mt-10 md:mt-0 border border-gray-100 animate-fade-in">
-                        <div class="absolute -top-6 md:-top-8 left-1/2 transform -translate-x-1/2">
-                            <img src="/assets/images/user02.png" alt="User" loading="lazy" class="w-16 h-16 md:w-20 md:h-20 rounded-full border-4 border-white shadow-md object-cover" loading="lazy">
-                        </div>
-                        <div class="text-center">
-                            <span class="inline-block bg-gray-100 text-gray-500 text-[10px] font-bold px-2 py-1 rounded mb-3">42歳・扶養内希望</span>
-                            <span class="inline-block bg-gray-100 text-teal-600 text-[10px] font-bold px-2 py-1 rounded mb-3">高時給派遣</span>
-                            <h3 class="font-bold text-gray-800 text-lg mb-5 leading-snug">
-                                働く時間は減ったのに、<br>
-                                時給<span class="text-accent">900円UP</span>で収入維持！
-                            </h3>
-                            <div class="bg-gray-50 rounded-lg p-4 mb-4 text-sm">
-                                <div class="flex items-center justify-between mb-2">
-                                    <span class="text-gray-400 text-xs">転職前</span>
-                                    <span class="text-gray-400 font-medium line-through">時給 2,200円</span>
-                                </div>
-                                <div class="flex items-center justify-between">
-                                    <span class="text-teal-600 text-xs font-bold">現在</span>
-                                    <span class="text-gray-800 font-bold text-base">時給 3,100円</span>
-                                </div>
-                            </div>
-                            <p class="text-sm text-sub-text text-left leading-relaxed">
-                                「派遣はハードルが高い」と思っていましたが、担当者の交渉で扶養内調整もスムーズに。短時間で効率よく家計を支えられています。
-                            </p>
-                        </div>
-                    </div>
-                    <div class="bg-white p-6 pt-10 md:p-8 md:pt-12 rounded-2xl shadow-soft relative mt-10 md:mt-0 border border-gray-100 animate-fade-in">
-                        <div class="absolute -top-6 md:-top-8 left-1/2 transform -translate-x-1/2">
-                            <img src="/assets/images/user03.png" alt="User" loading="lazy" class="w-16 h-16 md:w-20 md:h-20 rounded-full border-4 border-white shadow-md object-cover" loading="lazy">
-                        </div>
-                        <div class="text-center">
-                            <span class="inline-block bg-gray-100 text-gray-500 text-[10px] font-bold px-2 py-1 rounded mb-3">39歳・ブランク3年</span>
-                            <span class="inline-block bg-gray-100 text-teal-600 text-[10px] font-bold px-2 py-1 rounded mb-3">リハビリ復帰</span>
-                            <h3 class="font-bold text-gray-800 text-lg mb-5 leading-snug">
-                                新薬知識ゼロから復帰。<br>
-                                <span class="text-accent">週3日・1日4時間</span>で再スタート
-                            </h3>
-                            <div class="bg-gray-50 rounded-lg p-4 mb-4 text-sm">
-                                <div class="flex items-center justify-between mb-2">
-                                    <span class="text-gray-400 text-xs">不安</span>
-                                    <span class="text-gray-400 font-medium line-through">知識不足・体力</span>
-                                </div>
-                                <div class="flex items-center justify-between">
-                                    <span class="text-teal-600 text-xs font-bold">現在</span>
-                                    <span class="text-gray-800 font-bold text-base">研修充実・監査メイン</span>
-                                </div>
-                            </div>
-                            <p class="text-sm text-sub-text text-left leading-relaxed">
-                                いきなりのフルタイムは怖かったので、理解のある店舗を紹介してもらいました。e-learningでの研修制度も使えて、自信を取り戻せました。
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="mt-8 text-center md:hidden">
-                <button id="show-more-btn" onclick="toggleReviews()" class="bg-white border border-gray-300 text-gray-600 font-bold py-3 px-10 rounded-full shadow-sm hover:bg-gray-50 transition active:scale-95 text-sm flex items-center mx-auto gap-2">
-                    <span>他の口コミも見る</span>
-                    <i class="fas fa-chevron-down text-xs"></i>
-                </button>
-            </div>
-        </div>
-    </section>
-
-    <script is:inline>
-        function toggleReviews() {
-            const moreReviews = document.getElementById('more-reviews');
-            const btn = document.getElementById('show-more-btn');
-            moreReviews.classList.remove('hidden');
-            btn.style.display = 'none';
-        }
-    </script>
-
-    <section class="bg-gray-100 py-12 px-4 overflow-hidden">
-            <div class="max-w-7xl mx-auto">
-                <h2 class="text-center text-2xl font-bold mb-3">例えば、こんな求人があります</h2>
-                <p class="text-center text-xs text-sub-text mb-8">※実際の内容は派遣求人先でご確認ください</p>
-
-                <div class="swiper mySwiper px-4">
-                     
-                    <div class="swiper-wrapper !items-stretch">
-
-                        <div class="swiper-slide !h-auto !flex">
-                            <div class="w-full bg-white rounded-2xl shadow-md border-t-4 border-primary relative flex flex-col overflow-hidden h-full">
-                                <div class="h-32 bg-gray-200 w-full relative shrink-0">
-                                    <img src="/assets/images/ex01.png" alt="職場の雰囲気" class="w-full h-full object-cover" loading="lazy">
-                                    <span class="absolute top-3 right-3 bg-accent text-white text-[10px] font-bold px-2 py-1 rounded-full shadow-sm">週2日でも可能</span>
-                                </div>
-                                <div class="p-6 flex flex-col flex-grow">
-                                    <div class="flex flex-wrap gap-2 mb-3 text-[10px] font-bold text-sub-text">
-                                        <span class="bg-gray-100 px-2 py-1 rounded">調剤薬局</span>
-                                        <span class="bg-gray-100 px-2 py-1 rounded">土日休み相談可</span>
-                                        <span class="bg-gray-100 px-2 py-1 rounded">16時退社</span>
-                                    </div>
-                                    <h3 class="font-bold text-base text-gray-800 mb-4 leading-snug">ママさん薬剤師活躍中！急なお休みも協力体制あり</h3>
-                                    <div class="flex flex-col gap-2 mt-auto pt-4 border-t border-gray-100">
-                                        <div class="flex items-center text-sm"><span class="w-12 font-bold text-gray-400 text-xs">時給</span><span class="font-bold text-accent text-lg">3,300円</span></div>
-                                        <div class="flex items-center text-sm"><span class="w-12 font-bold text-gray-400 text-xs">時間</span><span class="font-bold text-gray-700">9:00〜15:00</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide !h-auto !flex">
-                            <div class="w-full bg-white rounded-2xl shadow-md border-t-4 border-primary relative flex flex-col overflow-hidden h-full">
-                                <div class="h-32 bg-gray-200 w-full shrink-0">
-                                    <img src="/assets/images/ex02.png" alt="ドラッグストア" class="w-full h-full object-cover" loading="lazy">
-                                </div>
-                                <div class="p-6 flex flex-col flex-grow">
-                                    <div class="flex flex-wrap gap-2 mb-3 text-[10px] font-bold text-sub-text">
-                                        <span class="bg-gray-100 px-2 py-1 rounded">ドラッグストア</span>
-                                        <span class="bg-gray-100 px-2 py-1 rounded">土日休み</span>
-                                        <span class="bg-gray-100 px-2 py-1 rounded">最新機器導入済</span>
-                                    </div>
-                                    <h3 class="font-bold text-base text-gray-800 mb-4 leading-snug">土日祝日休み相談可！ブランクがある方も研修充実</h3>
-                                    <div class="flex flex-col gap-2 mt-auto pt-4 border-t border-gray-100">
-                                        <div class="flex items-center text-sm"><span class="w-12 font-bold text-gray-400 text-xs">時給</span><span class="font-bold text-accent text-lg">3,500円</span></div>
-                                        <div class="flex items-center text-sm"><span class="w-12 font-bold text-gray-400 text-xs">時間</span><span class="font-bold text-gray-700">10:00〜16:00</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide !h-auto !flex">
-                            <div class="w-full bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl shadow-inner border border-gray-200 relative flex flex-col justify-center items-center text-center overflow-hidden h-full">
-                                <div class="w-full h-32 bg-gray-200/50 flex items-center justify-center relative shrink-0">
-                                    <span class="absolute top-0 left-0 bg-gray-600 text-white text-[10px] font-bold px-3 py-1 rounded-br-lg">非公開求人</span>
-                                    <i class="fas fa-lock text-4xl text-gray-300"></i>
-                                </div>
-                                <div class="p-6 flex flex-col items-center justify-center flex-grow w-full">
-                                    <h3 class="font-bold text-gray-600 text-sm mb-1">登録者限定</h3>
-                                    <p class="text-xs text-gray-400 mb-4">好条件・高額案件は非公開です</p>
-                                    <div class="w-full bg-white rounded-lg p-2 shadow-sm border border-gray-100">
-                                        <div class="text-xs text-gray-400 font-bold mb-1">想定時給</div>
-                                        <div class="text-xl font-bold text-accent">4,000円〜</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide !h-auto !flex">
-                            <div class="w-full bg-white rounded-2xl shadow-md border-t-4 border-primary relative flex flex-col overflow-hidden h-full">
-                                <div class="h-32 bg-gray-200 w-full relative shrink-0">
-                                    <img src="/assets/images/ex04.png" alt="駅近オフィス" class="w-full h-full object-cover" loading="lazy">
-                                    <span class="absolute top-3 right-3 bg-accent text-white text-[10px] font-bold px-2 py-1 rounded-full shadow-sm">16時上がり</span>
-                                </div>
-                                <div class="p-6 flex flex-col flex-grow">
-                                    <div class="flex flex-wrap gap-2 mb-3 text-[10px] font-bold text-sub-text">
-                                        <span class="bg-gray-100 px-2 py-1 rounded">調剤薬局</span>
-                                        <span class="bg-gray-100 px-2 py-1 rounded">駅近</span>
-                                        <span class="bg-gray-100 px-2 py-1 rounded">16時退社</span>
-                                    </div>
-                                    <h3 class="font-bold text-base text-gray-800 mb-4 leading-snug">【新着】急募！ 駅から徒歩1分でのお仕事。16時上がりOK</h3>
-                                    <div class="flex flex-col gap-2 mt-auto pt-4 border-t border-gray-100">
-                                        <div class="flex items-center text-sm"><span class="w-12 font-bold text-gray-400 text-xs">時給</span><span class="font-bold text-accent text-lg">3,600円</span></div>
-                                        <div class="flex items-center text-sm"><span class="w-12 font-bold text-gray-400 text-xs">時間</span><span class="font-bold text-gray-700">10:00〜16:00</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide !h-auto !flex">
-                            <div class="w-full bg-white rounded-2xl shadow-md border-t-4 border-primary relative flex flex-col overflow-hidden h-full">
-                                <div class="h-32 bg-gray-200 w-full relative shrink-0">
-                                    <img src="/assets/images/ex03.png" alt="クリニック" class="w-full h-full object-cover" loading="lazy">
-                                    <span class="absolute top-3 right-3 bg-yellow-400 text-white text-[10px] font-bold px-2 py-1 rounded-full shadow-sm">勤務時間の融通</span>
-                                </div>
-                                <div class="p-6 flex flex-col flex-grow">
-                                    <div class="flex flex-wrap gap-2 mb-3 text-[10px] font-bold text-sub-text">
-                                        <span class="bg-gray-100 px-2 py-1 rounded">クリニック門前</span>
-                                        <span class="bg-gray-100 px-2 py-1 rounded">ブランクOK</span>
-                                    </div>
-                                    <h3 class="font-bold text-base text-gray-800 mb-4 leading-snug">ゆったり働ける環境。子育て世代の薬剤師が多数在籍中</h3>
-                                    <div class="flex flex-col gap-2 mt-auto pt-4 border-t border-gray-100">
-                                        <div class="flex items-center text-sm"><span class="w-12 font-bold text-gray-400 text-xs">時給</span><span class="font-bold text-accent text-lg">3,300円</span></div>
-                                        <div class="flex items-center text-sm"><span class="w-12 font-bold text-gray-400 text-xs">時間</span><span class="font-bold text-gray-700">9:00〜17:00</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide !h-auto !flex">
-                            <div class="w-full bg-white rounded-2xl shadow-md border-t-4 border-primary relative flex flex-col overflow-hidden h-full">
-                                <div class="h-32 bg-gray-200 w-full shrink-0">
-                                    <img src="/assets/images/ex05.png" alt="調剤薬局" class="w-full h-full object-cover" loading="lazy">
-                                </div>
-                                <div class="p-6 flex flex-col flex-grow">
-                                    <div class="flex flex-wrap gap-2 mb-3 text-[10px] font-bold text-sub-text">
-                                        <span class="bg-gray-100 px-2 py-1 rounded">調剤薬局</span>
-                                        <span class="bg-gray-100 px-2 py-1 rounded">午前中のみ</span>
-                                        <span class="bg-gray-100 px-2 py-1 rounded">電子薬歴未経験OK</span>
-                                    </div>
-                                    <h3 class="font-bold text-base text-gray-800 mb-4 leading-snug">午前のみOK！扶養内での勤務を希望の方にぴったり</h3>
-                                    <div class="flex flex-col gap-2 mt-auto pt-4 border-t border-gray-100">
-                                        <div class="flex items-center text-sm"><span class="w-12 font-bold text-gray-400 text-xs">時給</span><span class="font-bold text-accent text-lg">3,200円</span></div>
-                                        <div class="flex items-center text-sm"><span class="w-12 font-bold text-gray-400 text-xs">時間</span><span class="font-bold text-gray-700">9:00〜13:00</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                     
-                    <div class="swiper-pagination !relative !bottom-auto !mt-6"></div>
-                </div>
-            </div>
-        </section>
-
-        <section class="bg-white py-12 px-4">
-            <div class="max-w-5xl mx-auto">
-                <h2 class="text-center text-2xl md:text-3xl font-bold mb-4">
-                    私にはどっちが合う？<br>
-                    <span class="text-teal-600">2大エージェント</span>徹底比較
-                </h2>
-                <p class="text-center text-sub-text mb-8 text-sm">
-                    「高時給・派遣重視」か「教育・サポート重視」か。<br>
-                    あなたの性格や目的に合わせて使い分けましょう。
-                </p>
-
-                <div class="md:hidden max-w-sm mx-auto pt-2">
-                    <div class="flex items-end">
-                        <button onclick="switchTab('pharmate')" id="btn-pharmate" class="w-1/2 py-4 bg-white text-accent border-t-4 border-accent font-bold text-sm rounded-t-xl shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)] relative z-30 -mb-px">
-                            <i class="fas fa-crown mr-1"></i>高時給・派遣
-                        </button>
-                        
-                        <button onclick="switchTab('pharmastaff')" id="btn-pharmastaff" class="w-1/2 py-3 bg-gray-200 text-gray-500 border-t-4 border-transparent font-bold text-sm rounded-t-xl relative z-10 hover:bg-gray-100 transition-colors">
-                            <i class="fas fa-shield-alt mr-1"></i>じっくり教育
-                        </button>
-                    </div>
-
-                    <div class="bg-white border border-gray-200 rounded-b-xl p-6 shadow-card relative z-20">
-                        <div id="content-pharmate" class="space-y-6">
-                            <div class="text-center border-b border-gray-100 pb-4">
-                                <div class="bg-white rounded-xl shadow-sm mx-auto mb-3 w-52 h-20 border border-gray-50 overflow-hidden">
-                                    <a id="img-tab-pharmate" href="/link/pharmate/" target="_blank" rel="nofollow noopener" class="flex items-center justify-center w-full h-full px-4 hover:opacity-80 transition-opacity">
-                                        <img src="/assets/images/logo_pharmate.png" alt="ファル・メイト" class="max-h-full w-auto object-contain">
-                                    </a>
-                                </div>
-                                <p class="text-xs text-accent font-bold">派遣・高時給の決定版</p>
-                            </div>
-                            <dl class="space-y-4 text-sm">
-                                <div class="flex gap-4">
-                                    <dt class="font-bold text-gray-400 w-20 flex-shrink-0">最大の強み</dt>
-                                    <dd class="font-bold text-gray-800">派遣のエキスパート<br><span class="text-xs text-gray-500">時給4,000円以上多数</span></dd>
-                                </div>
-                                <div class="flex gap-4">
-                                    <dt class="font-bold text-gray-400 w-20 flex-shrink-0">決定速度</dt>
-                                    <dd class="font-bold text-gray-800">スピーディ<br><span class="text-xs text-gray-500 font-normal">登録1時間で3社以上ご紹介</span></dd>
-                                </div>
-                                <div class="flex gap-4">
-                                    <dt class="font-bold text-gray-400 w-20 flex-shrink-0">こんな人に</dt>
-                                    <dd class="font-bold text-gray-800">
-                                        <div class="inline-block bg-accent text-white text-xs px-2 py-1 rounded mb-1">稼ぎたい</div>
-                                        <p class="text-xs font-normal text-gray-500">短時間で高収入を得たい</p>
-                                    </dd>
-                                </div>
-                            </dl>
-                            <div class="pt-2">
-                                <a id="btn-tab-pharmate" href="/link/pharmate/" target="_blank" rel="nofollow noopener" class="shiny-btn block w-full bg-accent hover:bg-accent text-white text-center font-bold py-4 rounded-lg shadow-md transition transform active:scale-95">
-                                    ファル・メイトに登録
-                                    <i class="fas fa-chevron-right ml-2"></i>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div id="content-pharmastaff" class="hidden space-y-6">
-                            <div class="text-center border-b border-gray-100 pb-4">
-                                <div class="bg-white rounded-xl shadow-sm mx-auto mb-3 w-52 h-20 border border-gray-50 overflow-hidden">
-                                    <a id="img-tab-pharmastaff" href="/link/38-8931/" target="_blank" rel="nofollow noopener" class="flex items-center justify-center w-full h-full px-4 hover:opacity-80 transition-opacity">
-                                        <img src="/assets/images/logo_pharm.gif" alt="ファルマスタッフ" class="max-h-full w-auto object-contain">
-                                    </a>
-                                </div>
-                                <p class="text-xs text-orange-500 font-bold">教育・サポート重視</p>
-                            </div>
-                            <dl class="space-y-4 text-sm">
-                                <div class="flex gap-4">
-                                    <dt class="font-bold text-gray-400 w-20 flex-shrink-0">最大の強み</dt>
-                                    <dd class="font-bold text-gray-800">日本調剤グループの教育力<br><span class="text-xs text-gray-500">ブランクがあっても安心</span></dd>
-                                </div>
-                                <div class="flex gap-4">
-                                    <dt class="font-bold text-gray-400 w-20 flex-shrink-0">決定速度</dt>
-                                    <dd class="font-bold text-orange-500 text-lg leading-none">じっくり丁寧<br><span class="text-xs text-gray-500 font-normal">対面面談で不安解消</span></dd>
-                                </div>
-                                <div class="flex gap-4">
-                                    <dt class="font-bold text-gray-400 w-20 flex-shrink-0">こんな人に</dt>
-                                    <dd class="font-bold text-gray-800">
-                                        <div class="inline-block bg-orange-500 text-white text-xs px-2 py-1 rounded mb-1">学びたい</div>
-                                        <p class="text-xs font-normal text-gray-500">研修制度を利用したい</p>
-                                    </dd>
-                                </div>
-                            </dl>
-                            <div class="pt-2">
-                                <a id="btn-tab-pharmastaff" href="/link/38-8931/" target="_blank" rel="nofollow noopener" class="shiny-btn block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-4 rounded-lg shadow-md transition transform active:scale-95">
-                                    ファルマスタッフを見る
-                                    <i class="fas fa-chevron-right ml-2"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="hidden md:block overflow-x-auto pb-6">
-                    <table class="w-full min-w-[700px] border-collapse text-center table-fixed shadow-lg rounded-xl overflow-hidden border border-gray-100">
-                        <thead>
-                            <tr>
-                                <th class="w-1/5 bg-gray-50 p-5 border-b border-gray-200 text-gray-500 font-bold text-sm">比較項目</th>
-                                
-                                <th class="w-2/5 bg-yellow-50 p-5 border-b-4 border-accent relative">
-                                    <div class="text-accent text-xs font-bold mb-2 uppercase tracking-wide">
-                                        <i class="fas fa-crown mr-1"></i>高時給・派遣なら
-                                    </div>
-                                    <div class="bg-white rounded-xl shadow-sm mx-auto mb-3 w-52 h-20 overflow-hidden">
-                                        <a id="img-table-pharmate" href="/link/pharmate/" target="_blank" rel="nofollow noopener" class="flex items-center justify-center w-full h-full px-4 hover:opacity-80 transition-opacity">
-                                            <img src="/assets/images/logo_pharmate.png" alt="ファル・メイト" class="max-h-full w-auto object-contain">
-                                        </a>
-                                    </div>
-                                </th>
-
-                                <th class="w-2/5 bg-orange-50 p-5 border-b-4 border-orange-400 relative">
-                                    <div class="text-orange-700 text-xs font-bold mb-2 uppercase tracking-wide">
-                                        <i class="fas fa-shield-alt mr-1"></i>教育・サポートなら
-                                    </div>
-                                    <div class="bg-white rounded-xl shadow-sm mx-auto mb-3 w-52 h-20 overflow-hidden">
-                                        <a id="img-table-pharmastaff" href="/link/38-8931/" target="_blank" rel="nofollow noopener" class="flex items-center justify-center w-full h-full px-4 hover:opacity-80 transition-opacity">
-                                            <img src="/assets/images/logo_pharm.gif" alt="ファルマスタッフ" class="max-h-full w-auto object-contain">
-                                        </a>
-                                    </div>
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody class="text-sm md:text-base bg-white divide-y divide-gray-100">
-                            <tr class="hover:bg-gray-50/50 transition">
-                                <td class="p-5 font-bold text-gray-600 bg-gray-50/50">最大の強み</td>
-                                <td class="p-5 bg-blue-50/20"><span class="text-accent font-bold text-lg block">派遣のエキスパート</span><span class="text-xs text-gray-500">時給4,000円以上多数</span></td>
-                                <td class="p-5 bg-orange-50/20"><span class="text-orange-500 font-bold text-lg block">教育・サポート</span><span class="text-xs text-gray-500">日本調剤グループの教育体制</span></td>
-                            </tr>
-                            <tr class="hover:bg-gray-50/50 transition">
-                                <td class="p-5 font-bold text-gray-600 bg-gray-50/50">決定スピード</td>
-                                <td class="p-5 bg-blue-50/20"><span class="text-accent font-bold text-lg block">スピーディ</span>
-                                    <p class="text-xs text-gray-500 mt-1">登録1時間で3社以上ご紹介</p>
-                                </td>
-                                <td class="p-5 bg-orange-50/20"><span class="font-bold text-orange-600 text-lg">じっくり丁寧</span>
-                                    <p class="text-xs text-gray-500 mt-1">対面面談で不安解消</p>
-                                </td>
-                            </tr>
-                            <tr class="hover:bg-gray-50/50 transition">
-                                <td class="p-5 font-bold text-gray-600 bg-gray-50/50">こんな人に</td>
-                                <td class="p-5 bg-blue-50/20">
-                                    <div class="inline-block bg-accent text-white text-xs px-2 py-1 rounded font-bold">稼ぎたい</div>
-                                    <p class="text-xs text-gray-600 mt-1">短時間で高収入を得たい</p>
-                                </td>
-                                <td class="p-5 bg-orange-50/20">
-                                    <div class="inline-block bg-orange-500 text-white text-xs px-2 py-1 rounded font-bold">学びたい</div>
-                                    <p class="text-xs text-gray-600 mt-1">研修制度を利用したい</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="p-5 bg-gray-50/50 font-bold text-gray-600">無料登録</td>
-                                <td class="p-5 bg-blue-50/20"><a id="btn-table-pharmate" href="/link/pharmate/" target="_blank" rel="nofollow noopener" class="block bg-accent hover:bg-accent text-white text-sm font-bold py-3 px-2 rounded-lg shadow-md transition transform hover:-translate-y-1 shiny-btn">ファル・メイト</a></td>
-                                <td class="p-5 bg-orange-50/20"><a id="btn-table-pharmastaff" href="/link/38-8931/" target="_blank" rel="nofollow noopener" class="block bg-orange-500 hover:bg-orange-600 text-white text-sm font-bold py-3 px-2 rounded-lg shadow-md transition transform hover:-translate-y-1 shiny-btn">ファルマスタッフ</a></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </section>
-
-    <section class="py-12 px-4 bg-white border-b border-gray-100">
-        <div class="max-w-3xl mx-auto">
-            <h2 class="text-center text-2xl font-bold mb-8">よくある質問</h2>
-            <div class="space-y-4">
-
-                <details class="group bg-gray-50 rounded-xl p-5 cursor-pointer transition hover:bg-gray-100 border border-transparent hover:border-gray-200">
-                    <summary class="font-bold text-gray-800 flex justify-between items-center list-none text-base md:text-lg">
-                        <span class="flex items-center"><span class="bg-primary text-white text-xs font-bold px-2 py-1 rounded-md mr-3 shadow-sm">Q</span>「パート」と「派遣」の決定的な違いは何ですか？</span>
-                        <span class="text-primary transition transform group-open:rotate-180"><i class="fas fa-chevron-down"></i></span>
-                    </summary>
-                    <div class="text-sm text-sub-text mt-4 pl-0 md:pl-4 border-l-0 leading-relaxed">
-                        <p class="mb-4">一番の違いは「時給」と「人間関係の気楽さ」です。パートだと思っている方の多くが、実は派遣の方がライフスタイルに合っているケースが多いです。</p>
-
-                        <div class="overflow-x-auto rounded-lg border border-gray-200 shadow-sm mb-4">
-                            <table class="min-w-full text-left text-sm whitespace-nowrap">
-                                <thead class="bg-gray-700 text-white">
-                                    <tr>
-                                        <th class="px-4 py-3 font-medium text-center bg-gray-800">特徴</th>
-                                        <th class="px-4 py-3 font-medium text-center bg-slate-500">パート</th>
-                                        <th class="px-4 py-3 font-bold text-center bg-pink-600">派遣薬剤師</th>
-                                    </tr>
-                                </thead>
-                                <tbody class="bg-white divide-y divide-gray-200">
-                                    <tr>
-                                        <th class="px-4 py-3 font-medium bg-gray-50 text-gray-900">雇用主</th>
-                                        <td class="px-4 py-3 text-center">薬局 (直接)</td>
-                                        <td class="px-4 py-3 text-center bg-pink-50 font-bold text-pink-700">派遣会社<br><span class="text-xs font-normal text-gray-500">何かあれば本人に変わって担当者が対応</span></td>
-                                    </tr>
-                                    <tr>
-                                        <th class="px-4 py-3 font-medium bg-gray-50 text-gray-900">時給相場</th>
-                                        <td class="px-4 py-3 text-center">2,000~2,500円</td>
-                                        <td class="px-4 py-3 text-center bg-pink-50 font-bold text-pink-700 text-base">2,800~4,000円超</td>
-                                    </tr>
-                                    <tr>
-                                        <th class="px-4 py-3 font-medium bg-gray-50 text-gray-900">残業</th>
-                                        <td class="px-4 py-3 text-center">店舗による</td>
-                                        <td class="px-4 py-3 text-center bg-pink-50 font-bold text-pink-700">ほぼ無し<br><span class="text-xs font-normal text-gray-500">契約で厳守</span></td>
-                                    </tr>
-                                    <tr>
-                                        <th class="px-4 py-3 font-medium bg-gray-50 text-gray-900">人間関係</th>
-                                        <td class="px-4 py-3 text-center">深い (長期前提)</td>
-                                        <td class="px-4 py-3 text-center bg-pink-50 font-bold text-pink-700">ドライ<br><span class="text-xs font-normal text-gray-500">期間が決まっているので気楽に働ける</span></td>
-                                    </tr>
-                                    <tr>
-                                        <th class="px-4 py-3 font-medium bg-gray-50 text-gray-900">安定性</th>
-                                        <td class="px-4 py-3 text-center">安定的</td>
-                                        <td class="px-4 py-3 text-center text-gray-500">不安定<br><span class="text-xs font-normal">契約終了のリスク有</span></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <p class="text-xs text-gray-500">※「管理薬剤師になれない」等のデメリットもありますが、育児期間中に効率よく稼ぐには派遣が最適です。</p>
-                    </div>
-                </details>
-                <details class="group bg-gray-50 rounded-xl p-5 cursor-pointer transition hover:bg-gray-100 border border-transparent hover:border-gray-200">
-                    <summary class="font-bold text-gray-800 flex justify-between items-center list-none text-base md:text-lg">
-                        <span class="flex items-center"><span class="bg-primary text-white text-xs font-bold px-2 py-1 rounded-md mr-3 shadow-sm">Q</span>子どもが熱を出したら休めますか？</span>
-                        <span class="text-primary transition transform group-open:rotate-180"><i class="fas fa-chevron-down"></i></span>
-                    </summary>
-                    <p class="text-sm text-sub-text mt-4 pl-4 leading-relaxed">大丈夫です、ご安心ください。派遣会社が間に入って調整します。登録時に「ママさん薬剤師が多い店舗」や「急な休みに理解のある職場」を厳選してご紹介します。</p>
-                </details>
-
-                <details class="group bg-gray-50 rounded-xl p-5 cursor-pointer transition hover:bg-gray-100 border border-transparent hover:border-gray-200">
-                    <summary class="font-bold text-gray-800 flex justify-between items-center list-none text-base md:text-lg">
-                        <span class="flex items-center"><span class="bg-primary text-white text-xs font-bold px-2 py-1 rounded-md mr-3 shadow-sm">Q</span>数年のブランクがあり、知識が不安です…</span>
-                        <span class="text-primary transition transform group-open:rotate-180"><i class="fas fa-chevron-down"></i></span>
-                    </summary>
-                    <p class="text-sm text-sub-text mt-4 pl-4 leading-relaxed">ご紹介するエージェントにはノウハウを活かした復職支援プログラムや研修制度が非常に充実しています。「まずは研修から」という働き方も可能です。</p>
-                </details>
-
-                <details class="group bg-gray-50 rounded-xl p-5 cursor-pointer transition hover:bg-gray-100 border border-transparent hover:border-gray-200">
-                    <summary class="font-bold text-gray-800 flex justify-between items-center list-none text-base md:text-lg">
-                        <span class="flex items-center"><span class="bg-primary text-white text-xs font-bold px-2 py-1 rounded-md mr-3 shadow-sm">Q</span>扶養内（年収130万以下）で働けますか？</span>
-                        <span class="text-primary transition transform group-open:rotate-180"><i class="fas fa-chevron-down"></i></span>
-                    </summary>
-                    <p class="text-sm text-sub-text mt-4 pl-4 leading-relaxed">はい、可能です。「週2日・1日4時間」など、年収の壁を超えないように計算してシフトを組むことができます。担当にご希望の年収額をお伝えください。</p>
-                </details>
-
-                <details class="group bg-gray-50 rounded-xl p-5 cursor-pointer transition hover:bg-gray-100 border border-transparent hover:border-gray-200">
-                    <summary class="font-bold text-gray-800 flex justify-between items-center list-none text-base md:text-lg">
-                        <span class="flex items-center"><span class="bg-primary text-white text-xs font-bold px-2 py-1 rounded-md mr-3 shadow-sm">Q</span>登録や仕事紹介にお金はかかりますか？</span>
-                        <span class="text-primary transition transform group-open:rotate-180"><i class="fas fa-chevron-down"></i></span>
-                    </summary>
-                    <p class="text-sm text-sub-text mt-4 pl-4 leading-relaxed">一切かかりません。登録から就業後のサポートまで<span class="font-bold text-accent">完全無料</span>でご利用いただけます。</p>
-                </details>
-
-                <details class="group bg-gray-50 rounded-xl p-5 cursor-pointer transition hover:bg-gray-100 border border-transparent hover:border-gray-200">
-                    <summary class="font-bold text-gray-800 flex justify-between items-center list-none text-base md:text-lg">
-                        <span class="flex items-center"><span class="bg-primary text-white text-xs font-bold px-2 py-1 rounded-md mr-3 shadow-sm">Q</span>紹介された求人を断ってもいいですか？</span>
-                        <span class="text-primary transition transform group-open:rotate-180"><i class="fas fa-chevron-down"></i></span>
-                    </summary>
-                    <p class="text-sm text-sub-text mt-4 pl-4 leading-relaxed">もちろんです。職場見学に行ってみて「雰囲気が合わないかも」と感じたら辞退して頂いて構いません。納得できる職場が見つかるまでご利用ください。</p>
-                </details>
-            </div>
-            <div class="mt-8 text-center">
-                <p class="text-sm font-bold text-gray-500 mb-2">疑問は解消されましたか？</p>
-                <p class="text-xs text-sub-text">
-                    登録後も、担当者がどんな些細な質問にもお答えします。<br>
-                    まずは登録して「どんな求人があるか」を見るだけでもOKです。
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <section id="register" class="py-16 px-4 bg-gradient-to-br from-primary to-teal-600 text-white text-center md:mb-0 relative overflow-hidden">
-        <div class="absolute top-0 left-0 w-full h-full opacity-10">
-            <i class="fas fa-pills absolute top-10 left-10 text-8xl transform rotate-12"></i>
-            <i class="fas fa-user-nurse absolute bottom-10 right-10 text-9xl transform -rotate-12"></i>
-        </div>
-
-        <div class="max-w-5xl mx-auto relative z-10">
-            <span class="bg-yellow-400 text-gray-800 text-xs font-bold px-3 py-1 rounded-full mb-3 inline-block shadow-sm">
-                失敗しないための王道ルート
-            </span>
-            <h2 class="text-2xl md:text-4xl font-bold mb-4 drop-shadow-md">
-                「2社」使い分けるのが<br class="md:hidden">
-                <span class="text-yellow-300 underline decoration-yellow-300 decoration-4 underline-offset-8">おすすめの戦略</span>です
-            </h2>
-            <p class="mb-10 font-bold opacity-90 text-sm md:text-base leading-relaxed">
-                1社だけに絞ると、良い求人を見逃すリスクがあります。<br>
-                「高時給派遣」と「教育・サポート」、<br class="md:hidden">
-                両方のメリットを手に入れましょう。
-            </p>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div class="bg-white rounded-3xl p-6 md:p-8 text-gray-800 shadow-2xl relative transform transition duration-300 hover:-translate-y-2 border-4 border-transparent hover:border-accent">
-                <div class="absolute -top-5 left-1/2 transform -translate-x-1/2 bg-accent text-white font-bold px-6 py-2 rounded-full shadow-lg text-sm whitespace-nowrap">
-                    <i class="fas fa-crown mr-2"></i>高時給・派遣ならココ
-                </div>
-                
-                <div class="h-36 mb-6 flex items-center justify-center">
-                    <a id="img-recco-pharmate" href="/link/pharmate/" target="_blank" rel="nofollow noopener" class="block h-full hover:opacity-80 transition">
-                        <img src="/assets/images/pharmate.png" alt="ファル・メイト" class="h-full w-auto object-contain">
-                    </a>
-                </div>
-
-                <div class="text-center mb-6">
-                    <a id="link-recco-pharmate" href="/link/pharmate/" target="_blank" rel="nofollow noopener" class="text-xl font-bold text-gray-800 hover:text-accent hover:underline transition">
-                        ファル・メイト
-                        <i class="fas fa-angle-right text-sm ml-1 text-gray-400"></i>
-                    </a>
-                </div>
-
-                <ul class="text-left text-sm space-y-4 mb-8 bg-gray-50 p-6 rounded-2xl">
-                    <li class="flex items-start">
-                        <i class="fas fa-check-circle text-accent mr-3 text-lg"></i>
-                        <div class="leading-tight">
-                            <span><span class="font-bold">派遣のエキスパート</span>ならではの好条件多数</span>
-                        </div>
-                    </li>
-                    <li class="flex items-center"><i class="fas fa-check-circle text-accent mr-3 text-lg"></i><span><span class="font-bold text-accent">時給4,000円以上</span>の求人多数あり</span></li>
-                    <li class="flex items-center"><i class="fas fa-check-circle text-accent mr-3 text-lg"></i><span><span class="font-bold">「高時給」</span>にこだわりたい方に最適</span></li>
-                </ul>
-                <a id="btn-recco-pharmate" href="/link/pharmate/" target="_blank" rel="nofollow noopener" class="shiny-btn block w-full bg-accent hover:bg-accent-hover text-white text-xl font-bold py-5 rounded-full shadow-lg shadow-pink-500/30 transition">
-                    高時給の求人を見る
-                    <i class="fas fa-external-link-alt ml-2 text-base"></i>
-                </a>
-            </div>
-
-            <div class="bg-white rounded-3xl p-6 md:p-8 text-gray-800 shadow-2xl relative transform transition duration-300 hover:-translate-y-2 border-4 border-transparent hover:border-orange-400">
-                <div class="absolute -top-5 left-1/2 transform -translate-x-1/2 bg-orange-500 text-white font-bold px-6 py-2 rounded-full shadow-lg text-sm whitespace-nowrap">
-                    <i class="fas fa-shield-alt mr-2"></i>教育・サポートならココ
-                </div>
-                
-                <div class="h-36 mb-6 flex items-center justify-center">
-                    <a id="img-recco-pharmastaff" href="/link/38-8931/" target="_blank" rel="nofollow noopener" class="block h-full hover:opacity-80 transition">
-                        <img src="/assets/images/farmastuff.png" alt="ファルマスタッフ" class="h-full w-auto object-contain">
-                    </a>
-                </div>
-
-                <div class="text-center mb-6">
-                    <a id="link-recco-pharmastaff" href="/link/38-8931/" target="_blank" rel="nofollow noopener" class="text-xl font-bold text-gray-800 hover:text-orange-500 hover:underline transition">
-                        ファルマスタッフ
-                        <i class="fas fa-angle-right text-sm ml-1 text-gray-400"></i>
-                    </a>
-                </div>
-
-                <ul class="text-left text-sm space-y-4 mb-8 bg-gray-50 p-6 rounded-2xl">
-                    <li class="flex items-center"><i class="fas fa-check-circle text-orange-500 mr-3 text-lg"></i><span>医療業界最大手<span class="font-bold">日本調剤株式会社</span>グループ</span></li>
-                    <li class="flex items-center"><i class="fas fa-check-circle text-orange-500 mr-3 text-lg"></i><span class="font-bold">会って</span>相談できる<span class="font-bold">手厚いサポート</span></li>
-                    <li class="flex items-start"><i class="fas fa-check-circle text-orange-500 mr-3 text-lg mt-1"></i>
-                        <div class="leading-tight">
-                            <span>18時までの職場の求人数 <span class="font-bold text-lg">13,138件</span></span>
-                            <br>
-                            <span class="text-xs text-gray-400">※2025年12月11日時点</span>
-                        </div>
-                    </li>
-                </ul>
-                <a id="btn-recco-pharmastaff" href="/link/38-8931/" target="_blank" rel="nofollow noopener" class="shiny-btn block w-full bg-orange-500 hover:bg-orange-600 text-white text-xl font-bold py-5 rounded-full shadow-lg shadow-orange-500/30 transition">
-                    自分の市場価値を診断
-                    <i class="fas fa-external-link-alt ml-2 text-base"></i>
-                </a>
-            </div>
-        </div>
-
-        <p class="text-xs text-teal-100 mt-10 opacity-80 leading-relaxed text-center">
-            ※どちらも利用は完全無料です。自分に合う求人を逃さないために、両方チェックすることをお勧めします。<br>
-            ※退会はいつでも可能です。
-        </p>
-    </section>
-
-    <div class="fixed bottom-0 left-0 w-full bg-white/95 backdrop-blur-md border-t border-gray-200 px-3 pt-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))] md:hidden z-50 shadow-[0_-4px_20px_-5px_rgba(0,0,0,0.1)]">
-        <div class="flex gap-3 max-w-sm mx-auto">
-            <a id="btn-float-pharmate" href="/link/pharmate/" class="flex-1 bg-accent hover:bg-accent text-center text-white text-xs font-bold py-3.5 rounded-lg shadow-md flex flex-col justify-center items-center leading-tight shiny-btn active:scale-95 transition relative overflow-visible">
-                <span class="text-[10px] block mb-0.5 text-yellow-200 font-extrabold tracking-wide">
-                    <i class="fas fa-crown mr-1"></i>時給4,000円〜
-                </span>
-                <span class="text-sm">高時給な派遣求人を見る</span>
-                <span class="text-[10px] opacity-90 mt-0.5 font-normal">ファル・メイト</span>
-                <img border="0" width="1" height="1" src="https://www11.a8.net/0.gif?a8mat=45KFSQ+7O95GY+31X8+5YJRM" alt="">
-            </a>
-            <a id="btn-float-pharmastaff" href="/link/38-8931/" class="flex-1 bg-orange-500 hover:bg-orange-600 text-center text-white text-xs font-bold py-3.5 rounded-lg shadow-md flex flex-col justify-center items-center leading-tight shiny-btn active:scale-95 transition relative overflow-visible">
-                <span class="text-[10px] block mb-0.5 text-yellow-100 font-extrabold tracking-wide">
-                    <i class="fas fa-shield-alt mr-1"></i>ブランクOK・教育充実
-                </span>
-                <span class="text-sm">じっくり相談して探す</span>
-                <span class="text-[10px] opacity-90 mt-0.5 font-normal">ファルマスタッフ</span>
-            </a>
-        </div>
+      <div
+        class="bg-gray-100 text-gray-600 text-[10px] md:text-xs font-medium px-2 py-0.5 rounded flex items-center whitespace-nowrap"
+      >
+        <i class="fas fa-bell text-gray-400 mr-1.5 text-[10px]"></i>
+        <span id="header-date-text">2025年12月更新</span>
+      </div>
     </div>
 
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "WebSite",
-            "name": "薬剤師Support.com",
-            "url": "https://yakuzaisupport.com/",
-            "description": "薬剤師派遣で時給3000円・16時退社｜家庭も収入も諦めない働き方"
-        }
-    </script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <script is:inline src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <a
+      href="#register"
+      class="hidden md:inline-flex items-center gap-2 bg-accent hover:bg-accent-hover text-white font-bold py-2 px-6 rounded-full transition shadow-md text-sm shiny-btn"
+    >
+      <i class="fas fa-search"></i> 求人を見る（無料）
+    </a>
+  </header>
 
-    <script is:inline>
+  <section
+    class="pt-14 md:pt-16 pb-8 md:pb-16 bg-gradient-to-b from-teal-50 via-white to-white relative overflow-hidden"
+  >
+    <div class="relative z-20">
+      <div class="bg-gray-50 py-0.5 border-b border-gray-100">
+        <div
+          class="flex justify-center items-center gap-2 text-[10px] text-gray-400"
+        >
+          <span
+            class="border border-gray-300 px-1 rounded-[2px] bg-white text-gray-400 font-medium scale-90"
+            >PR</span
+          >
+          <span>本ページはプロモーションが含まれています</span>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="max-w-4xl mx-auto text-center relative z-10 px-4 animate-on-scroll opacity-0 translate-y-8 transition-all duration-1000 ease-out"
+    >
+      <div class="-mx-4 md:mx-0 relative mb-5 overflow-hidden shadow-soft">
+        <picture>
+          <source media="(min-width: 768px)" srcset="/assets/images/main.png" />
+
+          <img
+            src="/assets/images/main_sp.png"
+            alt="派遣にして笑顔で働く女性薬剤師"
+            class="w-full h-auto align-middle object-cover"
+          />
+        </picture>
+      </div>
+
+      <h1 class="text-gray-600 mt-6 mb-0 md:mb-8 leading-snug">
+        <span class="font-bold">時給3,000円〜 週2日〜OK 残業ゼロ</span
+        ><br class="md:hidden" />
+        子育てママ薬剤師の賢い復職は
+        <span class="text-accent font-bold decoration-accent/30 decoration-4"
+          >“派遣”</span
+        >でした
+      </h1>
+
+      <a
+        href="#register"
+        class="hidden md:inline-flex shiny-btn group items-center justify-center w-full md:w-auto min-w-[340px] bg-accent hover:bg-accent-hover text-white text-xl font-bold py-4 px-8 rounded-full shadow-lg shadow-accent/30 transition transform hover:-translate-y-1"
+      >
+        無料で求人紹介を受ける
+        <i
+          class="fas fa-chevron-right ml-3 group-hover:translate-x-1 transition"
+        ></i>
+      </a>
+    </div>
+  </section>
+
+  <div class="w-full">
+    <section class="w-full bg-slate-50 pt-16 md:pt-24 pb-24 md:pb-32 relative">
+      <div
+        class="max-w-6xl mx-auto px-4 md:px-8 relative z-10 animate-on-scroll opacity-0 translate-y-8 transition-all duration-1000 ease-out"
+      >
+        <div class="text-center mb-16">
+          <p class="text-slate-500 mb-4 tracking-wider font-bold">
+            Current Situation
+          </p>
+          <h2
+            class="text-2xl md:text-3xl font-bold leading-tight text-slate-800"
+          >
+            今の職場、こんな<span class="text-accent relative inline-block"
+              >悩み</span
+            ><br class="md:hidden" />ありませんか？
+          </h2>
+        </div>
+
+        <div class="flex flex-col md:flex-row items-center gap-10 md:gap-20">
+          <div class="w-full md:w-1/2 relative">
+            <div
+              class="absolute -left-4 -bottom-4 w-full h-full bg-slate-200 rounded-[2rem] -z-10 hidden md:block transform -rotate-2"
+            ></div>
+            <div class="relative transform -rotate-2">
+              <img
+                src="/assets/images/full.png"
+                alt="焦る薬剤師"
+                class="w-full aspect-[4/3] object-cover rounded-[2rem] shadow-xl shadow-slate-300/50 grayscale-[30%]"
+                loading="lazy"
+              />
+              <div
+                class="absolute inset-0 bg-slate-900/10 rounded-[2rem]"
+              ></div>
+            </div>
+          </div>
+
+          <div class="w-full md:w-1/2">
+            <h3
+              class="text-xl md:text-2xl font-bold text-slate-700 mb-10 text-center md:text-left"
+            >
+              正社員・パートの現実…
+            </h3>
+
+            <ul class="space-y-10">
+              <li class="flex items-start group">
+                <div class="shrink-0 mr-6">
+                  <div class="w-14 h-10 flex items-center justify-center">
+                    <i class="fa-solid fa-thermometer text-accent text-3xl"></i>
+                  </div>
+                </div>
+                <div>
+                  <h4
+                    class="text-lg md:text-xl font-bold text-slate-800 mb-2 leading-tight"
+                  >
+                    子どもの発熱で早退のたびに肩身が狭い…
+                  </h4>
+                  <p
+                    class="text-slate-500 text-sm md:text-base leading-relaxed"
+                  >
+                    「また？」という空気感。謝ってばかりで心がすり減っていく。
+                  </p>
+                </div>
+              </li>
+
+              <li class="flex items-start group">
+                <div class="shrink-0 mr-6">
+                  <div class="w-14 h-10 flex items-center justify-center">
+                    <i class="fas fa-business-time text-accent text-3xl"></i>
+                  </div>
+                </div>
+                <div>
+                  <h4
+                    class="text-lg md:text-xl font-bold text-slate-800 mb-2 leading-tight"
+                  >
+                    「残業できません」が言いづらい空気
+                  </h4>
+                  <p
+                    class="text-slate-500 text-sm md:text-base leading-relaxed"
+                  >
+                    定時で帰るのが悪のような雰囲気。周りに合わせて無理をしてしまう。
+                  </p>
+                </div>
+              </li>
+
+              <li class="flex items-start group">
+                <div class="shrink-0 mr-6">
+                  <div class="w-14 h-10 flex items-center justify-center">
+                    <i class="fas fa-user-slash text-accent text-3xl"></i>
+                  </div>
+                </div>
+                <div>
+                  <h4
+                    class="text-lg md:text-xl font-bold text-slate-800 mb-2 leading-tight"
+                  >
+                    社員だと休めない。パートは収入が不安…
+                  </h4>
+                  <p
+                    class="text-slate-500 text-sm md:text-base leading-relaxed"
+                  >
+                    責任と自由、どちらを選んでも何かが犠牲になるジレンマ。
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="absolute left-0 right-0 bottom-0 flex justify-center translate-y-[99%] z-20"
+      >
+        <div
+          class="w-0 h-0 border-l-[40px] border-l-transparent border-r-[40px] border-r-transparent border-t-[30px] border-t-slate-50"
+        ></div>
+      </div>
+    </section>
+
+    <section class="w-full bg-white pt-24 md:pt-32 pb-16 md:pb-24 relative z-0">
+      <div
+        class="max-w-6xl mx-auto px-4 md:px-8 animate-on-scroll opacity-0 translate-y-8 transition-all duration-1000 ease-out"
+      >
+        <div class="text-center mb-16">
+          <p class="text-teal-600 tracking-wider font-bold mb-2">
+            New Standard
+          </p>
+          <h2
+            class="text-3xl md:text-4xl font-bold text-gray-900 leading-tight"
+          >
+            “派遣”という新しい選択肢
+          </h2>
+        </div>
+
+        <div
+          class="flex flex-col md:flex-row-reverse items-center gap-10 md:gap-20"
+        >
+          <div class="w-full md:w-1/2 relative">
+            <div
+              class="absolute -right-4 -bottom-4 w-full h-full bg-yellow-100 rounded-[2rem] -z-10 hidden md:block transform rotate-2"
+            ></div>
+            <div class="relative transform rotate-2">
+              <img
+                src="/assets/images/after-haken.png"
+                alt="笑顔の親子"
+                class="w-full aspect-[4/3] object-cover rounded-[2rem] shadow-2xl shadow-yellow-100/50"
+                loading="lazy"
+              />
+            </div>
+          </div>
+
+          <div class="w-full md:w-1/2">
+            <ul class="space-y-10">
+              <li class="flex items-start group">
+                <div class="shrink-0 mr-6">
+                  <div class="w-14 h-10 flex items-center justify-center">
+                    <i class="fas fa-calendar-check text-teal-600 text-3xl"></i>
+                  </div>
+                </div>
+                <div>
+                  <h4 class="text-xl md:text-2xl font-bold text-gray-800 mb-2">
+                    <span
+                      class="bg-gradient-to-t from-yellow-200/60 to-transparent bg-[length:100%_40%] bg-bottom bg-no-repeat pb-1"
+                      >週2日〜OK</span
+                    >、家庭優先
+                  </h4>
+                  <p class="text-gray-500 text-sm md:text-base leading-relaxed">
+                    土日休みや時短勤務も自由自在。家族との時間を犠牲にしません。
+                  </p>
+                </div>
+              </li>
+
+              <li class="flex items-start group">
+                <div class="shrink-0 mr-6">
+                  <div class="w-14 h-10 flex items-center justify-center">
+                    <i class="fas fa-clock text-teal-600 text-3xl"></i>
+                  </div>
+                </div>
+                <div>
+                  <div class="flex items-center gap-3 mb-2">
+                    <h4 class="text-xl md:text-2xl font-bold text-gray-800">
+                      定時退社！残業なし
+                    </h4>
+                  </div>
+                  <p class="text-gray-500 text-sm md:text-base leading-relaxed">
+                    契約通りの時間で終了。「周りの目が気になって帰れない」から解放されます。
+                  </p>
+                </div>
+              </li>
+
+              <li class="flex items-start group">
+                <div class="shrink-0 mr-6">
+                  <div class="w-14 h-10 flex items-center justify-center">
+                    <i
+                      class="fa-solid fa-piggy-bank text-teal-600 text-3xl"
+                    ></i>
+                  </div>
+                </div>
+                <div>
+                  <h4 class="text-xl md:text-2xl font-bold text-gray-800 mb-2">
+                    時給<span
+                      class="text-teal-600 text-2xl md:text-3xl font-extrabold mx-1"
+                      >3,000</span
+                    >円〜も可能
+                  </h4>
+                  <p class="text-gray-500 text-sm md:text-base leading-relaxed">
+                    パートよりも高時給。短い時間でも、しっかりと家計を支えられます。
+                  </p>
+                </div>
+              </li>
+
+              <li class="flex items-start group">
+                <div class="shrink-0 mr-6">
+                  <div class="w-14 h-10 flex items-center justify-center">
+                    <i class="fas fa-shield-heart text-teal-600 text-3xl"></i>
+                  </div>
+                </div>
+                <div>
+                  <h4 class="text-xl md:text-2xl font-bold text-gray-800 mb-2">
+                    福利厚生・ブランク研修
+                  </h4>
+                  <p class="text-gray-500 text-sm leading-relaxed">
+                    <span class="font-bold text-teal-600">社会保険・有給</span
+                    >も完備。復職支援プログラムがあるから久しぶりでも安心。
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section class="py-16 md:py-24 px-4 bg-teal-50/50 border-teal-100">
+    <div
+      class="max-w-6xl mx-auto animate-on-scroll opacity-0 translate-y-8 transition-all duration-1000 ease-out"
+    >
+      <h2 class="text-center text-2xl md:text-3xl font-bold mb-8 md:mb-16">
+        「働き方を変えてよかった」<br />先輩ママの声
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div
+          class="bg-white p-6 pt-10 md:p-8 md:pt-12 rounded-2xl shadow-soft relative mt-6 md:mt-0 border border-gray-100"
+        >
+          <div
+            class="absolute -top-6 md:-top-8 left-1/2 transform -translate-x-1/2"
+          >
+            <img
+              src="/assets/images/user01.png"
+              alt="User"
+              loading="lazy"
+              class="w-16 h-16 md:w-20 md:h-20 rounded-full border-4 border-white shadow-md object-cover"
+              loading="lazy"
+            />
+          </div>
+          <div class="text-center">
+            <span
+              class="inline-block bg-gray-100 text-gray-500 text-[10px] font-bold px-2 py-1 rounded mb-3"
+              >34歳・子供2人</span
+            >
+            <span
+              class="inline-block bg-gray-100 text-teal-600 text-[10px] font-bold px-2 py-1 rounded mb-3"
+              >高時給派遣・エリア重視</span
+            >
+            <h3 class="font-bold text-gray-800 text-lg mb-5 leading-snug">
+              お迎えの焦りから解放。<br />
+              通勤時間が<span class="text-accent">30分短縮!</span>
+            </h3>
+            <div class="bg-gray-50 rounded-lg p-4 mb-4 text-sm">
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-gray-400 text-xs">転職前</span>
+                <span class="text-gray-400 font-medium line-through"
+                  >通勤45分・残業あり</span
+                >
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-teal-600 text-xs font-bold">現在</span>
+                <span class="text-gray-800 font-bold text-base"
+                  >通勤15分・残業ゼロ</span
+                >
+              </div>
+            </div>
+            <p class="text-sm text-sub-text text-left leading-relaxed">
+              以前は延長保育に頼り切りでしたが、今は16時に退社。自宅近くのクリニックを紹介してもらい、夕飯を子供と作る余裕が生まれました。
+            </p>
+          </div>
+        </div>
+
+        <div id="more-reviews" class="hidden md:contents">
+          <div
+            class="bg-white p-6 pt-10 md:p-8 md:pt-12 rounded-2xl shadow-soft relative mt-10 md:mt-0 border border-gray-100 animate-fade-in"
+          >
+            <div
+              class="absolute -top-6 md:-top-8 left-1/2 transform -translate-x-1/2"
+            >
+              <img
+                src="/assets/images/user02.png"
+                alt="User"
+                loading="lazy"
+                class="w-16 h-16 md:w-20 md:h-20 rounded-full border-4 border-white shadow-md object-cover"
+                loading="lazy"
+              />
+            </div>
+            <div class="text-center">
+              <span
+                class="inline-block bg-gray-100 text-gray-500 text-[10px] font-bold px-2 py-1 rounded mb-3"
+                >42歳・扶養内希望</span
+              >
+              <span
+                class="inline-block bg-gray-100 text-teal-600 text-[10px] font-bold px-2 py-1 rounded mb-3"
+                >高時給派遣</span
+              >
+              <h3 class="font-bold text-gray-800 text-lg mb-5 leading-snug">
+                働く時間は減ったのに、<br />
+                時給<span class="text-accent">900円UP</span>で収入維持！
+              </h3>
+              <div class="bg-gray-50 rounded-lg p-4 mb-4 text-sm">
+                <div class="flex items-center justify-between mb-2">
+                  <span class="text-gray-400 text-xs">転職前</span>
+                  <span class="text-gray-400 font-medium line-through"
+                    >時給 2,200円</span
+                  >
+                </div>
+                <div class="flex items-center justify-between">
+                  <span class="text-teal-600 text-xs font-bold">現在</span>
+                  <span class="text-gray-800 font-bold text-base"
+                    >時給 3,100円</span
+                  >
+                </div>
+              </div>
+              <p class="text-sm text-sub-text text-left leading-relaxed">
+                「派遣はハードルが高い」と思っていましたが、担当者の交渉で扶養内調整もスムーズに。短時間で効率よく家計を支えられています。
+              </p>
+            </div>
+          </div>
+          <div
+            class="bg-white p-6 pt-10 md:p-8 md:pt-12 rounded-2xl shadow-soft relative mt-10 md:mt-0 border border-gray-100 animate-fade-in"
+          >
+            <div
+              class="absolute -top-6 md:-top-8 left-1/2 transform -translate-x-1/2"
+            >
+              <img
+                src="/assets/images/user03.png"
+                alt="User"
+                loading="lazy"
+                class="w-16 h-16 md:w-20 md:h-20 rounded-full border-4 border-white shadow-md object-cover"
+                loading="lazy"
+              />
+            </div>
+            <div class="text-center">
+              <span
+                class="inline-block bg-gray-100 text-gray-500 text-[10px] font-bold px-2 py-1 rounded mb-3"
+                >39歳・ブランク3年</span
+              >
+              <span
+                class="inline-block bg-gray-100 text-teal-600 text-[10px] font-bold px-2 py-1 rounded mb-3"
+                >リハビリ復帰</span
+              >
+              <h3 class="font-bold text-gray-800 text-lg mb-5 leading-snug">
+                新薬知識ゼロから復帰。<br />
+                <span class="text-accent">週3日・1日4時間</span>で再スタート
+              </h3>
+              <div class="bg-gray-50 rounded-lg p-4 mb-4 text-sm">
+                <div class="flex items-center justify-between mb-2">
+                  <span class="text-gray-400 text-xs">不安</span>
+                  <span class="text-gray-400 font-medium line-through"
+                    >知識不足・体力</span
+                  >
+                </div>
+                <div class="flex items-center justify-between">
+                  <span class="text-teal-600 text-xs font-bold">現在</span>
+                  <span class="text-gray-800 font-bold text-base"
+                    >研修充実・監査メイン</span
+                  >
+                </div>
+              </div>
+              <p class="text-sm text-sub-text text-left leading-relaxed">
+                いきなりのフルタイムは怖かったので、理解のある店舗を紹介してもらいました。e-learningでの研修制度も使えて、自信を取り戻せました。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-8 text-center md:hidden">
+        <button
+          id="show-more-btn"
+          onclick="toggleReviews()"
+          class="bg-white border border-gray-300 text-gray-600 font-bold py-3 px-10 rounded-full shadow-sm hover:bg-gray-50 transition active:scale-95 text-sm flex items-center mx-auto gap-2"
+        >
+          <span>他の口コミも見る</span>
+          <i class="fas fa-chevron-down text-xs"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <script is:inline>
+    function toggleReviews() {
+      const moreReviews = document.getElementById("more-reviews");
+      const btn = document.getElementById("show-more-btn");
+      moreReviews.classList.remove("hidden");
+      btn.style.display = "none";
+    }
+  </script>
+
+  <section class="bg-gray-100 py-16 md:py-24 px-4 overflow-hidden">
+    <div
+      class="max-w-7xl mx-auto animate-on-scroll opacity-0 translate-y-8 transition-all duration-1000 ease-out"
+    >
+      <h2 class="text-center text-2xl font-bold mb-3">
+        例えば、こんな求人があります
+      </h2>
+      <p class="text-center text-xs text-sub-text mb-8 md:mb-12">
+        ※実際の内容は派遣求人先でご確認ください
+      </p>
+
+      <div class="swiper mySwiper px-4">
+        <div class="swiper-wrapper !items-stretch">
+          <div class="swiper-slide !h-auto !flex">
+            <div
+              class="w-full bg-white rounded-2xl shadow-md border-t-4 border-primary relative flex flex-col overflow-hidden h-full"
+            >
+              <div class="h-32 bg-gray-200 w-full relative shrink-0">
+                <img
+                  src="/assets/images/ex01.png"
+                  alt="職場の雰囲気"
+                  class="w-full h-full object-cover"
+                  loading="lazy"
+                />
+                <span
+                  class="absolute top-3 right-3 bg-accent text-white text-[10px] font-bold px-2 py-1 rounded-full shadow-sm"
+                  >週2日でも可能</span
+                >
+              </div>
+              <div class="p-6 flex flex-col flex-grow">
+                <div
+                  class="flex flex-wrap gap-2 mb-3 text-[10px] font-bold text-sub-text"
+                >
+                  <span class="bg-gray-100 px-2 py-1 rounded">調剤薬局</span>
+                  <span class="bg-gray-100 px-2 py-1 rounded"
+                    >土日休み相談可</span
+                  >
+                  <span class="bg-gray-100 px-2 py-1 rounded">16時退社</span>
+                </div>
+                <h3 class="font-bold text-base text-gray-800 mb-4 leading-snug">
+                  ママさん薬剤師活躍中！急なお休みも協力体制あり
+                </h3>
+                <div
+                  class="flex flex-col gap-2 mt-auto pt-4 border-t border-gray-100"
+                >
+                  <div class="flex items-center text-sm">
+                    <span class="w-12 font-bold text-gray-400 text-xs"
+                      >時給</span
+                    ><span class="font-bold text-accent text-lg">3,300円</span>
+                  </div>
+                  <div class="flex items-center text-sm">
+                    <span class="w-12 font-bold text-gray-400 text-xs"
+                      >時間</span
+                    ><span class="font-bold text-gray-700">9:00〜15:00</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide !h-auto !flex">
+            <div
+              class="w-full bg-white rounded-2xl shadow-md border-t-4 border-primary relative flex flex-col overflow-hidden h-full"
+            >
+              <div class="h-32 bg-gray-200 w-full shrink-0">
+                <img
+                  src="/assets/images/ex02.png"
+                  alt="ドラッグストア"
+                  class="w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+              <div class="p-6 flex flex-col flex-grow">
+                <div
+                  class="flex flex-wrap gap-2 mb-3 text-[10px] font-bold text-sub-text"
+                >
+                  <span class="bg-gray-100 px-2 py-1 rounded"
+                    >ドラッグストア</span
+                  >
+                  <span class="bg-gray-100 px-2 py-1 rounded">土日休み</span>
+                  <span class="bg-gray-100 px-2 py-1 rounded"
+                    >最新機器導入済</span
+                  >
+                </div>
+                <h3 class="font-bold text-base text-gray-800 mb-4 leading-snug">
+                  土日祝日休み相談可！ブランクがある方も研修充実
+                </h3>
+                <div
+                  class="flex flex-col gap-2 mt-auto pt-4 border-t border-gray-100"
+                >
+                  <div class="flex items-center text-sm">
+                    <span class="w-12 font-bold text-gray-400 text-xs"
+                      >時給</span
+                    ><span class="font-bold text-accent text-lg">3,500円</span>
+                  </div>
+                  <div class="flex items-center text-sm">
+                    <span class="w-12 font-bold text-gray-400 text-xs"
+                      >時間</span
+                    ><span class="font-bold text-gray-700">10:00〜16:00</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide !h-auto !flex">
+            <div
+              class="w-full bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl shadow-inner border border-gray-200 relative flex flex-col justify-center items-center text-center overflow-hidden h-full"
+            >
+              <div
+                class="w-full h-32 bg-gray-200/50 flex items-center justify-center relative shrink-0"
+              >
+                <span
+                  class="absolute top-0 left-0 bg-gray-600 text-white text-[10px] font-bold px-3 py-1 rounded-br-lg"
+                  >非公開求人</span
+                >
+                <i class="fas fa-lock text-4xl text-gray-300"></i>
+              </div>
+              <div
+                class="p-6 flex flex-col items-center justify-center flex-grow w-full"
+              >
+                <h3 class="font-bold text-gray-600 text-sm mb-1">登録者限定</h3>
+                <p class="text-xs text-gray-400 mb-4">
+                  好条件・高額案件は非公開です
+                </p>
+                <div
+                  class="w-full bg-white rounded-lg p-2 shadow-sm border border-gray-100"
+                >
+                  <div class="text-xs text-gray-400 font-bold mb-1">
+                    想定時給
+                  </div>
+                  <div class="text-xl font-bold text-accent">4,000円〜</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide !h-auto !flex">
+            <div
+              class="w-full bg-white rounded-2xl shadow-md border-t-4 border-primary relative flex flex-col overflow-hidden h-full"
+            >
+              <div class="h-32 bg-gray-200 w-full relative shrink-0">
+                <img
+                  src="/assets/images/ex04.png"
+                  alt="駅近オフィス"
+                  class="w-full h-full object-cover"
+                  loading="lazy"
+                />
+                <span
+                  class="absolute top-3 right-3 bg-accent text-white text-[10px] font-bold px-2 py-1 rounded-full shadow-sm"
+                  >16時上がり</span
+                >
+              </div>
+              <div class="p-6 flex flex-col flex-grow">
+                <div
+                  class="flex flex-wrap gap-2 mb-3 text-[10px] font-bold text-sub-text"
+                >
+                  <span class="bg-gray-100 px-2 py-1 rounded">調剤薬局</span>
+                  <span class="bg-gray-100 px-2 py-1 rounded">駅近</span>
+                  <span class="bg-gray-100 px-2 py-1 rounded">16時退社</span>
+                </div>
+                <h3 class="font-bold text-base text-gray-800 mb-4 leading-snug">
+                  【新着】急募！ 駅から徒歩1分でのお仕事。16時上がりOK
+                </h3>
+                <div
+                  class="flex flex-col gap-2 mt-auto pt-4 border-t border-gray-100"
+                >
+                  <div class="flex items-center text-sm">
+                    <span class="w-12 font-bold text-gray-400 text-xs"
+                      >時給</span
+                    ><span class="font-bold text-accent text-lg">3,600円</span>
+                  </div>
+                  <div class="flex items-center text-sm">
+                    <span class="w-12 font-bold text-gray-400 text-xs"
+                      >時間</span
+                    ><span class="font-bold text-gray-700">10:00〜16:00</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide !h-auto !flex">
+            <div
+              class="w-full bg-white rounded-2xl shadow-md border-t-4 border-primary relative flex flex-col overflow-hidden h-full"
+            >
+              <div class="h-32 bg-gray-200 w-full relative shrink-0">
+                <img
+                  src="/assets/images/ex03.png"
+                  alt="クリニック"
+                  class="w-full h-full object-cover"
+                  loading="lazy"
+                />
+                <span
+                  class="absolute top-3 right-3 bg-yellow-400 text-white text-[10px] font-bold px-2 py-1 rounded-full shadow-sm"
+                  >勤務時間の融通</span
+                >
+              </div>
+              <div class="p-6 flex flex-col flex-grow">
+                <div
+                  class="flex flex-wrap gap-2 mb-3 text-[10px] font-bold text-sub-text"
+                >
+                  <span class="bg-gray-100 px-2 py-1 rounded"
+                    >クリニック門前</span
+                  >
+                  <span class="bg-gray-100 px-2 py-1 rounded">ブランクOK</span>
+                </div>
+                <h3 class="font-bold text-base text-gray-800 mb-4 leading-snug">
+                  ゆったり働ける環境。子育て世代の薬剤師が多数在籍中
+                </h3>
+                <div
+                  class="flex flex-col gap-2 mt-auto pt-4 border-t border-gray-100"
+                >
+                  <div class="flex items-center text-sm">
+                    <span class="w-12 font-bold text-gray-400 text-xs"
+                      >時給</span
+                    ><span class="font-bold text-accent text-lg">3,300円</span>
+                  </div>
+                  <div class="flex items-center text-sm">
+                    <span class="w-12 font-bold text-gray-400 text-xs"
+                      >時間</span
+                    ><span class="font-bold text-gray-700">9:00〜17:00</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide !h-auto !flex">
+            <div
+              class="w-full bg-white rounded-2xl shadow-md border-t-4 border-primary relative flex flex-col overflow-hidden h-full"
+            >
+              <div class="h-32 bg-gray-200 w-full shrink-0">
+                <img
+                  src="/assets/images/ex05.png"
+                  alt="調剤薬局"
+                  class="w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+              <div class="p-6 flex flex-col flex-grow">
+                <div
+                  class="flex flex-wrap gap-2 mb-3 text-[10px] font-bold text-sub-text"
+                >
+                  <span class="bg-gray-100 px-2 py-1 rounded">調剤薬局</span>
+                  <span class="bg-gray-100 px-2 py-1 rounded">午前中のみ</span>
+                  <span class="bg-gray-100 px-2 py-1 rounded"
+                    >電子薬歴未経験OK</span
+                  >
+                </div>
+                <h3 class="font-bold text-base text-gray-800 mb-4 leading-snug">
+                  午前のみOK！扶養内での勤務を希望の方にぴったり
+                </h3>
+                <div
+                  class="flex flex-col gap-2 mt-auto pt-4 border-t border-gray-100"
+                >
+                  <div class="flex items-center text-sm">
+                    <span class="w-12 font-bold text-gray-400 text-xs"
+                      >時給</span
+                    ><span class="font-bold text-accent text-lg">3,200円</span>
+                  </div>
+                  <div class="flex items-center text-sm">
+                    <span class="w-12 font-bold text-gray-400 text-xs"
+                      >時間</span
+                    ><span class="font-bold text-gray-700">9:00〜13:00</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-pagination !relative !bottom-auto !mt-6"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white py-16 md:py-24 px-4">
+    <div
+      class="max-w-5xl mx-auto animate-on-scroll opacity-0 translate-y-8 transition-all duration-1000 ease-out"
+    >
+      <h2 class="text-center text-2xl md:text-3xl font-bold mb-4">
+        私にはどっちが合う？<br />
+        <span class="text-teal-600">2大エージェント</span>徹底比較
+      </h2>
+      <p class="text-center text-sub-text mb-8 md:mb-12 text-sm">
+        「高時給・派遣重視」か「教育・サポート重視」か。<br />
+        あなたの性格や目的に合わせて使い分けましょう。
+      </p>
+
+      <div class="md:hidden max-w-sm mx-auto pt-2">
+        <div class="flex items-end">
+          <button
+            onclick="switchTab('pharmate')"
+            id="btn-pharmate"
+            class="w-1/2 py-4 bg-white text-accent border-t-4 border-accent font-bold text-sm rounded-t-xl shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)] relative z-30 -mb-px"
+          >
+            <i class="fas fa-crown mr-1"></i>高時給・派遣
+          </button>
+
+          <button
+            onclick="switchTab('pharmastaff')"
+            id="btn-pharmastaff"
+            class="w-1/2 py-3 bg-gray-200 text-gray-500 border-t-4 border-transparent font-bold text-sm rounded-t-xl relative z-10 hover:bg-gray-100 transition-colors"
+          >
+            <i class="fas fa-shield-alt mr-1"></i>じっくり教育
+          </button>
+        </div>
+
+        <div
+          class="bg-white border border-gray-200 rounded-b-xl p-6 shadow-card relative z-20"
+        >
+          <div id="content-pharmate" class="space-y-6">
+            <div class="text-center border-b border-gray-100 pb-4">
+              <div
+                class="bg-white rounded-xl shadow-sm mx-auto mb-3 w-52 h-20 border border-gray-100 overflow-hidden flex items-center justify-center"
+              >
+                <a
+                  id="img-tab-pharmate"
+                  href="/link/pharmate/"
+                  target="_blank"
+                  rel="nofollow noopener"
+                  class="flex items-center justify-center w-full h-full px-4 hover:opacity-80 transition-opacity"
+                >
+                  <img
+                    src="/assets/images/logo_pharmate.png"
+                    alt="ファル・メイト"
+                    class="max-h-full w-auto object-contain"
+                  />
+                </a>
+              </div>
+              <p class="text-xs text-accent font-bold">派遣・高時給の決定版</p>
+            </div>
+            <dl class="space-y-4 text-sm">
+              <div class="flex gap-4">
+                <dt class="font-bold text-gray-400 w-20 flex-shrink-0">
+                  最大の強み
+                </dt>
+                <dd class="font-bold text-gray-800">
+                  派遣のエキスパート<br /><span class="text-xs text-gray-500"
+                    >時給4,000円以上多数</span
+                  >
+                </dd>
+              </div>
+              <div class="flex gap-4">
+                <dt class="font-bold text-gray-400 w-20 flex-shrink-0">
+                  決定速度
+                </dt>
+                <dd class="font-bold text-gray-800">
+                  スピーディ<br /><span
+                    class="text-xs text-gray-500 font-normal"
+                    >登録1時間で3社以上ご紹介</span
+                  >
+                </dd>
+              </div>
+              <div class="flex gap-4">
+                <dt class="font-bold text-gray-400 w-20 flex-shrink-0">
+                  こんな人に
+                </dt>
+                <dd class="font-bold text-gray-800">
+                  <div
+                    class="inline-block bg-accent text-white text-xs px-2 py-1 rounded mb-1"
+                  >
+                    稼ぎたい
+                  </div>
+                  <p class="text-xs font-normal text-gray-500">
+                    短時間で高収入を得たい
+                  </p>
+                </dd>
+              </div>
+            </dl>
+            <div class="pt-2">
+              <a
+                id="btn-tab-pharmate"
+                href="/link/pharmate/"
+                target="_blank"
+                rel="nofollow noopener"
+                class="shiny-btn block w-full bg-accent hover:bg-accent text-white text-center font-bold py-4 rounded-lg shadow-md transition transform active:scale-95"
+              >
+                ファル・メイトに登録
+                <i class="fas fa-chevron-right ml-2"></i>
+              </a>
+            </div>
+          </div>
+
+          <div id="content-pharmastaff" class="hidden space-y-6">
+            <div class="text-center border-b border-gray-100 pb-4">
+              <div
+                class="bg-white rounded-xl shadow-sm mx-auto mb-3 w-52 h-20 border border-gray-100 overflow-hidden flex items-center justify-center"
+              >
+                <a
+                  id="img-tab-pharmastaff"
+                  href="/link/38-8931/"
+                  target="_blank"
+                  rel="nofollow noopener"
+                  class="flex items-center justify-center w-full h-full px-4 hover:opacity-80 transition-opacity"
+                >
+                  <img
+                    src="/assets/images/logo_pharm.gif"
+                    alt="ファルマスタッフ"
+                    class="max-h-full w-auto object-contain"
+                  />
+                </a>
+              </div>
+              <p class="text-xs text-orange-500 font-bold">
+                教育・サポート重視
+              </p>
+            </div>
+            <dl class="space-y-4 text-sm">
+              <div class="flex gap-4">
+                <dt class="font-bold text-gray-400 w-20 flex-shrink-0">
+                  最大の強み
+                </dt>
+                <dd class="font-bold text-gray-800">
+                  日本調剤グループの教育力<br /><span
+                    class="text-xs text-gray-500"
+                    >ブランクがあっても安心</span
+                  >
+                </dd>
+              </div>
+              <div class="flex gap-4">
+                <dt class="font-bold text-gray-400 w-20 flex-shrink-0">
+                  決定速度
+                </dt>
+                <dd class="font-bold text-orange-500 text-lg leading-none">
+                  じっくり丁寧<br /><span
+                    class="text-xs text-gray-500 font-normal"
+                    >対面面談で不安解消</span
+                  >
+                </dd>
+              </div>
+              <div class="flex gap-4">
+                <dt class="font-bold text-gray-400 w-20 flex-shrink-0">
+                  こんな人に
+                </dt>
+                <dd class="font-bold text-gray-800">
+                  <div
+                    class="inline-block bg-orange-500 text-white text-xs px-2 py-1 rounded mb-1"
+                  >
+                    学びたい
+                  </div>
+                  <p class="text-xs font-normal text-gray-500">
+                    研修制度を利用したい
+                  </p>
+                </dd>
+              </div>
+            </dl>
+            <div class="pt-2">
+              <a
+                id="btn-tab-pharmastaff"
+                href="/link/38-8931/"
+                target="_blank"
+                rel="nofollow noopener"
+                class="shiny-btn block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-4 rounded-lg shadow-md transition transform active:scale-95"
+              >
+                ファルマスタッフを見る
+                <i class="fas fa-chevron-right ml-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hidden md:block overflow-x-auto pb-6">
+        <table
+          class="w-full min-w-[700px] border-collapse text-center table-fixed shadow-lg rounded-xl overflow-hidden border border-gray-200"
+        >
+          <thead>
+            <tr>
+              <th
+                class="w-1/5 bg-white p-5 border-b border-gray-100 text-gray-400 font-bold text-sm align-middle"
+              >
+                比較項目
+              </th>
+
+              <th
+                class="w-2/5 bg-white p-5 border-b border-accent relative border-t-8 border-accent"
+              >
+                <div
+                  class="text-accent text-xs font-bold mb-2 uppercase tracking-wide"
+                >
+                  <i class="fas fa-crown mr-1"></i>高時給・派遣なら
+                </div>
+                <div
+                  class="bg-white rounded-xl shadow-sm mx-auto mb-3 w-52 h-20 border-2 border-accent overflow-hidden flex items-center justify-center"
+                >
+                  <a
+                    id="img-table-pharmate"
+                    href="/link/pharmate/"
+                    target="_blank"
+                    rel="nofollow noopener"
+                    class="flex items-center justify-center w-full h-full px-4 hover:opacity-80 transition-opacity"
+                  >
+                    <img
+                      src="/assets/images/logo_pharmate.png"
+                      alt="ファル・メイト"
+                      class="max-h-full w-auto object-contain"
+                    />
+                  </a>
+                </div>
+              </th>
+
+              <th
+                class="w-2/5 bg-white p-5 border-b border-gray-100 relative border-t-8 border-orange-400"
+              >
+                <div
+                  class="text-orange-500 text-xs font-bold mb-2 uppercase tracking-wide"
+                >
+                  <i class="fas fa-shield-alt mr-1"></i>教育・サポートなら
+                </div>
+                <div
+                  class="bg-white rounded-xl shadow-sm mx-auto mb-3 w-52 h-20 border-2 border-orange-400 overflow-hidden flex items-center justify-center"
+                >
+                  <a
+                    id="img-table-pharmastaff"
+                    href="/link/38-8931/"
+                    target="_blank"
+                    rel="nofollow noopener"
+                    class="flex items-center justify-center w-full h-full px-4 hover:opacity-80 transition-opacity"
+                  >
+                    <img
+                      src="/assets/images/logo_pharm.gif"
+                      alt="ファルマスタッフ"
+                      class="max-h-full w-auto object-contain"
+                    />
+                  </a>
+                </div>
+              </th>
+            </tr>
+          </thead>
+          <tbody class="text-sm md:text-base bg-white divide-y divide-gray-100">
+            <tr class="hover:bg-gray-50 transition group">
+              <td class="p-5 font-bold text-gray-500 text-xs bg-white">
+                最大の強み
+              </td>
+              <td class="p-5 bg-white">
+                <span class="text-accent font-bold text-lg block"
+                  >派遣のエキスパート</span
+                >
+                <span
+                  class="text-xs text-gray-400 bg-gray-100 px-2 py-0.5 rounded-full mt-1 inline-block"
+                  >時給4,000円以上多数</span
+                >
+              </td>
+              <td class="p-5 bg-white">
+                <span class="text-orange-500 font-bold text-lg block"
+                  >教育・サポート</span
+                >
+                <span
+                  class="text-xs text-gray-400 bg-gray-100 px-2 py-0.5 rounded-full mt-1 inline-block"
+                  >日本調剤グループの教育体制</span
+                >
+              </td>
+            </tr>
+            <tr class="hover:bg-gray-50 transition group">
+              <td class="p-5 font-bold text-gray-500 text-xs bg-white">
+                決定スピード
+              </td>
+              <td class="p-5 bg-white">
+                <span class="text-gray-800 font-bold text-lg block"
+                  >スピーディ</span
+                >
+                <p class="text-xs text-gray-400 mt-1">
+                  登録1時間で3社以上ご紹介
+                </p>
+              </td>
+              <td class="p-5 bg-white">
+                <span class="font-bold text-gray-800 text-lg"
+                  >じっくり丁寧</span
+                >
+                <p class="text-xs text-gray-400 mt-1">対面面談で不安解消</p>
+              </td>
+            </tr>
+            <tr class="hover:bg-gray-50 transition group">
+              <td class="p-5 font-bold text-gray-500 text-xs bg-white">
+                こんな人に
+              </td>
+              <td class="p-5 bg-white">
+                <div
+                  class="inline-block bg-accent text-white text-xs px-2 py-1 rounded font-bold mb-1"
+                >
+                  稼ぎたい
+                </div>
+                <p class="text-xs text-gray-500">短時間で高収入を得たい</p>
+              </td>
+              <td class="p-5 bg-white">
+                <div
+                  class="inline-block bg-orange-500 text-white text-xs px-2 py-1 rounded font-bold mb-1"
+                >
+                  学びたい
+                </div>
+                <p class="text-xs text-gray-500">研修制度を利用したい</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="p-5 bg-white font-bold text-gray-500 text-xs">
+                無料登録
+              </td>
+              <td class="p-5 bg-white">
+                <a
+                  id="btn-table-pharmate"
+                  href="/link/pharmate/"
+                  target="_blank"
+                  rel="nofollow noopener"
+                  class="block bg-accent hover:bg-accent text-white text-sm font-bold py-3 px-2 rounded-lg shadow-md transition transform hover:-translate-y-1 shiny-btn"
+                >
+                  ファル・メイト
+                </a>
+              </td>
+              <td class="p-5 bg-white">
+                <a
+                  id="btn-table-pharmastaff"
+                  href="/link/38-8931/"
+                  target="_blank"
+                  rel="nofollow noopener"
+                  class="block bg-orange-500 hover:bg-orange-600 text-white text-sm font-bold py-3 px-2 rounded-lg shadow-md transition transform hover:-translate-y-1 shiny-btn"
+                >
+                  ファルマスタッフ
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 md:py-24 px-4 bg-slate-50 border-b border-gray-200">
+    <div
+      class="max-w-3xl mx-auto animate-on-scroll opacity-0 translate-y-8 transition-all duration-1000 ease-out"
+    >
+      <h2 class="text-center text-2xl font-bold mb-8 md:mb-12 text-gray-800">
+        よくある質問
+      </h2>
+      <div class="space-y-4">
+        <details
+          class="group bg-white rounded-xl p-5 cursor-pointer transition hover:shadow-md border border-gray-200 shadow-sm"
+        >
+          <summary
+            class="font-bold text-gray-800 flex justify-between items-center list-none text-base md:text-lg"
+          >
+            <span class="flex items-center">
+              <span
+                class="bg-primary text-white text-xs font-bold px-2 py-1 rounded-md mr-3 shadow-sm"
+                >Q</span
+              >
+              「パート」と「派遣」の決定的な違いは何ですか？
+            </span>
+            <span
+              class="text-primary transition transform group-open:rotate-180"
+              ><i class="fas fa-chevron-down"></i
+            ></span>
+          </summary>
+          <div
+            class="text-sm text-sub-text mt-4 pl-0 md:pl-4 border-l-0 leading-relaxed"
+          >
+            <p class="mb-4">
+              一番の違いは「時給」と「人間関係の気楽さ」です。パートだと思っている方の多くが、実は派遣の方がライフスタイルに合っているケースが多いです。
+            </p>
+
+            <div
+              class="overflow-x-auto rounded-lg border border-gray-200 shadow-sm mb-4"
+            >
+              <table class="min-w-full text-left text-sm whitespace-nowrap">
+                <thead class="bg-gray-700 text-white">
+                  <tr>
+                    <th class="px-4 py-3 font-medium text-center bg-gray-800">
+                      特徴
+                    </th>
+                    <th class="px-4 py-3 font-medium text-center bg-slate-500">
+                      パート
+                    </th>
+                    <th class="px-4 py-3 font-bold text-center bg-pink-600">
+                      派遣薬剤師
+                    </th>
+                  </tr>
+                </thead>
+                <tbody class="bg-white divide-y divide-gray-200">
+                  <tr>
+                    <th class="px-4 py-3 font-medium bg-gray-50 text-gray-900">
+                      雇用主
+                    </th>
+                    <td class="px-4 py-3 text-center">薬局 (直接)</td>
+                    <td
+                      class="px-4 py-3 text-center bg-pink-50 font-bold text-pink-700"
+                    >
+                      派遣会社<br /><span
+                        class="text-xs font-normal text-gray-500"
+                        >何かあれば本人に変わって担当者が対応</span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="px-4 py-3 font-medium bg-gray-50 text-gray-900">
+                      時給相場
+                    </th>
+                    <td class="px-4 py-3 text-center">2,000~2,500円</td>
+                    <td
+                      class="px-4 py-3 text-center bg-pink-50 font-bold text-pink-700 text-base"
+                    >
+                      2,800~4,000円超
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="px-4 py-3 font-medium bg-gray-50 text-gray-900">
+                      残業
+                    </th>
+                    <td class="px-4 py-3 text-center">店舗による</td>
+                    <td
+                      class="px-4 py-3 text-center bg-pink-50 font-bold text-pink-700"
+                    >
+                      ほぼ無し<br /><span
+                        class="text-xs font-normal text-gray-500"
+                        >契約で厳守</span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="px-4 py-3 font-medium bg-gray-50 text-gray-900">
+                      人間関係
+                    </th>
+                    <td class="px-4 py-3 text-center">深い (長期前提)</td>
+                    <td
+                      class="px-4 py-3 text-center bg-pink-50 font-bold text-pink-700"
+                    >
+                      ドライ<br /><span
+                        class="text-xs font-normal text-gray-500"
+                        >期間が決まっているので気楽に働ける</span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="px-4 py-3 font-medium bg-gray-50 text-gray-900">
+                      安定性
+                    </th>
+                    <td class="px-4 py-3 text-center">安定的</td>
+                    <td class="px-4 py-3 text-center text-gray-500">
+                      不安定<br /><span class="text-xs font-normal"
+                        >契約終了のリスク有</span
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="text-xs text-gray-500">
+              ※「管理薬剤師になれない」等のデメリットもありますが、育児期間中に効率よく稼ぐには派遣が最適です。
+            </p>
+          </div>
+        </details>
+
+        <details
+          class="group bg-white rounded-xl p-5 cursor-pointer transition hover:shadow-md border border-gray-200 shadow-sm"
+        >
+          <summary
+            class="font-bold text-gray-800 flex justify-between items-center list-none text-base md:text-lg"
+          >
+            <span class="flex items-center">
+              <span
+                class="bg-primary text-white text-xs font-bold px-2 py-1 rounded-md mr-3 shadow-sm"
+                >Q</span
+              >
+              子どもが熱を出したら休めますか？
+            </span>
+            <span
+              class="text-primary transition transform group-open:rotate-180"
+              ><i class="fas fa-chevron-down"></i
+            ></span>
+          </summary>
+          <p class="text-sm text-sub-text mt-4 pl-4 leading-relaxed">
+            大丈夫です、ご安心ください。派遣会社が間に入って調整します。登録時に「ママさん薬剤師が多い店舗」や「急な休みに理解のある職場」を厳選してご紹介します。
+          </p>
+        </details>
+
+        <details
+          class="group bg-white rounded-xl p-5 cursor-pointer transition hover:shadow-md border border-gray-200 shadow-sm"
+        >
+          <summary
+            class="font-bold text-gray-800 flex justify-between items-center list-none text-base md:text-lg"
+          >
+            <span class="flex items-center">
+              <span
+                class="bg-primary text-white text-xs font-bold px-2 py-1 rounded-md mr-3 shadow-sm"
+                >Q</span
+              >
+              数年のブランクがあり、知識が不安です…
+            </span>
+            <span
+              class="text-primary transition transform group-open:rotate-180"
+              ><i class="fas fa-chevron-down"></i
+            ></span>
+          </summary>
+          <p class="text-sm text-sub-text mt-4 pl-4 leading-relaxed">
+            ご紹介するエージェントにはノウハウを活かした復職支援プログラムや研修制度が非常に充実しています。「まずは研修から」という働き方も可能です。
+          </p>
+        </details>
+
+        <details
+          class="group bg-white rounded-xl p-5 cursor-pointer transition hover:shadow-md border border-gray-200 shadow-sm"
+        >
+          <summary
+            class="font-bold text-gray-800 flex justify-between items-center list-none text-base md:text-lg"
+          >
+            <span class="flex items-center">
+              <span
+                class="bg-primary text-white text-xs font-bold px-2 py-1 rounded-md mr-3 shadow-sm"
+                >Q</span
+              >
+              扶養内（年収130万以下）で働けますか？
+            </span>
+            <span
+              class="text-primary transition transform group-open:rotate-180"
+              ><i class="fas fa-chevron-down"></i
+            ></span>
+          </summary>
+          <p class="text-sm text-sub-text mt-4 pl-4 leading-relaxed">
+            はい、可能です。「週2日・1日4時間」など、年収の壁を超えないように計算してシフトを組むことができます。担当にご希望の年収額をお伝えください。
+          </p>
+        </details>
+
+        <details
+          class="group bg-white rounded-xl p-5 cursor-pointer transition hover:shadow-md border border-gray-200 shadow-sm"
+        >
+          <summary
+            class="font-bold text-gray-800 flex justify-between items-center list-none text-base md:text-lg"
+          >
+            <span class="flex items-center">
+              <span
+                class="bg-primary text-white text-xs font-bold px-2 py-1 rounded-md mr-3 shadow-sm"
+                >Q</span
+              >
+              登録や仕事紹介にお金はかかりますか？
+            </span>
+            <span
+              class="text-primary transition transform group-open:rotate-180"
+              ><i class="fas fa-chevron-down"></i
+            ></span>
+          </summary>
+          <p class="text-sm text-sub-text mt-4 pl-4 leading-relaxed">
+            一切かかりません。登録から就業後のサポートまで<span
+              class="font-bold text-accent"
+              >完全無料</span
+            >でご利用いただけます。
+          </p>
+        </details>
+
+        <details
+          class="group bg-white rounded-xl p-5 cursor-pointer transition hover:shadow-md border border-gray-200 shadow-sm"
+        >
+          <summary
+            class="font-bold text-gray-800 flex justify-between items-center list-none text-base md:text-lg"
+          >
+            <span class="flex items-center">
+              <span
+                class="bg-primary text-white text-xs font-bold px-2 py-1 rounded-md mr-3 shadow-sm"
+                >Q</span
+              >
+              紹介された求人を断ってもいいですか？
+            </span>
+            <span
+              class="text-primary transition transform group-open:rotate-180"
+              ><i class="fas fa-chevron-down"></i
+            ></span>
+          </summary>
+          <p class="text-sm text-sub-text mt-4 pl-4 leading-relaxed">
+            もちろんです。職場見学に行ってみて「雰囲気が合わないかも」と感じたら辞退して頂いて構いません。納得できる職場が見つかるまでご利用ください。
+          </p>
+        </details>
+      </div>
+      <div class="mt-8 text-center">
+        <p class="text-sm font-bold text-gray-500 mb-2">
+          疑問は解消されましたか？
+        </p>
+        <p class="text-xs text-sub-text">
+          登録後も、担当者がどんな些細な質問にもお答えします。<br />
+          まずは登録して「どんな求人があるか」を見るだけでもOKです。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section
+    id="register"
+    class="py-16 md:py-24 px-4 bg-gradient-to-br from-primary to-teal-600 text-white text-center md:mb-0 relative overflow-hidden"
+  >
+    <div class="absolute top-0 left-0 w-full h-full opacity-10">
+      <i
+        class="fas fa-pills absolute top-10 left-10 text-8xl transform rotate-12"
+      ></i>
+      <i
+        class="fas fa-user-nurse absolute bottom-10 right-10 text-9xl transform -rotate-12"
+      ></i>
+    </div>
+
+    <div
+      class="max-w-5xl mx-auto relative z-10 animate-on-scroll opacity-0 translate-y-8 transition-all duration-1000 ease-out"
+    >
+      <span
+        class="bg-yellow-400 text-gray-800 text-xs font-bold px-3 py-1 rounded-full mb-3 inline-block shadow-sm"
+      >
+        失敗しないための王道ルート
+      </span>
+      <h2 class="text-2xl md:text-4xl font-bold mb-4 drop-shadow-md">
+        「2社」使い分けるのが<br class="md:hidden" />
+        <span
+          class="text-yellow-300 underline decoration-yellow-300 decoration-4 underline-offset-8"
+          >おすすめの戦略</span
+        >です
+      </h2>
+      <p
+        class="mb-10 font-bold opacity-90 text-sm md:text-base leading-relaxed"
+      >
+        1社だけに絞ると、良い求人を見逃すリスクがあります。<br />
+        「高時給派遣」と「教育・サポート」、<br class="md:hidden" />
+        両方のメリットを手に入れましょう。
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div
+          class="bg-white rounded-3xl p-6 md:p-8 text-gray-800 shadow-2xl relative transform transition duration-300 hover:-translate-y-2 border-4 border-transparent hover:border-accent"
+        >
+          <div
+            class="absolute -top-5 left-1/2 transform -translate-x-1/2 bg-accent text-white font-bold px-6 py-2 rounded-full shadow-lg text-sm whitespace-nowrap"
+          >
+            <i class="fas fa-crown mr-2"></i>高時給・派遣ならココ
+          </div>
+
+          <div class="h-36 mb-6 flex items-center justify-center">
+            <a
+              id="img-recco-pharmate"
+              href="/link/pharmate/"
+              target="_blank"
+              rel="nofollow noopener"
+              class="block h-full hover:opacity-80 transition"
+            >
+              <img
+                src="/assets/images/pharmate.png"
+                alt="ファル・メイト"
+                class="h-full w-auto object-contain"
+              />
+            </a>
+          </div>
+
+          <div class="text-center mb-6">
+            <a
+              id="link-recco-pharmate"
+              href="/link/pharmate/"
+              target="_blank"
+              rel="nofollow noopener"
+              class="text-xl font-bold text-gray-800 hover:text-accent hover:underline transition"
+            >
+              ファル・メイト
+              <i class="fas fa-angle-right text-sm ml-1 text-gray-400"></i>
+            </a>
+          </div>
+
+          <ul
+            class="text-left text-sm space-y-4 mb-8 bg-gray-50 p-6 rounded-2xl"
+          >
+            <li class="flex items-start">
+              <i class="fas fa-check-circle text-accent mr-3 text-lg"></i>
+              <div class="leading-tight">
+                <span
+                  ><span class="font-bold">派遣のエキスパート</span
+                  >ならではの好条件多数</span
+                >
+              </div>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-check-circle text-accent mr-3 text-lg"></i
+              ><span
+                ><span class="font-bold text-accent">時給4,000円以上</span
+                >の求人多数あり</span
+              >
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-check-circle text-accent mr-3 text-lg"></i
+              ><span
+                ><span class="font-bold">「高時給」</span
+                >にこだわりたい方に最適</span
+              >
+            </li>
+          </ul>
+          <a
+            id="btn-recco-pharmate"
+            href="/link/pharmate/"
+            target="_blank"
+            rel="nofollow noopener"
+            class="shiny-btn block w-full bg-accent hover:bg-accent-hover text-white text-xl font-bold py-5 rounded-full shadow-lg shadow-pink-500/30 transition"
+          >
+            高時給の求人を見る
+            <i class="fas fa-external-link-alt ml-2 text-base"></i>
+          </a>
+        </div>
+
+        <div
+          class="bg-white rounded-3xl p-6 md:p-8 text-gray-800 shadow-2xl relative transform transition duration-300 hover:-translate-y-2 border-4 border-transparent hover:border-orange-400"
+        >
+          <div
+            class="absolute -top-5 left-1/2 transform -translate-x-1/2 bg-orange-500 text-white font-bold px-6 py-2 rounded-full shadow-lg text-sm whitespace-nowrap"
+          >
+            <i class="fas fa-shield-alt mr-2"></i>教育・サポートならココ
+          </div>
+
+          <div class="h-36 mb-6 flex items-center justify-center">
+            <a
+              id="img-recco-pharmastaff"
+              href="/link/38-8931/"
+              target="_blank"
+              rel="nofollow noopener"
+              class="block h-full hover:opacity-80 transition"
+            >
+              <img
+                src="/assets/images/farmastuff.png"
+                alt="ファルマスタッフ"
+                class="h-full w-auto object-contain"
+              />
+            </a>
+          </div>
+
+          <div class="text-center mb-6">
+            <a
+              id="link-recco-pharmastaff"
+              href="/link/38-8931/"
+              target="_blank"
+              rel="nofollow noopener"
+              class="text-xl font-bold text-gray-800 hover:text-orange-500 hover:underline transition"
+            >
+              ファルマスタッフ
+              <i class="fas fa-angle-right text-sm ml-1 text-gray-400"></i>
+            </a>
+          </div>
+
+          <ul
+            class="text-left text-sm space-y-4 mb-8 bg-gray-50 p-6 rounded-2xl"
+          >
+            <li class="flex items-center">
+              <i class="fas fa-check-circle text-orange-500 mr-3 text-lg"></i
+              ><span
+                >医療業界最大手<span class="font-bold">日本調剤株式会社</span
+                >グループ</span
+              >
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-check-circle text-orange-500 mr-3 text-lg"></i
+              ><span class="font-bold">会って</span>相談できる<span
+                class="font-bold"
+                >手厚いサポート</span
+              >
+            </li>
+            <li class="flex items-start">
+              <i
+                class="fas fa-check-circle text-orange-500 mr-3 text-lg mt-1"
+              ></i>
+              <div class="leading-tight">
+                <span
+                  >18時までの職場の求人数
+                  <span class="font-bold text-lg">13,138件</span></span
+                >
+                <br />
+                <span class="text-xs text-gray-400">※2025年12月11日時点</span>
+              </div>
+            </li>
+          </ul>
+          <a
+            id="btn-recco-pharmastaff"
+            href="/link/38-8931/"
+            target="_blank"
+            rel="nofollow noopener"
+            class="shiny-btn block w-full bg-orange-500 hover:bg-orange-600 text-white text-xl font-bold py-5 rounded-full shadow-lg shadow-orange-500/30 transition"
+          >
+            自分の市場価値を診断
+            <i class="fas fa-external-link-alt ml-2 text-base"></i>
+          </a>
+        </div>
+      </div>
+
+      <p
+        class="text-xs text-teal-100 mt-10 opacity-80 leading-relaxed text-center"
+      >
+        ※どちらも利用は完全無料です。自分に合う求人を逃さないために、両方チェックすることをお勧めします。<br />
+        どうしても迷ったら、まずは『ファル・メイト』で高時給の相場を確認してみるのがおすすめです。登録しても必ず働く必要はありません。
+      </p>
+    </div>
+  </section>
+
+  <div
+    class="fixed bottom-0 left-0 w-full bg-white/95 backdrop-blur-md border-t border-gray-200 px-3 pt-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))] md:hidden z-50 shadow-[0_-4px_20px_-5px_rgba(0,0,0,0.1)]"
+  >
+    <div class="flex gap-3 max-w-sm mx-auto">
+      <a
+        id="btn-float-pharmate"
+        href="/link/pharmate/"
+        class="flex-1 bg-accent hover:bg-accent text-center text-white text-xs font-bold py-3.5 rounded-lg shadow-md flex flex-col justify-center items-center leading-tight shiny-btn active:scale-95 transition relative overflow-visible"
+      >
+        <span
+          class="text-[10px] block mb-0.5 text-yellow-200 font-extrabold tracking-wide"
+        >
+          <i class="fas fa-crown mr-1"></i>時給4,000円〜
+        </span>
+        <span class="text-sm">高時給な派遣求人を見る</span>
+        <span class="text-[10px] opacity-90 mt-0.5 font-normal"
+          >ファル・メイト</span
+        >
+        <img
+          border="0"
+          width="1"
+          height="1"
+          src="https://www11.a8.net/0.gif?a8mat=45KFSQ+7O95GY+31X8+5YJRM"
+          alt=""
+        />
+      </a>
+      <a
+        id="btn-float-pharmastaff"
+        href="/link/38-8931/"
+        class="flex-1 bg-orange-500 hover:bg-orange-600 text-center text-white text-xs font-bold py-3.5 rounded-lg shadow-md flex flex-col justify-center items-center leading-tight shiny-btn active:scale-95 transition relative overflow-visible"
+      >
+        <span
+          class="text-[10px] block mb-0.5 text-yellow-100 font-extrabold tracking-wide"
+        >
+          <i class="fas fa-shield-alt mr-1"></i>ブランクOK・教育充実
+        </span>
+        <span class="text-sm">じっくり相談して探す</span>
+        <span class="text-[10px] opacity-90 mt-0.5 font-normal"
+          >ファルマスタッフ</span
+        >
+      </a>
+    </div>
+  </div>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "薬剤師Support.com",
+      "url": "https://yakuzaisupport.com/",
+      "description": "薬剤師派遣で時給3000円・16時退社｜家庭も収入も諦めない働き方"
+    }
+  </script>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+  <script
+    is:inline
+    src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+    defer
+  ></script>
+
+  <script is:inline>
     // 1. スライダーの設定
-        document.addEventListener('DOMContentLoaded', function() {
-            const swiper = new Swiper(".mySwiper", {
-                slidesPerView: 1.2,
-                spaceBetween: 20,
-                centeredSlides: true,
-                loop: true,
-                speed: 600,
-                autoplay: {
-                    delay: 4000,
-                    disableOnInteraction: false,
-                },
-                pagination: {
-                    el: ".swiper-pagination",
-                    clickable: true,
-                },
-                breakpoints: {
-                    768: {
-                        slidesPerView: 3,
-                        spaceBetween: 32,
-                        centeredSlides: false
-                    }
-                },
-            });
-            
-            // 2. 日付の自動更新
-            const today = new Date();
-            const dateText = document.getElementById('header-date-text');
-            if (dateText) {
-                dateText.innerHTML = `${today.getFullYear()}年${today.getMonth() + 1}月更新`;
+    document.addEventListener("DOMContentLoaded", function () {
+      const swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1.2,
+        spaceBetween: 20,
+        centeredSlides: true,
+        loop: true,
+        speed: 600,
+        autoplay: {
+          delay: 4000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 32,
+            centeredSlides: false,
+          },
+        },
+      });
+
+      // 2. 日付の自動更新
+      const today = new Date();
+      const dateText = document.getElementById("header-date-text");
+      if (dateText) {
+        dateText.innerHTML = `${today.getFullYear()}年${
+          today.getMonth() + 1
+        }月更新`;
+      }
+
+      // 3. ふわっと表示アニメーション
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.remove("opacity-0", "translate-y-8");
+              entry.target.classList.add("opacity-100", "translate-y-0");
+              observer.unobserve(entry.target);
             }
-        });
+          });
+        },
+        { threshold: 0.1 }
+      );
 
-        // 4. タブ切り替え機能
-        function switchTab(agent) {
-            const contentPharmate = document.getElementById('content-pharmate');
-            const contentPharmastaff = document.getElementById('content-pharmastaff');
-            const btnPharmate = document.getElementById('btn-pharmate');
-            const btnPharmastaff = document.getElementById('btn-pharmastaff');
+      document.querySelectorAll(".animate-on-scroll").forEach((el) => {
+        observer.observe(el);
+      });
+    });
 
-            // デザイン用のクラス
-            const activeClasses = ['bg-white', 'text-accent', 'border-t-4', 'border-accent', 'py-4', '-mb-px', 'z-30', 'relative', 'rounded-t-xl', 'shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)]'];
-            const inactiveClasses = ['bg-gray-200', 'text-gray-500', 'border-t-4', 'border-transparent', 'py-3', 'z-10', 'relative', 'rounded-t-xl'];
+    // 4. タブ切り替え機能
+    function switchTab(agent) {
+      const contentPharmate = document.getElementById("content-pharmate");
+      const contentPharmastaff = document.getElementById("content-pharmastaff");
+      const btnPharmate = document.getElementById("btn-pharmate");
+      const btnPharmastaff = document.getElementById("btn-pharmastaff");
 
-            const resetStyles = (btn) => {
-                btn.classList.remove(...activeClasses);
-                btn.classList.remove(...inactiveClasses);
-                btn.classList.remove('text-orange-500', 'border-orange-500'); // ファルマスタッフ用
-            };
+      // デザイン用のクラス
+      const activeClasses = [
+        "bg-white",
+        "text-accent",
+        "border-t-4",
+        "border-accent",
+        "py-4",
+        "-mb-px",
+        "z-30",
+        "relative",
+        "rounded-t-xl",
+        "shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)]",
+      ];
+      const inactiveClasses = [
+        "bg-gray-200",
+        "text-gray-500",
+        "border-t-4",
+        "border-transparent",
+        "py-3",
+        "z-10",
+        "relative",
+        "rounded-t-xl",
+      ];
 
-            if (agent === 'pharmate') {
-                contentPharmate.classList.remove('hidden');
-                contentPharmastaff.classList.add('hidden');
-                resetStyles(btnPharmate);
-                btnPharmate.classList.add(...activeClasses);
-                resetStyles(btnPharmastaff);
-                btnPharmastaff.classList.add(...inactiveClasses);
-            } else {
-                contentPharmate.classList.add('hidden');
-                contentPharmastaff.classList.remove('hidden');
-                resetStyles(btnPharmastaff);
-                // ファルマスタッフ固有の色設定
-                btnPharmastaff.classList.add('bg-white', 'text-orange-500', 'border-t-4', 'border-orange-500', 'py-4', '-mb-px', 'z-30', 'relative', 'rounded-t-xl', 'shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)]');
-                resetStyles(btnPharmate);
-                btnPharmate.classList.add(...inactiveClasses);
-            }
-        }
-    </script>
+      const resetStyles = (btn) => {
+        btn.classList.remove(...activeClasses);
+        btn.classList.remove(...inactiveClasses);
+        btn.classList.remove("text-orange-500", "border-orange-500"); // ファルマスタッフ用
+      };
+
+      if (agent === "pharmate") {
+        contentPharmate.classList.remove("hidden");
+        contentPharmastaff.classList.add("hidden");
+        resetStyles(btnPharmate);
+        btnPharmate.classList.add(...activeClasses);
+        resetStyles(btnPharmastaff);
+        btnPharmastaff.classList.add(...inactiveClasses);
+      } else {
+        contentPharmate.classList.add("hidden");
+        contentPharmastaff.classList.remove("hidden");
+        resetStyles(btnPharmastaff);
+        // ファルマスタッフ固有の色設定
+        btnPharmastaff.classList.add(
+          "bg-white",
+          "text-orange-500",
+          "border-t-4",
+          "border-orange-500",
+          "py-4",
+          "-mb-px",
+          "z-30",
+          "relative",
+          "rounded-t-xl",
+          "shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)]"
+        );
+        resetStyles(btnPharmate);
+        btnPharmate.classList.add(...inactiveClasses);
+      }
+    }
+  </script>
 </Layout>
