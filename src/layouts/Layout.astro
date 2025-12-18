@@ -1,8 +1,8 @@
 ---
-const { 
-  title, 
-  description = "薬剤師のための新しい働き方支援サービス。ママ薬剤師の復職や派遣という選択肢をご提案します。",
-  bodyClass = "" 
+const {
+title,
+description = "薬剤師のための新しい働き方支援サービス。ママ薬剤師の復職や派遣という選択肢をご提案します。",
+bodyClass = ""
 } = Astro.props;
 
 const currentUrl = new URL(Astro.url.pathname, "https://yakuzaisupport.com");
@@ -11,60 +11,103 @@ import '../styles/global.css';
 
 <!DOCTYPE html>
 <html lang="ja" class="scroll-smooth">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-		
-		<title>{title}</title>
-        <meta name="description" content={description}>
-        <meta property="og:title" content={title}>
-        <meta property="og:description" content={description}>
-		<meta property="og:site_name" content="薬剤師Support.com" />
-		<meta property="og:image" content="/assets/images/main.png" />
-		<meta name="twitter:card" content="summary_large_image" />
-		<link rel="canonical" href={currentUrl} />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-		<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
-		<link rel="manifest" href="/assets/images/site.webmanifest">
-		<!-- Google Tag Manager -->
-		<script is:inline>
-			(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-			})(window,document,'script','dataLayer','GTM-T5MFTFR3');
-		</script>
-	</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
 
-	<body class={`bg-slate-50 font-sans text-text ${bodyClass}`}>
-		<!-- Google Tag Manager (noscript) -->
-		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T5MFTFR3"
-		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-		<!-- End Google Tag Manager (noscript) -->
+    <title>{title}</title>
+    <meta name="description" content="{description}" />
+    <meta property="og:title" content="{title}" />
+    <meta property="og:description" content="{description}" />
+    <meta property="og:site_name" content="薬剤師Support.com" />
+    <meta property="og:image" content="/assets/images/main.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <!-- Google Tag Manager -->
+    <script is:inline>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-T5MFTFR3");
+    </script>
+    <link rel="canonical" href="{currentUrl}" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/assets/images/site.webmanifest" />
+  </head>
 
-		<slot />
+  <body class="{`bg-slate-50" font-sans text-text ${bodyClass}`}>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-T5MFTFR3"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
-		<footer class="bg-gray-800 text-gray-400 py-12 px-4 pb-14 md:pb-12 mt-auto">
-			<div class="max-w-4xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 text-sm">
-				<div>
-					<a href="/" class="block hover:opacity-80 transition-opacity">
-						<img src="/assets/images/yakusupo_logo_wh.svg" alt="薬剤師Support.com" class="h-6 md:h-8 w-auto">
-					</a>
-					<p class="text-xs mt-2">薬剤師のための新しい働き方支援サービス</p>
-				</div>
-				<div class="text-center md:text-right">
-					<div class="mt-4 space-x-6 text-xs font-medium">
-						<a href="/" class="hover:text-white transition">ママ薬剤師派遣</a>
-						<a href="/privacy" class="hover:text-white transition">プライバシーポリシー</a>
-						<a href="/company" class="hover:text-white transition">運営者情報</a>
-					</div>
-				</div>
-			</div>
-			<div class="text-center text-[10px] text-gray-600 mt-12 border-t border-gray-700 pt-8">
-				&copy; 2025 Yakuzaishi Support.com All Rights Reserved.
-			</div>
-		</footer>
-	</body>
+    <slot />
+
+    <footer class="bg-gray-800 text-gray-400 py-12 px-4 pb-14 md:pb-12 mt-auto">
+      <div
+        class="max-w-4xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 text-sm"
+      >
+        <div>
+          <a href="/" class="block hover:opacity-80 transition-opacity">
+            <img
+              src="/assets/images/yakusupo_logo_wh.svg"
+              alt="薬剤師Support.com"
+              class="h-6 md:h-8 w-auto"
+            />
+          </a>
+          <p class="text-xs mt-2">薬剤師のための新しい働き方支援サービス</p>
+        </div>
+        <div class="text-center md:text-right">
+          <div class="mt-4 space-x-6 text-xs font-medium">
+            <a href="/" class="hover:text-white transition">ママ薬剤師派遣</a>
+            <a href="/privacy" class="hover:text-white transition"
+              >プライバシーポリシー</a
+            >
+            <a href="/company" class="hover:text-white transition"
+              >運営者情報</a
+            >
+          </div>
+        </div>
+      </div>
+      <div
+        class="text-center text-[10px] text-gray-600 mt-12 border-t border-gray-700 pt-8"
+      >
+        &copy; 2025 Yakuzaishi Support.com All Rights Reserved.
+      </div>
+    </footer>
+  </body>
 </html>
