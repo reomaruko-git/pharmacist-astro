@@ -1,10 +1,11 @@
 ---
 const {
-title,
-description = "薬剤師のための新しい働き方支援サービス。ママ薬剤師の復職や派遣という選択肢をご提案します。",
-bodyClass = ""
+  title,
+  description = "薬剤師のための新しい働き方支援サービス。ママ薬剤師の復職や派遣という選択肢をご提案します。",
+  bodyClass = ""
 } = Astro.props;
 
+// 正規化されたURLを取得
 const currentUrl = new URL(Astro.url.pathname, "https://yakuzaisupport.com");
 import '../styles/global.css';
 ---
@@ -19,13 +20,14 @@ import '../styles/global.css';
     />
 
     <title>{title}</title>
-    <meta name="description" content="{description}" />
-    <meta property="og:title" content="{title}" />
-    <meta property="og:description" content="{description}" />
+    <meta name="description" content={description} />
+    
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />  
     <meta property="og:site_name" content="薬剤師Support.com" />
-    <meta property="og:image" content="/assets/images/main.png" />
+    <meta property="og:image" content="https://yakuzaisupport.com/assets/images/main.png" />
     <meta name="twitter:card" content="summary_large_image" />
-    <!-- Google Tag Manager -->
+
     <script is:inline>
       (function (w, d, s, l, i) {
         w[l] = w[l] || [];
@@ -38,7 +40,7 @@ import '../styles/global.css';
         f.parentNode.insertBefore(j, f);
       })(window, document, "script", "dataLayer", "GTM-T5MFTFR3");
     </script>
-    <link rel="canonical" href="{currentUrl}" />
+    <link rel="canonical" href={currentUrl.href} />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -63,8 +65,8 @@ import '../styles/global.css';
     <link rel="manifest" href="/assets/images/site.webmanifest" />
   </head>
 
-  <body class={`bg-slate-50" font-sans text-text ${bodyClass}`}>
-    <!-- Google Tag Manager (noscript) -->
+  <body class={"bg-slate-50 font-sans text-text " + bodyClass}>
+    
     <noscript
       ><iframe
         src="https://www.googletagmanager.com/ns.html?id=GTM-T5MFTFR3"
@@ -73,8 +75,6 @@ import '../styles/global.css';
         style="display: none; visibility: hidden"
       ></iframe
     ></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-
     <slot />
 
     <button
@@ -117,34 +117,35 @@ import '../styles/global.css';
         &copy; 2025 Yakuzaishi Support.com All Rights Reserved.
       </div>
     </footer>
-  <script is:inline>
-          document.addEventListener('DOMContentLoaded', () => {
-              // 5. 上に戻るボタンの制御
-              const scrollTopBtn = document.getElementById("scroll-to-top");
 
-              if (scrollTopBtn) {
-                  // スクロール時の表示/非表示切り替え
-                  window.addEventListener("scroll", () => {
-                      // 300px以上スクロールしたら表示
-                      if (window.scrollY > 300) {
-                          scrollTopBtn.classList.remove("opacity-0", "translate-y-10", "invisible");
-                          scrollTopBtn.classList.add("opacity-100", "translate-y-0", "visible");
-                      } else {
-                          // 上に戻ったら隠す
-                          scrollTopBtn.classList.remove("opacity-100", "translate-y-0", "visible");
-                          scrollTopBtn.classList.add("opacity-0", "translate-y-10", "invisible");
-                      }
-                  });
+    <script is:inline>
+      document.addEventListener('DOMContentLoaded', () => {
+          const scrollTopBtn = document.getElementById("scroll-to-top");
 
-                  // クリック時のスムーズスクロール動作
-                  scrollTopBtn.addEventListener("click", () => {
-                      window.scrollTo({
-                          top: 0,
-                          behavior: "smooth",
-                      });
+          if (scrollTopBtn) {
+              window.addEventListener("scroll", () => {
+                  if (window.scrollY > 300) {
+                      scrollTopBtn.classList.remove("opacity-0", "translate-y-10", "invisible");
+                      scrollTopBtn.classList.add("opacity-100", "translate-y-0", "visible");
+                  } else {
+                      scrollTopBtn.classList.remove("opacity-100", "translate-y-0", "visible");
+                      scrollTopBtn.classList.add("opacity-0", "translate-y-10", "invisible");
+                  }
+              });
+
+              scrollTopBtn.addEventListener("click", () => {
+                  window.scrollTo({
+                      top: 0,
+                      behavior: "smooth"
                   });
-              }
-          });
-      </script>
-  </body>
+              });
+          }
+      });
+    </script>
+
+    <div style="display:none;">
+      <img border="0" width="1" height="1" src="https://www18.a8.net/0.gif?a8mat=45KFSQ+7O95GY+31X8+5YJRM" alt="">
+      <img border="0" width="1" height="1" src="https://www11.a8.net/0.gif?a8mat=45KE8R+FXCGC2+276A+5ZMCI" alt="">
+    </div>
+    </body>
 </html>
