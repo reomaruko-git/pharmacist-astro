@@ -58,15 +58,31 @@ import Layout from '../layouts/Layout.astro';
       class="max-w-4xl mx-auto text-center relative z-10 animate-on-scroll opacity-0 translate-y-8 transition-all duration-1000 ease-out"
     >
       <div class="-mx-4 md:mx-0 relative mb-5 overflow-hidden shadow-soft">
-        <picture>
-          <source media="(min-width: 768px)" srcset="/assets/images/main.png" />
+        <a href="#register">
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="/assets/images/main.webp"
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="/assets/images/main.png"
+            />
 
-          <img
-            src="/assets/images/main_sp.png"
-            alt="派遣にして笑顔で働く女性薬剤師"
-            class="w-full h-auto align-middle object-cover"
-          />
-        </picture>
+            <source srcset="/assets/images/main_sp.webp" type="image/webp" />
+
+            <img
+              src="/assets/images/main_sp.png"
+              alt="派遣にして笑顔で働く女性薬剤師"
+              class="w-full h-auto align-middle object-cover"
+              width="375"
+              height="500"
+              fetchpriority="high"
+              decoding="async"
+            />
+          </picture>
+        </a>
       </div>
 
       <h1 class="text-gray-600 mt-6 mb-0 md:mb-8 leading-snug">
