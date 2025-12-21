@@ -23,16 +23,70 @@
       })(window, document, "script", "dataLayer", "GTM-T5MFTFR3");
     </script>
 
-    <script src="https://cdn.tailwindcss.com"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+
+    <style>
+      /* デザイナーこだわりのティールカラーを即時反映 */
+      body {
+        background-color: #f0fdfa; /* bg-teal-50 */
+        font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",
+          "Hiragino Sans", Meiryo, sans-serif;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+      }
+      .loading-container {
+        text-align: center;
+      }
+      .loading-text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1.5rem;
+        color: #0d9488; /* text-teal-600 */
+        font-size: 1.5rem; /* text-2xl */
+        font-weight: 300;
+        letter-spacing: 0.2em;
+      }
+      /* アイコンを回すアニメーション */
+      .fa-spin-custom {
+        animation: spin 2s linear infinite;
+        margin: 0 0.75rem;
+      }
+      @keyframes spin {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      .fallback-text {
+        font-size: 10px;
+        color: #9ca3af; /* text-gray-400 */
+        line-height: 1.6;
+      }
+      .fallback-link {
+        text-decoration: underline;
+        color: #0d9488;
+        font-weight: bold;
+        transition: opacity 0.2s;
+      }
+      .fallback-link:hover {
+        opacity: 0.7;
+      }
+    </style>
   </head>
 
-  <body
-    class="bg-teal-50/50 font-sans flex flex-col justify-center items-center h-screen w-screen overflow-hidden"
-  >
+  <body>
     <noscript
       ><iframe
         src="https://www.googletagmanager.com/ns.html?id=GTM-T5MFTFR3"
@@ -42,23 +96,19 @@
       ></iframe
     ></noscript>
 
-    <div class="text-center">
-      <div class="flex items-center justify-center mb-6 text-teal-600">
-        <span class="text-2xl sm:text-3xl font-light tracking-[0.2em]">L</span>
-        <i
-          class="fas fa-capsules text-2xl sm:text-3xl animate-spin mx-2 sm:mx-3"
-        ></i>
-        <span class="text-2xl sm:text-3xl font-light tracking-[0.2em]"
-          >ADING</span
-        >
+    <div class="loading-container">
+      <div class="loading-text">
+        <span>L</span>
+        <i class="fas fa-capsules fa-spin-custom"></i>
+        <span>ADING</span>
       </div>
 
-      <p class="text-[10px] text-gray-400 leading-relaxed">
+      <p class="fallback-text">
         自動で移動しない場合は
         <a
           id="manual-link"
           href="https://px.a8.net/svt/ejp?a8mat=45KE8R+FXCGC2+276A+5ZMCI"
-          class="underline hover:text-teal-600 transition font-bold"
+          class="fallback-link"
         >
           こちら
         </a>
@@ -67,22 +117,22 @@
     </div>
 
     <script is:inline>
-      // 0.8秒待ってから実行（GTMの計測完了を待つ）
+      // 0.8秒待ってからリダイレクト（計測タグの送信時間を確保）
       setTimeout(function () {
         const params = new URLSearchParams(window.location.search);
         const baseDest =
           "https://px.a8.net/svt/ejp?a8mat=45KE8R+FXCGC2+276A+5ZMCI";
 
-        // パラメータがある場合、& でつなぐ（? の重複を防ぐ）
+        // パラメータがある場合、& でつなぐ
         const finalUrl = params.toString()
           ? baseDest + "&" + params.toString()
           : baseDest;
 
-        // 手動リンクのURLも更新
+        // フォールバック用のリンクも更新
         const linkElem = document.getElementById("manual-link");
         if (linkElem) linkElem.href = finalUrl;
 
-        // 転送実行
+        // 移動実行
         window.location.href = finalUrl;
       }, 800);
     </script>
