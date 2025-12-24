@@ -1,92 +1,94 @@
 ---
 // src/layouts/RedirectLayout.astro
-const { pageTitle, affiliateUrl } = Astro.props;
+// デフォルト値（= "#" など）を設定して、空（undefined）を防ぐ
+const { pageTitle = "案件", affiliateUrl = "#" } = Astro.props;
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex, nofollow" />
-    <title>{pageTitle}へ移動中 | 薬剤師Support.com</title>
+    <title>{pageTitle}</title></head
+  >へ移動中 | 薬剤師Support.com
 
-    <script is:inline define:vars="{{" pageTitle }}>
-      window.dataLayer = window.dataLayer || [];
-      window.dataLayer.push({
-        event: "redirect_start",
-        affiliate_name: pageTitle, // ここで案件名をGTMへ渡す
-      });
-    </script>
+  <script is:inline define:vars="{{" pageTitle }}>
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: "redirect_start",
+      affiliate_name: pageTitle, // ここで案件名をGTMへ渡す
+    });
+  </script>
 
-    <script is:inline>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-T5MFTFR3");
-    </script>
+  <script is:inline>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != "dataLayer" ? "&l=" + l : "";
+      j.async = true;
+      j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, "script", "dataLayer", "GTM-T5MFTFR3");
+  </script>
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
 
-    <style>
-      body {
-        background-color: #f0fdfa;
-        font-family: sans-serif;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        width: 100vw;
-        overflow: hidden;
+  <style>
+    body {
+      background-color: #f0fdfa;
+      font-family: sans-serif;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      width: 100vw;
+      overflow: hidden;
+    }
+    .loading-container {
+      text-align: center;
+    }
+    .loading-text {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+      color: #0d9488;
+      font-size: 1.5rem;
+      font-weight: 300;
+      letter-spacing: 0.2em;
+    }
+    .fa-spin-custom {
+      animation: spin 2s linear infinite;
+      margin: 0 0.75rem;
+    }
+    @keyframes spin {
+      from {
+        transform: rotate(0deg);
       }
-      .loading-container {
-        text-align: center;
+      to {
+        transform: rotate(360deg);
       }
-      .loading-text {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 1.5rem;
-        color: #0d9488;
-        font-size: 1.5rem;
-        font-weight: 300;
-        letter-spacing: 0.2em;
-      }
-      .fa-spin-custom {
-        animation: spin 2s linear infinite;
-        margin: 0 0.75rem;
-      }
-      @keyframes spin {
-        from {
-          transform: rotate(0deg);
-        }
-        to {
-          transform: rotate(360deg);
-        }
-      }
-      .fallback-text {
-        font-size: 10px;
-        color: #9ca3af;
-        line-height: 1.6;
-      }
-      .fallback-link {
-        text-decoration: underline;
-        color: #0d9488;
-        font-weight: bold;
-      }
-    </style>
-  </head>
+    }
+    .fallback-text {
+      font-size: 10px;
+      color: #9ca3af;
+      line-height: 1.6;
+    }
+    .fallback-link {
+      text-decoration: underline;
+      color: #0d9488;
+      font-weight: bold;
+    }
+  </style>
+
 
   <body>
     <noscript
@@ -94,9 +96,8 @@ const { pageTitle, affiliateUrl } = Astro.props;
         src="https://www.googletagmanager.com/ns.html?id=GTM-T5MFTFR3"
         height="0"
         width="0"
-        style="display: none; visibility: hidden"
-      ></iframe
-    ></noscript>
+        style="display: none; visibility: hidden"></iframe></noscript
+    >
 
     <div class="loading-container">
       <div class="loading-text">
@@ -106,8 +107,7 @@ const { pageTitle, affiliateUrl } = Astro.props;
       </div>
       <p class="fallback-text">
         自動で移動しない場合は
-        <a id="manual-link" href="{affiliateUrl}" class="fallback-link"
-          >こちら</a
+        <a id="manual-link" href={affiliateUrl} class="fallback-link">こちら</a
         >をクリック
       </p>
     </div>
