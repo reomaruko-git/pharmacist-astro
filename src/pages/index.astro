@@ -94,15 +94,20 @@ import Layout from '../layouts/Layout.astro';
         >でした
       </h1>
 
-      <a
-        href="#register"
-        class="hidden md:inline-flex shiny-btn group items-center justify-center w-full md:w-auto min-w-[340px] bg-accent hover:bg-accent-hover text-white text-xl font-bold py-4 px-8 rounded-full shadow-lg shadow-accent/30 transition transform hover:-translate-y-1"
-      >
-        無料で求人紹介を受ける
-        <i
-          class="fas fa-chevron-right ml-3 group-hover:translate-x-1 transition"
-        ></i>
-      </a>
+      <div class="flex flex-col items-center gap-2">
+        <span class="text-accent font-bold text-sm animate-bounce">
+          ＼ 最短60秒で入力完了！ ／
+        </span>
+        <a
+          href="#register"
+          class="hidden md:inline-flex shiny-btn group items-center justify-center w-full md:w-auto min-w-[340px] bg-accent hover:bg-accent-hover text-white text-xl font-bold py-4 px-8 rounded-full shadow-lg shadow-accent/30 transition transform hover:-translate-y-1"
+        >
+          無料で求人紹介を受ける
+          <i
+            class="fas fa-chevron-right ml-3 group-hover:translate-x-1 transition"
+          ></i>
+        </a>
+      </div>
     </div>
   </section>
 
@@ -1421,14 +1426,14 @@ import Layout from '../layouts/Layout.astro';
       <span
         class="bg-yellow-400 text-gray-800 text-xs font-bold px-3 py-1 rounded-full mb-3 inline-block shadow-sm"
       >
-        どちらも登録【最短60秒】で完了！
+        理想の『16時退社』を逃さないために
       </span>
       <h2 class="text-2xl md:text-4xl font-bold mb-4 drop-shadow-md">
-        「2社」使い分けるのが<br class="md:hidden" />
+        賢いママは、<br class="md:hidden" />
         <span
           class="text-yellow-300 underline decoration-yellow-300 decoration-4 underline-offset-8"
-          >おすすめの戦略</span
-        >です
+          >この2社をセット</span
+        >で活用しています
       </h2>
       <p
         class="mb-10 font-bold opacity-90 text-sm md:text-base leading-relaxed"
@@ -1513,6 +1518,9 @@ import Layout from '../layouts/Layout.astro';
             rel="nofollow noopener"
             class="shiny-btn block w-full bg-accent hover:bg-accent-hover text-white text-xl font-bold py-5 rounded-full shadow-lg shadow-pink-500/30 transition"
           >
+            <span class="text-[10px] block opacity-90 font-medium"
+              >カンタン60秒で登録完了！</span
+            >
             高時給の求人を見る
             <i class="fas fa-external-link-alt ml-2 text-base"></i>
           </a>
@@ -1579,11 +1587,7 @@ import Layout from '../layouts/Layout.astro';
               ></i>
               <div class="leading-tight">
                 <span
-                  >18時までの職場の求人数
-                  <span class="font-bold text-lg">13,138件</span></span
-                >
-                <br />
-                <span class="text-xs text-gray-400">※2025年12月11日時点</span>
+                  ><span class="font-bold">残業なし・16時退社</span>の求人を優先紹介
               </div>
             </li>
           </ul>
@@ -1594,7 +1598,10 @@ import Layout from '../layouts/Layout.astro';
             rel="nofollow noopener"
             class="shiny-btn block w-full bg-orange-500 hover:bg-orange-600 text-white text-xl font-bold py-5 rounded-full shadow-lg shadow-orange-500/30 transition"
           >
-            自分の市場価値を診断
+            <span class="text-[10px] block opacity-90 font-medium"
+              >スマホで1分、入力は名前と連絡先だけでOK</span
+            >
+            まずは相談してみる
             <i class="fas fa-external-link-alt ml-2 text-base"></i>
           </a>
         </div>
@@ -1624,7 +1631,7 @@ import Layout from '../layouts/Layout.astro';
         <span
           class="text-[10px] block mb-0.5 text-yellow-200 font-extrabold tracking-wide"
         >
-          <i class="fas fa-crown mr-1"></i>「1日単位」の単発あり
+          <i class="fas fa-clock mr-1"></i>最短60秒で登録完了！
         </span>
         <span class="text-sm">高時給な派遣求人を見る</span>
         <span class="text-[10px] opacity-90 mt-0.5 font-normal"
