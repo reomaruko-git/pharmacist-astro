@@ -1,7 +1,6 @@
 ---
-// src/layouts/RedirectLayout.astro
-// デフォルト値（= "#" など）を設定して、空（undefined）を防ぐ
-const { pageTitle = "案件", affiliateUrl = "#" } = Astro.props;
+// 修正後：redirects = {} を追加して、空っぽでもエラーにならないようにガードを固める
+const { pageTitle, affiliateUrl, redirects = {} } = Astro.props;
 ---
 
 <!doctype html>
@@ -89,7 +88,6 @@ const { pageTitle = "案件", affiliateUrl = "#" } = Astro.props;
     }
   </style>
 
-
   <body>
     <noscript
       ><iframe
@@ -126,4 +124,6 @@ const { pageTitle = "案件", affiliateUrl = "#" } = Astro.props;
       }, 800); // 計測完了を待つために少し猶予を持たせる
     </script>
   </body>
+
+
 </html>
