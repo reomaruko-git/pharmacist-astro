@@ -17,11 +17,11 @@ const {
     <title>{pageTitle}</title></head
   >へ移動中 | 薬剤師Support.com
 
-  <script is:inline define:vars="{{" pageTitle }}>
+  <script is:inline define:vars={{ pageTitle }}>
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
       event: "redirect_start",
-      affiliate_name: pageTitle, // ここで案件名をGTMへ渡す
+      affiliate_name: pageTitle,
     });
   </script>
 
@@ -92,43 +92,41 @@ const {
       font-weight: bold;
     }
   </style>
-
-  <body>
-    <noscript
-      ><iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-T5MFTFR3"
-        height="0"
-        width="0"
-        style="display: none; visibility: hidden"></iframe></noscript
-    >
-
-    <div class="loading-container">
-      <div class="loading-text">
-        <span>L</span>
-        <i class="fas fa-capsules fa-spin-custom"></i>
-        <span>ADING</span>
-      </div>
-      <p class="fallback-text">
-        自動で移動しない場合は
-        <a id="manual-link" href={affiliateUrl} class="fallback-link">こちら</a
-        >をクリック
-      </p>
-    </div>
-
-    <script is:inline define:vars="{{" affiliateUrl }}>
-      setTimeout(function () {
-        const params = new URLSearchParams(window.location.search);
-        const finalUrl = params.toString()
-          ? affiliateUrl.includes("?")
-            ? `${affiliateUrl}&${params.toString()}`
-            : `${affiliateUrl}?${params.toString()}`
-          : affiliateUrl;
-
-        document.getElementById("manual-link").href = finalUrl;
-        window.location.href = finalUrl;
-      }, 800); // 計測完了を待つために少し猶予を持たせる
-    </script>
-  </body>
-
-
 </html>
+
+<body>
+  <noscript>
+    <iframe
+      src="https://www.googletagmanager.com/ns.html?id=GTM-T5MFTFR3"
+      height="0"
+      width="0"
+      style="display: none; visibility: hidden"></iframe>
+  </noscript>
+
+  <div class="loading-container">
+    <div class="loading-text">
+      <span>L</span>
+      <i class="fas fa-capsules fa-spin-custom"></i>
+      <span>ADING</span>
+    </div>
+    <p class="fallback-text">
+      自動で移動しない場合は
+      <a id="manual-link" href={affiliateUrl} class="fallback-link">こちら</a>
+      をクリック
+    </p>
+  </div>
+
+  <script is:inline define:vars={{ affiliateUrl }}>
+    setTimeout(function () {
+      const params = new URLSearchParams(window.location.search);
+      const finalUrl = params.toString()
+        ? affiliateUrl.includes("?")
+          ? `${affiliateUrl}&${params.toString()}`
+          : `${affiliateUrl}?${params.toString()}`
+        : affiliateUrl;
+
+      document.getElementById("manual-link").href = finalUrl;
+      window.location.href = finalUrl;
+    }, 800);
+  </script>
+</body>
