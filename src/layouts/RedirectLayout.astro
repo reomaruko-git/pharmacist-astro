@@ -1,14 +1,11 @@
 ---
 // src/layouts/RedirectLayout.astro
-// 1. 全てのプロップスを安全に受け取ります。redirects がなくても空のオブジェクト {} を代入します。
+// 全てのプロップスにデフォルト値を設定し、未定義(undefined)を回避します
 const {
   pageTitle = "薬剤師求人",
   affiliateUrl = "#",
   redirects = {},
 } = Astro.props;
-
-// 2. もしこれでもエラーが出るなら、この下で Object.entries(redirects) を
-//    使っている箇所がないか、ファイル内を「Ctrl + F」で探してみてください。
 ---
 
 <!doctype html>
