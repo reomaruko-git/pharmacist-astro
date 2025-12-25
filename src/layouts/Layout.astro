@@ -175,39 +175,41 @@ import "../styles/global.css";
         alt=""
       />
     </div>
-    <script>
-      // ページが読み込まれたら実行
+    <script is:inline>
       document.addEventListener("DOMContentLoaded", () => {
-        // 1. URLから 'gclid' を取得する
+        // ログ：プログラムが動いているか確認
+        console.log("【GCLID計測】スクリプト開始");
+
+        // 1. GCLIDがあるか確認
         const urlParams = new URLSearchParams(window.location.search);
         const gclid = urlParams.get("gclid");
 
-        // gclid がなければ何もしない（オーガニック流入などの場合）
-        if (!gclid) return;
+        // ログ：GCLIDの中身を表示
+        console.log("【GCLID計測】取得したID:", gclid);
 
-        // 2. ページ内のすべてのリンク（aタグ）を取得
+        if (!gclid) {
+          console.log("【GCLID計測】IDがないため終了します");
+          return;
+        }
+
+        // 2. リンクを探す
         const links = document.querySelectorAll("a");
+        console.log("【GCLID計測】ページ内のリンク数:", links.length);
 
         links.forEach((link) => {
-          try {
-            // href属性がない、またはページ内リンク（#〜）の場合は無視
-            const href = link.getAttribute("href");
-            if (!href || href.startsWith("#") || href.startsWith("/")) return;
+          // アフィリエイトリンクっぽいか簡易チェック（httpから始まるか）
+          if (link.href && link.href.startsWith("http")) {
+            try {
+              const targetUrl = new URL(link.href);
 
-            // 3. リンク先URLに gclid をパラメータとして付与
-            const targetUrl = new URL(link.href);
+              // ★パラメータ付与（A8なら 's'、レントラックスなら 'idx'）
+              targetUrl.searchParams.set("s", gclid);
 
-            // 【重要】ここをASPに合わせて書き換えてください
-            // A8.netの場合 → 's'
-            // レントラックスの場合 → 'idx' または 's'
-            // フェルマの場合 → 'u' や 'p1' など（要確認）
-            targetUrl.searchParams.set("s", gclid);
-
-            // リンクを書き換え
-            link.href = targetUrl.toString();
-          } catch (e) {
-            // エラーが起きても何もしない
-            console.error("リンク書き換えエラー:", e);
+              link.href = targetUrl.toString();
+              console.log("【GCLID計測】書き換え成功:", link.href);
+            } catch (e) {
+              console.error("【GCLID計測】エラー:", e);
+            }
           }
         });
       });
