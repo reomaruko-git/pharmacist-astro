@@ -92,41 +92,53 @@ const {
       font-weight: bold;
     }
   </style>
-</html>
 
-<body>
-  <noscript>
-    <iframe
-      src="https://www.googletagmanager.com/ns.html?id=GTM-T5MFTFR3"
-      height="0"
-      width="0"
-      style="display: none; visibility: hidden"></iframe>
-  </noscript>
 
-  <div class="loading-container">
-    <div class="loading-text">
-      <span>L</span>
-      <i class="fas fa-capsules fa-spin-custom"></i>
-      <span>ADING</span>
+  <body>
+    <noscript>
+      <iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-T5MFTFR3"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"></iframe>
+    </noscript>
+
+    <div class="loading-container">
+      <div class="loading-text">
+        <span>L</span>
+        <i class="fas fa-capsules fa-spin-custom"></i>
+        <span>ADING</span>
+      </div>
+      <p class="fallback-text">
+        自動で移動しない場合は
+        <a id="manual-link" href={affiliateUrl} class="fallback-link">こちら</a>
+        をクリック
+      </p>
     </div>
-    <p class="fallback-text">
-      自動で移動しない場合は
-      <a id="manual-link" href={affiliateUrl} class="fallback-link">こちら</a>
-      をクリック
-    </p>
-  </div>
 
-  <script is:inline define:vars={{ affiliateUrl }}>
-    setTimeout(function () {
-      const params = new URLSearchParams(window.location.search);
-      const finalUrl = params.toString()
-        ? affiliateUrl.includes("?")
-          ? `${affiliateUrl}&${params.toString()}`
-          : `${affiliateUrl}?${params.toString()}`
-        : affiliateUrl;
+    <script is:inline define:vars={{ affiliateUrl }}>
+      setTimeout(function () {
+        // 1. 今のURLからパラメータを取得
+        const params = new URLSearchParams(window.location.search);
 
-      document.getElementById("manual-link").href = finalUrl;
-      window.location.href = finalUrl;
-    }, 800);
-  </script>
-</body>
+        // 2. 「s」か「gclid」のどちらか持っている方を取得（sを優先）
+        const clickId = params.get("s") || params.get("gclid");
+
+        // 3. ベースのURL（A8のリンク）
+        let finalUrl = affiliateUrl;
+
+        // 4. IDを持っていれば、A8のリンクのお尻にくっつける
+        if (clickId) {
+          // リンクにすでに「?」があるかチェックして繋ぎ文字を決める
+          const separator = finalUrl.includes("?") ? "&" : "?";
+          // 強制的に「s=」という名前でくっつける（A8仕様）
+          finalUrl = `${finalUrl}${separator}s=${clickId}`;
+        }
+
+        // 5. セットして移動！
+        document.getElementById("manual-link").href = finalUrl;
+        window.location.href = finalUrl;
+      }, 800); // 0.8秒後に移動
+    </script>
+  </body>
+</html>
