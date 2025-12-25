@@ -159,44 +159,30 @@ import "../styles/global.css";
       });
     </script>
 
-    <script is:inline>
-      document.addEventListener("DOMContentLoaded", () => {
-        // ログ：プログラムが動いているか確認
-        console.log("【GCLID計測】スクリプト開始");
+    <script is:inline define:vars={{ affiliateUrl }}>
+      setTimeout(function () {
+        // 1. 今のURLからパラメータを取得
+        const params = new URLSearchParams(window.location.search);
 
-        // 1. GCLIDがあるか確認
-        const urlParams = new URLSearchParams(window.location.search);
-        const gclid = urlParams.get("gclid");
+        // 2. 「s」か「gclid」のどちらか持っている方を取得
+        const clickId = params.get("s") || params.get("gclid");
 
-        // ログ：GCLIDの中身を表示
-        console.log("【GCLID計測】取得したID:", gclid);
+        // 3. ベースのURL
+        let finalUrl = affiliateUrl;
 
-        if (!gclid) {
-          console.log("【GCLID計測】IDがないため終了します");
-          return;
+        // 4. IDを持っていれば、リンクのお尻にくっつける
+        if (clickId) {
+          // リンクにすでに「?」があるかチェックして繋ぎ文字を決める
+          const separator = finalUrl.includes("?") ? "&" : "?";
+
+          // ★修正：レントラックスもA8も、一律「s=」でOKです！
+          finalUrl = `${finalUrl}${separator}s=${clickId}`;
         }
 
-        // 2. リンクを探す
-        const links = document.querySelectorAll("a");
-        console.log("【GCLID計測】ページ内のリンク数:", links.length);
-
-        links.forEach((link) => {
-          // アフィリエイトリンクっぽいか簡易チェック（httpから始まるか）
-          if (link.href && link.href.startsWith("http")) {
-            try {
-              const targetUrl = new URL(link.href);
-
-              // ★パラメータ付与（A8なら 's'、レントラックスなら 'idx'）
-              targetUrl.searchParams.set("s", gclid);
-
-              link.href = targetUrl.toString();
-              console.log("【GCLID計測】書き換え成功:", link.href);
-            } catch (e) {
-              console.error("【GCLID計測】エラー:", e);
-            }
-          }
-        });
-      });
+        // 5. セットして移動！
+        document.getElementById("manual-link").href = finalUrl;
+        window.location.href = finalUrl;
+      }, 800); // 0.8秒後に移動
     </script>
   </body>
 </html>
