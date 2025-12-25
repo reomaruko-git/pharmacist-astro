@@ -93,7 +93,6 @@ const {
     }
   </style>
 
-
   <body>
     <noscript>
       <iframe
@@ -121,18 +120,26 @@ const {
         // 1. 今のURLからパラメータを取得
         const params = new URLSearchParams(window.location.search);
 
-        // 2. 「s」か「gclid」のどちらか持っている方を取得（sを優先）
+        // 2. 「s」か「gclid」のどちらか持っている方を取得
         const clickId = params.get("s") || params.get("gclid");
 
-        // 3. ベースのURL（A8のリンク）
+        // 3. ベースのURL
         let finalUrl = affiliateUrl;
 
-        // 4. IDを持っていれば、A8のリンクのお尻にくっつける
+        // 4. IDを持っていれば、ASPに合わせて適切な名前でくっつける
         if (clickId) {
           // リンクにすでに「?」があるかチェックして繋ぎ文字を決める
           const separator = finalUrl.includes("?") ? "&" : "?";
-          // 強制的に「s=」という名前でくっつける（A8仕様）
-          finalUrl = `${finalUrl}${separator}s=${clickId}`;
+
+          // ★ここが進化ポイント：ASPを自動判別
+          let paramName = "s"; // デフォルトはA8（s）
+
+          if (finalUrl.includes("rentracks")) {
+            paramName = "idx"; // レントラックスなら（idx）に変える
+          }
+
+          // 決定した名前でくっつける
+          finalUrl = `${finalUrl}${separator}${paramName}=${clickId}`;
         }
 
         // 5. セットして移動！
@@ -141,4 +148,5 @@ const {
       }, 800); // 0.8秒後に移動
     </script>
   </body>
+
 </html>
