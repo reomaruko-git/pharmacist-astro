@@ -170,12 +170,12 @@ import "../styles/global.css";
         // 3. ベースのURL
         let finalUrl = affiliateUrl;
 
-        // 4. IDを持っていれば、リンクのお尻にくっつける
+        // 4. IDを持っていれば、シンプルに「s=」でくっつける
         if (clickId) {
           // リンクにすでに「?」があるかチェックして繋ぎ文字を決める
           const separator = finalUrl.includes("?") ? "&" : "?";
 
-          // ★修正：レントラックスもA8も、一律「s=」でOKです！
+          // ★修正：レントラックスもA8も、全て「s=」で統一します！
           finalUrl = `${finalUrl}${separator}s=${clickId}`;
         }
 
