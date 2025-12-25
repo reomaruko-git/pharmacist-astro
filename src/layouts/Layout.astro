@@ -2,15 +2,15 @@
 const {
   title,
   description = "薬剤師のための新しい働き方支援サービス。ママ薬剤師の復職や派遣という選択肢をご提案します。",
-  bodyClass = ""
+  bodyClass = "",
 } = Astro.props;
 
 // 正規化されたURLを取得
 const currentUrl = new URL(Astro.url.pathname, "https://yakuzaisupport.com");
-import '../styles/global.css';
+import "../styles/global.css";
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
@@ -21,11 +21,14 @@ import '../styles/global.css';
 
     <title>{title}</title>
     <meta name="description" content={description} />
-    
+
     <meta property="og:title" content={title} />
-    <meta property="og:description" content={description} />  
+    <meta property="og:description" content={description} />
     <meta property="og:site_name" content="薬剤師Support.com" />
-    <meta property="og:image" content="https://yakuzaisupport.com/assets/images/main.png" />
+    <meta
+      property="og:image"
+      content="https://yakuzaisupport.com/assets/images/main.png"
+    />
     <meta name="twitter:card" content="summary_large_image" />
 
     <script is:inline>
@@ -66,15 +69,13 @@ import '../styles/global.css';
   </head>
 
   <body class={"bg-slate-50 font-sans text-text " + bodyClass}>
-    
     <noscript
       ><iframe
         src="https://www.googletagmanager.com/ns.html?id=GTM-T5MFTFR3"
         height="0"
         width="0"
-        style="display: none; visibility: hidden"
-      ></iframe
-    ></noscript>
+        style="display: none; visibility: hidden"></iframe></noscript
+    >
     <slot />
 
     <button
@@ -105,8 +106,7 @@ import '../styles/global.css';
             <a href="/privacy" class="hover:text-white transition"
               >プライバシーポリシー</a
             >
-            <a href="/company" class="hover:text-white transition"
-              >運営者情報</a
+            <a href="/company" class="hover:text-white transition">運営者情報</a
             >
           </div>
         </div>
@@ -119,33 +119,98 @@ import '../styles/global.css';
     </footer>
 
     <script is:inline>
-      document.addEventListener('DOMContentLoaded', () => {
-          const scrollTopBtn = document.getElementById("scroll-to-top");
+      document.addEventListener("DOMContentLoaded", () => {
+        const scrollTopBtn = document.getElementById("scroll-to-top");
 
-          if (scrollTopBtn) {
-              window.addEventListener("scroll", () => {
-                  if (window.scrollY > 300) {
-                      scrollTopBtn.classList.remove("opacity-0", "translate-y-10", "invisible");
-                      scrollTopBtn.classList.add("opacity-100", "translate-y-0", "visible");
-                  } else {
-                      scrollTopBtn.classList.remove("opacity-100", "translate-y-0", "visible");
-                      scrollTopBtn.classList.add("opacity-0", "translate-y-10", "invisible");
-                  }
-              });
+        if (scrollTopBtn) {
+          window.addEventListener("scroll", () => {
+            if (window.scrollY > 300) {
+              scrollTopBtn.classList.remove(
+                "opacity-0",
+                "translate-y-10",
+                "invisible",
+              );
+              scrollTopBtn.classList.add(
+                "opacity-100",
+                "translate-y-0",
+                "visible",
+              );
+            } else {
+              scrollTopBtn.classList.remove(
+                "opacity-100",
+                "translate-y-0",
+                "visible",
+              );
+              scrollTopBtn.classList.add(
+                "opacity-0",
+                "translate-y-10",
+                "invisible",
+              );
+            }
+          });
 
-              scrollTopBtn.addEventListener("click", () => {
-                  window.scrollTo({
-                      top: 0,
-                      behavior: "smooth"
-                  });
-              });
-          }
+          scrollTopBtn.addEventListener("click", () => {
+            window.scrollTo({
+              top: 0,
+              behavior: "smooth",
+            });
+          });
+        }
       });
     </script>
 
     <div style="display:none;">
-      <img border="0" width="1" height="1" src="https://www18.a8.net/0.gif?a8mat=45KFSQ+7O95GY+31X8+5YJRM" alt="">
-      <img border="0" width="1" height="1" src="https://www11.a8.net/0.gif?a8mat=45KE8R+FXCGC2+276A+5ZMCI" alt="">
+      <img
+        border="0"
+        width="1"
+        height="1"
+        src="https://www18.a8.net/0.gif?a8mat=45KFSQ+7O95GY+31X8+5YJRM"
+        alt=""
+      />
+      <img
+        border="0"
+        width="1"
+        height="1"
+        src="https://www11.a8.net/0.gif?a8mat=45KE8R+FXCGC2+276A+5ZMCI"
+        alt=""
+      />
     </div>
-    </body>
+    <script>
+      // ページが読み込まれたら実行
+      document.addEventListener("DOMContentLoaded", () => {
+        // 1. URLから 'gclid' を取得する
+        const urlParams = new URLSearchParams(window.location.search);
+        const gclid = urlParams.get("gclid");
+
+        // gclid がなければ何もしない（オーガニック流入などの場合）
+        if (!gclid) return;
+
+        // 2. ページ内のすべてのリンク（aタグ）を取得
+        const links = document.querySelectorAll("a");
+
+        links.forEach((link) => {
+          try {
+            // href属性がない、またはページ内リンク（#〜）の場合は無視
+            const href = link.getAttribute("href");
+            if (!href || href.startsWith("#") || href.startsWith("/")) return;
+
+            // 3. リンク先URLに gclid をパラメータとして付与
+            const targetUrl = new URL(link.href);
+
+            // 【重要】ここをASPに合わせて書き換えてください
+            // A8.netの場合 → 's'
+            // レントラックスの場合 → 'idx' または 's'
+            // フェルマの場合 → 'u' や 'p1' など（要確認）
+            targetUrl.searchParams.set("s", gclid);
+
+            // リンクを書き換え
+            link.href = targetUrl.toString();
+          } catch (e) {
+            // エラーが起きても何もしない
+            console.error("リンク書き換えエラー:", e);
+          }
+        });
+      });
+    </script>
+  </body>
 </html>
