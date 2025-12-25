@@ -161,21 +161,22 @@ import "../styles/global.css";
 
     <script is:inline define:vars={{ affiliateUrl }}>
       setTimeout(function () {
+        // 1. 今のURLからパラメータを取得
         const params = new URLSearchParams(window.location.search);
-        // 「s」か「gclid」を取得
+
+        // 2. 「s」か「gclid」を取得
         const clickId = params.get("s") || params.get("gclid");
 
+        // 3. ベースのURL（A8のリンク）
         let finalUrl = affiliateUrl;
 
+        // 4. IDを持っていれば、A8の「s=」としてくっつける
         if (clickId) {
-          // 既に「?」があるなら「&」、なければ「?」
           const separator = finalUrl.includes("?") ? "&" : "?";
-
-          // 【絶対安全策】すべて「s=」で統一します。
-          // これならレントラックスのidxと衝突しません。
           finalUrl = `${finalUrl}${separator}s=${clickId}`;
         }
 
+        // 5. 移動
         document.getElementById("manual-link").href = finalUrl;
         window.location.href = finalUrl;
       }, 800);
