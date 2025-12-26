@@ -102,12 +102,16 @@ const {
         style="display: none; visibility: hidden"></iframe>
     </noscript>
 
-    <div class="loading-container">
-      <div class="loading-text">
-        <span>L</span>
-        <i class="fas fa-capsules fa-spin-custom"></i>
-        <span>ADING</span>
-      </div>
+<div class="loading-container">
+  <p style="color: #0d9488; font-size: 1.1rem; margin-bottom: 1rem; font-weight: bold;">
+    {pageTitle} へ移動しています...
+  </p>
+
+  <div class="loading-text">
+    <span>L</span>
+    <i class="fas fa-capsules fa-spin-custom"></i>
+    <span>ADING</span>
+  </div>
       <p class="fallback-text">
         自動で移動しない場合は
         <a id="manual-link" href={affiliateUrl} class="fallback-link">こちら</a>
