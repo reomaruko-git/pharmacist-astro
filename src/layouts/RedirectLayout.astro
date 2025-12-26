@@ -1,10 +1,8 @@
 ---
 // src/layouts/RedirectLayout.astro
-// 全てのプロップスにデフォルト値を設定し、未定義(undefined)を回避します
 const {
   pageTitle = "薬剤師求人",
   affiliateUrl = "#",
-  redirects = {},
 } = Astro.props;
 ---
 
@@ -14,104 +12,76 @@ const {
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex, nofollow" />
-    <title>{pageTitle}へ移動中 | 薬剤師Support.com</title>
+    <title>{pageTitle} へ移動中 | 薬剤師Support.com</title>
 
-  <script is:inline define:vars={{ pageTitle }}>
-    window.dataLayer = window.dataLayer || [];
-    window.dataLayer.push({
-      event: "redirect_start",
-      affiliate_name: pageTitle,
-    });
-  </script>
+    <script is:inline define:vars={{ pageTitle }}>
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        event: "redirect_start",
+        affiliate_name: pageTitle,
+      });
+    </script>
 
-  <script is:inline>
-    (function (w, d, s, l, i) {
-      w[l] = w[l] || [];
-      w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-      var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s),
-        dl = l != "dataLayer" ? "&l=" + l : "";
-      j.async = true;
-      j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-      f.parentNode.insertBefore(j, f);
-    })(window, document, "script", "dataLayer", "GTM-T5MFTFR3");
-  </script>
+    <script is:inline>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-T5MFTFR3");
+    </script>
 
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
-  <style>
-    body {
-      background-color: #f0fdfa;
-      font-family: sans-serif;
-      margin: 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      width: 100vw;
-      overflow: hidden;
-    }
-    .loading-container {
-      text-align: center;
-    }
-    .loading-text {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 1.5rem;
-      color: #0d9488;
-      font-size: 1.5rem;
-      font-weight: 300;
-      letter-spacing: 0.2em;
-    }
-    .fa-spin-custom {
-      animation: spin 2s linear infinite;
-      margin: 0 0.75rem;
-    }
-    @keyframes spin {
-      from {
-        transform: rotate(0deg);
+    <style>
+      body {
+        background-color: #f0fdfa;
+        font-family: sans-serif;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
       }
-      to {
-        transform: rotate(360deg);
+      .loading-container { text-align: center; }
+      .loading-text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1.5rem;
+        color: #0d9488;
+        font-size: 1.5rem;
+        font-weight: 300;
+        letter-spacing: 0.2em;
       }
-    }
-    .fallback-text {
-      font-size: 10px;
-      color: #9ca3af;
-      line-height: 1.6;
-    }
-    .fallback-link {
-      text-decoration: underline;
-      color: #0d9488;
-      font-weight: bold;
-    }
-  </style>
+      .fa-spin-custom { animation: spin 2s linear infinite; margin: 0 0.75rem; }
+      @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+      .fallback-text { font-size: 10px; color: #9ca3af; line-height: 1.6; }
+      .fallback-link { text-decoration: underline; color: #0d9488; font-weight: bold; }
+    </style>
   </head>
 
   <body>
-    <noscript>
-      <iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-T5MFTFR3"
-        height="0"
-        width="0"
-        style="display: none; visibility: hidden"></iframe>
-    </noscript>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T5MFTFR3" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
 
-<div class="loading-container">
-  <p style="color: #0d9488; font-size: 1.1rem; margin-bottom: 1rem; font-weight: bold;">
-    {pageTitle} へ移動しています...
-  </p>
+    <div class="loading-container">
+      <p style="color: #0d9488; font-size: 1.1rem; margin-bottom: 1rem; font-weight: bold;">
+        {pageTitle} へ移動しています...
+      </p>
 
-  <div class="loading-text">
-    <span>L</span>
-    <i class="fas fa-capsules fa-spin-custom"></i>
-    <span>ADING</span>
-  </div>
+      <div class="loading-text">
+        <span>L</span>
+        <i class="fas fa-capsules fa-spin-custom"></i>
+        <span>ADING</span>
+      </div>
+
       <p class="fallback-text">
         自動で移動しない場合は
         <a id="manual-link" href={affiliateUrl} class="fallback-link">こちら</a>
@@ -121,27 +91,16 @@ const {
 
     <script is:inline define:vars={{ affiliateUrl }}>
       setTimeout(function () {
-        // 1. 今のURLからパラメータを取得
         const params = new URLSearchParams(window.location.search);
-
-        // 2. 「s」か「gclid」を取得
         const clickId = params.get("s") || params.get("gclid");
-
-        // 3. ベースのURL（A8のリンク）
         let finalUrl = affiliateUrl;
-
-        // 4. IDを持っていれば、A8の「s=」としてくっつける
         if (clickId) {
           const separator = finalUrl.includes("?") ? "&" : "?";
           finalUrl = `${finalUrl}${separator}s=${clickId}`;
         }
-
-        // 5. 移動
         document.getElementById("manual-link").href = finalUrl;
         window.location.href = finalUrl;
       }, 800);
     </script>
   </body>
-
-
 </html>
