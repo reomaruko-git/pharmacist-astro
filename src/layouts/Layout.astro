@@ -120,6 +120,25 @@ import "../styles/global.css";
 
     <script is:inline>
       document.addEventListener("DOMContentLoaded", () => {
+        // --------------------------------------------------
+        // ★追加機能：GCLID（計測ID）を全リンクに引き継ぐ
+        // --------------------------------------------------
+        const params = window.location.search;
+        // URLにパラメータ（?gclid=...など）がある場合だけ実行
+        if (params) {
+          // 内部リンク（/link/〜）だけを探す
+          const links = document.querySelectorAll('a[href^="/link/"]');
+
+          links.forEach((link) => {
+            // すでに?があるか確認して、パラメータを継ぎ足す
+            const separator = link.href.includes("?") ? "&" : "?";
+            link.href += separator + params.slice(1);
+          });
+        }
+
+        // --------------------------------------------------
+        // 既存機能：トップへ戻るボタン
+        // --------------------------------------------------
         const scrollTopBtn = document.getElementById("scroll-to-top");
 
         if (scrollTopBtn) {
