@@ -1596,7 +1596,7 @@ import Layout from "../layouts/Layout.astro";
             class="shiny-btn block w-full bg-orange-500 hover:bg-orange-600 text-white text-xl font-bold py-5 rounded-full shadow-lg shadow-orange-500/30 transition flex flex-col items-center justify-center leading-tight"
           >
             <span class="text-[10px] block opacity-95 font-medium mb-1">
-              スマホで1分、入力は名前と連絡先だけでOK
+              入力は名前と連絡先だけでOK！
             </span>
 
             <div class="flex items-center justify-center gap-2">
@@ -1611,49 +1611,40 @@ import Layout from "../layouts/Layout.astro";
       >
         ※どちらも利用は完全無料です。自分に合う求人を逃さないために、両方チェックすることをお勧めします。<br
         />
-        どうしても迷ったら、まずは『ファル・メイト』で高時給の相場を確認してみるのがおすすめです。登録しても必ず働く必要はありません。
+        登録しても必ず働く必要はありません。
       </p>
     </div>
   </section>
-  <div
-    class="fixed bottom-0 left-0 w-full bg-white/95 backdrop-blur-md border-t border-gray-200 px-3 pt-3 md:hidden z-50 shadow-[0_-4px_20px_-5px_rgba(0,0,0,0.1)]"
+<div
+    class="fixed bottom-0 left-0 w-full bg-white/80 backdrop-blur-md border-t border-gray-200 px-3 pt-3 md:hidden z-50 shadow-[0_-4px_20px_-5px_rgba(0,0,0,0.1)]"
     style="padding-bottom: max(12px, env(safe-area-inset-bottom))"
   >
-    <div class="flex gap-3 max-w-sm mx-auto">
+    <div class="flex gap-2 max-w-sm mx-auto items-end">
       <a
         id="btn-float-pharmate"
         href="/link/pharmate"
         rel="nofollow"
         target="_blank"
-        class="flex-1 bg-accent hover:bg-accent text-center text-white text-xs font-bold py-3.5 rounded-lg shadow-md flex flex-col justify-center items-center leading-tight shiny-btn active:scale-95 transition relative overflow-visible"
+        class="flex-1 bg-gray-400 hover:bg-gray-500 text-center text-white font-bold py-3 rounded-lg shadow-sm flex flex-col justify-center items-center leading-tight transition relative opacity-90"
       >
-        <span
-          class="text-[10px] block mb-0.5 text-yellow-200 font-extrabold tracking-wide"
-        >
-          <i class="fas fa-clock mr-1"></i>最短60秒で登録完了！
-        </span>
-        <span class="text-sm">高時給な派遣求人を見る</span>
-        <span class="text-[10px] opacity-90 mt-0.5 font-normal"
-          >ファル・メイト</span
-        >
+        <span class="text-[9px] opacity-90 font-normal">高時給・単発なら</span>
+        <span class="text-sm">ファル・メイト</span>
       </a>
-      <a
-        id="btn-float-pharmastaff"
-        href="/link/38-8931"
-        rel="nofollow"
-        target="_blank"
-        class="flex-1 bg-orange-500 hover:bg-orange-600 text-center text-white text-xs font-bold py-3.5 rounded-lg shadow-md flex flex-col justify-center items-center leading-tight shiny-btn active:scale-95 transition relative overflow-visible"
-      >
-        <span
-          class="text-[10px] block mb-0.5 text-yellow-100 font-extrabold tracking-wide"
+
+      <div class="flex-[1.6] relative">
+        <a
+          id="btn-float-pharmastaff"
+          href="/link/38-8931"
+          rel="nofollow"
+          target="_blank"
+          class="block w-full bg-orange-500 hover:bg-orange-600 text-center text-white font-bold py-4 rounded-xl shadow-[0_10px_15px_-3px_rgba(249,115,22,0.3)] flex flex-col justify-center items-center leading-tight shiny-btn active:scale-95 transition relative overflow-visible"
         >
-          <i class="fas fa-shield-alt mr-1"></i>ブランクOK・教育充実
-        </span>
-        <span class="text-sm">じっくり相談して探す</span>
-        <span class="text-[10px] opacity-90 mt-0.5 font-normal"
-          >ファルマスタッフ</span
-        >
-      </a>
+          <span class="text-[10px] block mb-0.5 text-yellow-100 font-bold tracking-wide">
+            <i class="fas fa-pen mr-1"></i>最短60秒で入力完了! 登録無料
+          </span>
+          <span class="text-base">ファルマスタッフに相談する</span>
+        </a>
+      </div>
     </div>
   </div>
   <div style="display:none;">

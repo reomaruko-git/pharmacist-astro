@@ -23,8 +23,8 @@
 
   /* ▼ 影の設定 */
   --shadow-soft: 0 10px 40px -10px rgba(0, 0, 0, 0.08);
-  --shadow-card: 0 4px 6px -1px rgba(0, 0, 0, 0.05),
-    0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  --shadow-card:
+    0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
 }
 
 /* -------------------------------------------------- */
@@ -168,5 +168,40 @@
   }
   .mySwiper .swiper-pagination-bullet-active {
     opacity: 1;
+  }
+}
+
+/* -------------------------------------------------- */
+/* 4. Career 追記                     */
+/* -------------------------------------------------- */
+
+@theme {
+  /* ▼ 信頼感のあるカラーパレット（継続） */
+  --color-trust-navy: #0f172a;
+  --color-trust-blue: #3b82f6;
+  --color-trust-teal: #14b8a6;
+}
+
+@layer components {
+  /* 写真の上に載せる文字用の影 */
+  .text-shadow-md {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  .text-shadow-lg {
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  }
+
+  /* モダンなカード（浮き上がる動き） */
+  .card-float {
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 4px 20px -5px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(226, 232, 240, 0.6);
+  }
+  .card-float:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 30px -10px rgba(59, 130, 246, 0.15);
+    border-color: var(--color-trust-blue);
   }
 }

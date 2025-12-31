@@ -1,0 +1,563 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout
+  title="薬剤師の人間関係リセット転職｜「職場ガチャ」で失敗しないための転職術"
+  description="「人間関係」で悩むのは、あなたのせいじゃありません。狭い薬局特有の空気に疲れたら、環境をガラッと変える「リセット転職」を。職場見学で空気を確かめてから入社する方法教えます。"
+  bodyClass="pb-24 md:pb-0"
+>
+  <header
+    id="main-header"
+    class="fixed w-full z-50 top-0 left-0 h-16 flex items-center justify-between px-4 md:px-8 transition-all duration-300 bg-transparent"
+  >
+    <div class="flex items-center gap-4">
+      <a href="/" class="block hover:opacity-70 transition-opacity">
+        <img
+          src="/assets/images/yakusupo_logo.svg"
+          alt="薬剤師Support.com"
+          class="h-7 w-auto drop-shadow-md"
+        />
+      </a>
+      <div
+        class="hidden md:flex bg-white/90 backdrop-blur text-slate-600 text-xs font-bold px-3 py-1 rounded-full items-center shadow-sm"
+      >
+        <i class="fas fa-check-circle mr-1.5 text-trust-blue"></i>
+        <span>2025年 職場環境データ保有</span>
+      </div>
+    </div>
+
+    <a
+      href="#register"
+      class="hidden md:inline-flex items-center gap-2 bg-trust-navy hover:bg-slate-800 text-white font-bold py-2.5 px-6 rounded-full transition shadow-lg text-sm shiny-btn"
+    >
+      <i class="fas fa-search"></i> 環境の良い求人を見る
+    </a>
+  </header>
+
+  <section
+    class="relative w-full h-[600px] md:h-[700px] flex items-center justify-start overflow-hidden mt-0"
+  >
+    <div
+      class="absolute inset-0 bg-cover bg-[70%_center] md:bg-center bg-no-repeat z-0 transform scale-105"
+      style="background-image: url('/assets/images/career_main.png');"
+    >
+      <div
+        class="absolute inset-0 bg-gradient-to-r from-slate-900/70 via-slate-900/20 to-transparent"
+      >
+      </div>
+      <div
+        class="absolute inset-0 bg-gradient-to-t from-slate-900/50 via-transparent to-slate-900/30"
+      >
+      </div>
+    </div>
+
+    <div
+      class="relative z-10 max-w-6xl mx-auto px-6 w-full h-full flex flex-col justify-center pt-16"
+    >
+      <div class="max-w-xl">
+        <div
+          class="inline-flex items-center gap-2 bg-black/40 backdrop-blur-md border border-white/20 text-white px-4 py-1.5 rounded-full text-xs font-bold shadow-lg mb-6 animate-fade-in-up"
+        >
+          <span class="w-2 h-2 rounded-full bg-trust-teal animate-pulse"></span>
+          人間関係に疲れてしまったあなたへ
+        </div>
+
+        <h1
+          class="text-white leading-tight font-bold text-3xl md:text-6xl tracking-tight mb-6 drop-shadow-xl animate-fade-in-up delay-100"
+        >
+          薬剤師の転職は、<br />
+          <span class="text-trust-teal relative inline-block">
+            「人間関係」
+            <span
+              class="absolute bottom-1 left-0 w-full h-3 bg-trust-teal/30 -z-10 -skew-x-12"
+            ></span>
+          </span>
+          で選んでいい。
+        </h1>
+
+        <p
+          class="text-slate-100 text-sm md:text-xl leading-relaxed mb-10 drop-shadow-md animate-fade-in-up delay-200 font-medium"
+        >
+          「この職場、合わないかも…」<br />
+          そう感じるのは、あなたのせいじゃありません。<br />
+          狭い調剤室のストレスから解放されて、<br class="hidden md:inline" />
+          もっと深呼吸できる場所で働きませんか？
+        </p>
+
+        <div
+          class="flex flex-col sm:flex-row gap-4 animate-fade-in-up delay-300"
+        >
+          <a
+            href="#register"
+            class="shiny-btn inline-flex items-center justify-center bg-trust-blue hover:bg-blue-600 text-white text-lg font-bold py-4 px-10 rounded-full shadow-xl shadow-blue-900/50 transition transform hover:-translate-y-1"
+          >
+            リセット転職を相談する
+            <i class="fas fa-arrow-right ml-3"></i>
+          </a>
+        </div>
+        <p
+          class="mt-4 text-xs text-slate-300 animate-fade-in-up delay-500 pl-1 opacity-90"
+        >
+          <i class="fas fa-lock mr-1"></i> 今の職場にはバレません / 完全無料
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <script is:inline>
+    window.addEventListener("scroll", () => {
+      const header = document.getElementById("main-header");
+      if (window.scrollY > 50) {
+        header.classList.remove("bg-transparent");
+        header.classList.add("bg-white/90", "backdrop-blur-md", "shadow-sm");
+      } else {
+        header.classList.add("bg-transparent");
+        header.classList.remove("bg-white/90", "backdrop-blur-md", "shadow-sm");
+      }
+    });
+  </script>
+
+  <section class="py-20 md:py-32 px-4 bg-white">
+    <div
+      class="max-w-5xl mx-auto animate-on-scroll opacity-0 translate-y-8 transition-all duration-1000 ease-out"
+    >
+      <div class="text-center mb-16">
+        <h2 class="text-2xl md:text-3xl font-bold text-trust-navy mb-4">
+          「性格の不一致」ではありません。<br />
+          <span class="text-trust-blue">「逃げ場がない」</span>だけなんです。
+        </h2>
+        <p
+          class="text-slate-500 text-sm md:text-base leading-relaxed max-w-2xl mx-auto"
+        >
+          少人数の薬局は、一度関係がこじれるともう修復できません。<br />
+          それはあなたが悪いのではなく、そういう環境が原因なんです。<br />
+          だから、自分を責めるのはもう終わりにしましょう。
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+        <div class="text-center md:text-left group">
+          <div
+            class="w-14 h-14 mx-auto md:mx-0 rounded-2xl bg-slate-50 flex items-center justify-center text-2xl text-trust-blue mb-6 group-hover:bg-trust-blue group-hover:text-white transition-colors duration-300"
+          >
+            <i class="fas fa-crown"></i>
+          </div>
+          <h3 class="text-lg font-bold text-trust-navy mb-3">
+            お局様がルールブック
+          </h3>
+          <p class="text-sm text-slate-500 leading-relaxed">
+            「あの人の機嫌」が最優先。正しいことを言っても通じないし、気に入られないと有給も取れない…そんな理不尽に耐えていませんか？
+          </p>
+        </div>
+
+        <div class="text-center md:text-left group">
+          <div
+            class="w-14 h-14 mx-auto md:mx-0 rounded-2xl bg-slate-50 flex items-center justify-center text-2xl text-trust-blue mb-6 group-hover:bg-trust-blue group-hover:text-white transition-colors duration-300"
+          >
+            <i class="fas fa-volume-mute"></i>
+          </div>
+          <h3 class="text-lg font-bold text-trust-navy mb-3">
+            誰も助けてくれない
+          </h3>
+          <p class="text-sm text-slate-500 leading-relaxed">
+            管理薬剤師自身がトラブルメーカーだったり、見て見ぬふりだったり。「相談できる人」がいない孤独は、本当に辛いですよね。
+          </p>
+        </div>
+
+        <div class="text-center md:text-left group">
+          <div
+            class="w-14 h-14 mx-auto md:mx-0 rounded-2xl bg-slate-50 flex items-center justify-center text-2xl text-trust-blue mb-6 group-hover:bg-trust-blue group-hover:text-white transition-colors duration-300"
+          >
+            <i class="fas fa-hourglass-half"></i>
+          </div>
+          <h3 class="text-lg font-bold text-trust-navy mb-3">
+            気疲れでヘトヘト
+          </h3>
+          <p class="text-sm text-slate-500 leading-relaxed">
+            本来は患者さんのために使いたいエネルギーを、同僚への気遣いや機嫌取りに使い果たしてしまう。仕事が終わるとドッと疲れませんか？
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 md:py-32 px-4 bg-slate-50">
+    <div
+      class="max-w-6xl mx-auto animate-on-scroll opacity-0 translate-y-8 transition-all duration-1000 ease-out"
+    >
+      <div class="flex flex-col md:flex-row items-center gap-12 md:gap-24">
+        <div class="w-full md:w-1/2">
+          <span
+            class="text-trust-blue font-bold text-xs tracking-wider uppercase mb-2 block"
+            >Our Solution</span
+          >
+          <h2
+            class="text-3xl md:text-4xl font-bold text-trust-navy mb-8 leading-tight"
+          >
+            個人戦はやめて、<br />
+            <span class="text-trust-blue">「組織」</span>に守ってもらおう。
+          </h2>
+          <p class="text-slate-600 mb-10 leading-relaxed">
+            大手や優良企業への転職は、あなたの心を「仕組み」で守ることです。<br
+            />
+            個人の我慢に頼らない、ちゃんとした環境を選びませんか？
+          </p>
+
+          <div class="space-y-8">
+            <div class="flex gap-5">
+              <div
+                class="shrink-0 w-12 h-12 rounded-full bg-white shadow-sm flex items-center justify-center text-trust-blue text-lg"
+              >
+                <i class="fas fa-random"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-trust-navy text-lg">
+                  店舗異動という「保険」
+                </h4>
+                <p class="text-sm text-slate-500 mt-1 leading-relaxed">
+                  もし人間関係で躓いても、辞めずに「場所」だけ変えられます。この選択肢があるだけで、心に余裕が生まれますよ。
+                </p>
+              </div>
+            </div>
+
+            <div class="flex gap-5">
+              <div
+                class="shrink-0 w-12 h-12 rounded-full bg-white shadow-sm flex items-center justify-center text-trust-blue text-lg"
+              >
+                <i class="fas fa-balance-scale"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-trust-navy text-lg">
+                  本社の人事が味方
+                </h4>
+                <p class="text-sm text-slate-500 mt-1 leading-relaxed">
+                  現場の感情論は通じません。ハラスメントや理不尽な扱いは、本社がしっかり対応してくれます。
+                </p>
+              </div>
+            </div>
+
+            <div class="flex gap-5">
+              <div
+                class="shrink-0 w-12 h-12 rounded-full bg-white shadow-sm flex items-center justify-center text-trust-blue text-lg"
+              >
+                <i class="fas fa-eye"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-trust-navy text-lg">
+                  入社前の「お試し見学」
+                </h4>
+                <p class="text-sm text-slate-500 mt-1 leading-relaxed">
+                  求人票には載っていない「空気感」を、プロと一緒に事前にチェックできます。「変な人がいないか」を確認しましょう。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full md:w-1/2">
+          <div
+            class="relative rounded-2xl overflow-hidden shadow-2xl aspect-square bg-white group"
+          >
+            <div
+              class="w-full h-full bg-slate-200 flex items-center justify-center text-slate-400 group-hover:scale-105 transition duration-700"
+            >
+              <span class="text-sm">Image Area (Solution)</span>
+            </div>
+
+            <div
+              class="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-slate-900/80 to-transparent"
+            >
+              <p class="text-white font-bold text-lg flex items-center">
+                <i class="fas fa-shield-alt mr-3 text-trust-teal"></i>
+                組織に守られた働き方
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 md:py-32 px-4 bg-white">
+    <div
+      class="max-w-6xl mx-auto animate-on-scroll opacity-0 translate-y-8 transition-all duration-1000 ease-out"
+    >
+      <h2
+        class="text-center text-2xl md:text-3xl font-bold mb-16 text-trust-navy"
+      >
+        環境を変えて、笑顔が戻った人たち
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="card-float p-8">
+          <div class="flex items-center gap-3 mb-6">
+            <div
+              class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-400"
+            >
+              <i class="fas fa-user"></i>
+            </div>
+            <div>
+              <span class="text-xs font-bold text-slate-500 block"
+                >30代・管理薬剤師</span
+              >
+              <span class="text-[10px] text-slate-400"
+                >調剤薬局 ➔ 大手チェーン</span
+              >
+            </div>
+          </div>
+          <h3 class="font-bold text-trust-navy text-base mb-4 leading-snug">
+            「感情」じゃなくて「ルール」で動く。<br />この快適さは衝撃でした。
+          </h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            以前は経営者一族の顔色を伺うのが仕事でした。今は明確なルールがあり、理不尽な指示もありません。「正当に評価される」って、こんなに楽なんですね。
+          </p>
+        </div>
+
+        <div class="card-float p-8 hidden md:block">
+          <div class="flex items-center gap-3 mb-6">
+            <div
+              class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-400"
+            >
+              <i class="fas fa-user"></i>
+            </div>
+            <div>
+              <span class="text-xs font-bold text-slate-500 block"
+                >40代・ママ薬剤師</span
+              >
+              <span class="text-[10px] text-slate-400"
+                >個人薬局 ➔ ドラッグストア</span
+              >
+            </div>
+          </div>
+          <h3 class="font-bold text-trust-navy text-base mb-4 leading-snug">
+            「お互い様」が機能する。<br />休みへの罪悪感が消えました。
+          </h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            少人数の職場では、子供の熱で休むたびに「すみません」と謝り続けていました。今の職場は人数に余裕があり、システム的にカバーし合えるので、精神的な負担が全く違います。
+          </p>
+        </div>
+
+        <div class="card-float p-8 hidden md:block">
+          <div class="flex items-center gap-3 mb-6">
+            <div
+              class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-400"
+            >
+              <i class="fas fa-user"></i>
+            </div>
+            <div>
+              <span class="text-xs font-bold text-slate-500 block"
+                >20代・女性</span
+              >
+              <span class="text-[10px] text-slate-400">病院 ➔ 調剤併設</span>
+            </div>
+          </div>
+          <h3 class="font-bold text-trust-navy text-base mb-4 leading-snug">
+            職場見学で「空気」を確認。<br />入社後のギャップゼロです。
+          </h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            エージェントの方に同行してもらい、事前に店舗のバックヤードまで見せてもらいました。管理薬剤師さんの穏やかな人柄を見て、「ここなら大丈夫」と確信できました。
+          </p>
+        </div>
+      </div>
+
+      <div class="mt-10 text-center md:hidden">
+        <button
+          class="text-trust-blue font-bold text-sm hover:underline"
+          id="show-more-reviews-btn"
+          onclick="document.querySelectorAll('.card-float.hidden').forEach(el => el.classList.remove('hidden')); this.style.display='none';"
+        >
+          全ての口コミを見る <i class="fas fa-arrow-right ml-1"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 md:py-32 px-4 bg-slate-50">
+    <div
+      class="max-w-4xl mx-auto animate-on-scroll opacity-0 translate-y-8 transition-all duration-1000 ease-out"
+    >
+      <h2
+        class="text-center text-2xl md:text-3xl font-bold mb-4 text-trust-navy"
+      >
+        情報の「質」が、転職の失敗を防ぎます
+      </h2>
+      <p class="text-center text-slate-500 mb-12 text-sm">
+        求人票には載らない「内部情報」こそが重要です。
+      </p>
+
+      <div
+        class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden"
+      >
+        <table class="w-full text-center">
+          <thead
+            class="bg-slate-50 text-slate-600 text-sm border-b border-slate-200"
+          >
+            <tr>
+              <th class="p-5 font-medium">比較項目</th>
+              <th class="p-5 font-medium text-slate-400">自分で探す</th>
+              <th class="p-5 font-bold text-trust-blue">ファルマスタッフ</th>
+            </tr>
+          </thead>
+          <tbody class="text-sm md:text-base divide-y divide-slate-100">
+            <tr>
+              <td class="p-5 font-bold text-slate-700">職場の雰囲気</td>
+              <td class="p-5 text-slate-400">入社まで不明</td>
+              <td class="p-5 font-bold text-trust-navy">
+                <i class="fas fa-check-circle text-trust-blue mr-2"></i>
+                事前の見学・調査済み
+              </td>
+            </tr>
+            <tr>
+              <td class="p-5 font-bold text-slate-700">離職率・評判</td>
+              <td class="p-5 text-slate-400">わからない</td>
+              <td class="p-5 font-bold text-trust-navy">
+                <i class="fas fa-check-circle text-trust-blue mr-2"></i>
+                データを共有
+              </td>
+            </tr>
+            <tr>
+              <td class="p-5 font-bold text-slate-700">条件交渉</td>
+              <td class="p-5 text-slate-400">言い出しにくい</td>
+              <td class="p-5 font-bold text-trust-navy">
+                <i class="fas fa-check-circle text-trust-blue mr-2"></i>
+                エージェントが代行
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section
+    id="register"
+    class="py-20 md:py-32 px-4 bg-trust-navy relative overflow-hidden"
+  >
+    <div class="absolute top-0 left-0 w-full h-full pointer-events-none">
+      <div
+        class="absolute top-0 right-0 w-1/2 h-full bg-blue-900/20 -skew-x-12 translate-x-1/4"
+      >
+      </div>
+    </div>
+
+    <div
+      class="max-w-3xl mx-auto relative z-10 animate-on-scroll opacity-0 translate-y-8 transition-all duration-1000 ease-out text-center"
+    >
+      <h2 class="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
+        あなたの「代わり」はいても、<br />
+        <span class="text-trust-teal">あなたの人生の代わり</span>はいません。
+      </h2>
+      <p class="mb-12 text-slate-300 text-base md:text-lg leading-relaxed">
+        自分をすり減らす毎日は、もう終わりにしましょう。<br />
+        まずは「ここなら私でも笑って働けそう」と思える職場を、<br
+          class="hidden md:inline"
+        />
+        一緒に探してみませんか？
+      </p>
+
+      <div class="bg-white rounded-2xl p-8 md:p-10 shadow-2xl max-w-md mx-auto">
+        <div class="mb-8 flex justify-center h-16">
+          <img
+            src="/assets/images/logo_pharm.gif"
+            alt="ファルマスタッフ"
+            class="h-full w-auto object-contain"
+          />
+        </div>
+
+        <ul class="text-left text-sm space-y-4 mb-8">
+          <li class="flex items-start gap-3">
+            <i class="fas fa-check text-trust-blue mt-1"></i>
+            <span class="text-slate-600">希望条件をじっくり聞きます</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <i class="fas fa-check text-trust-blue mt-1"></i>
+            <span class="text-slate-600"
+              ><span class="font-bold text-slate-800">職場見学に同行</span
+              >してサポート</span
+            >
+          </li>
+          <li class="flex items-start gap-3">
+            <i class="fas fa-check text-trust-blue mt-1"></i>
+            <span class="text-slate-600">入社後のトラブル相談もOK</span>
+          </li>
+        </ul>
+
+        <a
+          href="/link/38-8931"
+          target="_blank"
+          rel="nofollow noopener"
+          class="shiny-btn block w-full bg-trust-blue hover:bg-blue-600 text-white text-lg font-bold py-4 rounded-full shadow-lg transition transform hover:-translate-y-1"
+        >
+          非公開求人を見る（無料）
+          <i class="fas fa-external-link-alt ml-2 text-sm"></i>
+        </a>
+      </div>
+
+      <p class="text-xs text-slate-500 mt-8">
+        ※登録情報は厳重に管理され、現在の職場に知られることはありません。
+      </p>
+    </div>
+  </section>
+
+  <div
+    class="fixed bottom-0 left-0 w-full bg-white/90 backdrop-blur-md border-t border-slate-200 px-4 pt-3 pb-safe md:hidden z-50 shadow-[0_-4px_10px_rgba(0,0,0,0.05)]"
+    style="padding-bottom: max(12px, env(safe-area-inset-bottom))"
+  >
+    <a
+      href="/link/38-8931"
+      rel="nofollow"
+      target="_blank"
+      class="block w-full bg-trust-navy hover:bg-slate-800 text-center text-white font-bold py-3.5 rounded-xl shadow-lg flex items-center justify-center gap-2 shiny-btn active:scale-95 transition"
+    >
+      <i class="fas fa-search"></i>
+      <span>環境の良い職場を探す</span>
+    </a>
+  </div>
+
+  <div style="display:none;">
+    <img
+      src="https://www18.a8.net/0.gif?a8mat=45KE8R+FXCGC2+276A+5ZMCI"
+      border="0"
+      height="1"
+      width="1"
+    />
+  </div>
+
+  <script is:inline>
+    document.addEventListener("DOMContentLoaded", function () {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.remove("opacity-0", "translate-y-8");
+              entry.target.classList.add("opacity-100", "translate-y-0");
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.1 },
+      );
+      document.querySelectorAll(".animate-on-scroll").forEach((el) => {
+        observer.observe(el);
+      });
+
+      // アニメーション用クラスの付与（FV）
+      const fvElements = document.querySelectorAll(".animate-fade-in-up");
+      fvElements.forEach((el) => {
+        el.style.opacity = "0";
+        el.style.transform = "translateY(20px)";
+        el.style.transition = "opacity 0.8s ease-out, transform 0.8s ease-out";
+      });
+
+      setTimeout(() => {
+        fvElements.forEach((el, index) => {
+          setTimeout(() => {
+            el.style.opacity = "1";
+            el.style.transform = "translateY(0)";
+          }, index * 100);
+        });
+      }, 100);
+    });
+  </script>
+</Layout>
