@@ -31,6 +31,7 @@ import "../styles/global.css";
     />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="referrer" content="no-referrer-when-downgrade">
+    <meta name="theme-color" content="#0ea5e9" />
     {import.meta.env.PROD && (  
       <script is:inline>
         (function (w, d, s, l, i) {
@@ -46,6 +47,7 @@ import "../styles/global.css";
       </script>
     )}
     <link rel="canonical" href={currentUrl.href} />
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -68,6 +70,7 @@ import "../styles/global.css";
       href="/assets/images/favicon-16x16.png"
     />
     <link rel="manifest" href="/assets/images/site.webmanifest" />
+    <meta name="theme-color" content="#10b09d" />
   </head>
 
   <body class={"bg-slate-50 font-sans text-text " + bodyClass}>
